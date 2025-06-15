@@ -15,7 +15,7 @@ app.innerHTML = `
   </header>
   <section id="hero" class="hero-section">
     <h1><span class="highlight">Hi, I'm Harold Ligon</span></h1>
-    <p class="subtitle">A creative and driven software development student.</p>
+    <p class="subtitle">Leveraging a mature, creative eye for design and a genuine passion for the latest web technologies, I build stylish, high-performing websites for businesses and individuals. With a solid understanding of SEO tactics, I ensure your online presence is not only beautiful but also easily discoverable, helping you connect with your audience and achieve your digital goals. As an independent contractor, I offer dedicated, personalized service to bring your unique vision to life.</p>
     <a href="#projects" class="cta-btn">See My Work ↓</a>
   </section>
   <section id="about" class="about-section">
@@ -62,11 +62,11 @@ app.innerHTML = `
   <section id="projects" class="projects-section">
     <h2>Projects</h2>
     <div class="project-filters">
-      <button class="filter-btn active" data-filter="all" style="text-align:center;">All</button>
       <button class="filter-btn" data-filter="web" style="text-align:center;">Web Apps</button>
       <button class="filter-btn" data-filter="webpages" style="text-align:center;">Web Pages</button>
       <button class="filter-btn" data-filter="design" style="text-align:center;">Graphic Design</button>
       <button class="filter-btn" data-filter="games" style="text-align:center;">Games</button>
+      <button class="filter-btn active" data-filter="all" style="text-align:center;">All</button>      
     </div>
     <div class="projects-grid">
       <!-- PizzaByU -->
