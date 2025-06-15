@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "vs": "npm run dev -- --port=5173",
-    "deploy": "gh-pages -d dist"
+    "deploy": "node deploy.js",
+    "gh-pages": "gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.0.0",
