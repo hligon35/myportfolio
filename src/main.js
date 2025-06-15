@@ -265,9 +265,47 @@ filterBtns.forEach(btn => {
   });
 });
 
-// Contact form (demo only)
-document.getElementById('contact-form').addEventListener('submit', e => {
+// Contact form with backend submission
+document.getElementById('contact-form').addEventListener('submit', async e => {
   e.preventDefault();
-  alert('Thank you for reaching out! (Demo only)');
-  e.target.reset();
+  
+  // Get form data
+  const formData = new FormData(e.target);
+  const formProps = Object.fromEntries(formData);
+  
+  // Update button state
+  const submitButton = e.target.querySelector('button[type="submit"]');
+  const originalText = submitButton.textContent;
+  submitButton.textContent = 'Sending...';
+  submitButton.disabled = true;
+  
+  try {
+    // Send to backend
+    const response = await fetch('http://localhost:3000/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formProps),
+    });
+    
+    const result = await response.json();
+    
+    if (response.ok) {
+      // Success
+      alert('Thank you for your message! I will get back to you soon.');
+      e.target.reset();
+    } else {
+      // Error from server
+      alert(`Error: ${result.error || 'Something went wrong. Please try again.'}`);
+    }
+  } catch (error) {
+    // Network error
+    console.error('Error submitting form:', error);
+    alert('Failed to send message. Please check your internet connection and try again.');
+  } finally {
+    // Reset button
+    submitButton.textContent = originalText;
+    submitButton.disabled = false;
+  }
 });
