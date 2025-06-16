@@ -133,7 +133,7 @@ app.innerHTML = `
       <!-- Voice-Over Portfolio -->
       <div class="project-card project-card-flex" data-type="webpages">
         <div class="project-card-imgcol">
-          <img src="projects/bearvoice.png" alt="Portfolio Site" class="project-card-img" />
+          <img src="projects/bearVoice.png" alt="Portfolio Site" class="project-card-img" />
           <a href="https://hligon35.github.io/thebearvoice/" class="cta-btn project-card-btn" target="_blank" style="text-align:center;">View Project</a>
         </div>
         <div class="project-card-content">
