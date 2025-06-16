@@ -1,4 +1,5 @@
-import './style.css';
+// CSS is now linked directly in index.html
+// import './style.css';
 
 const app = document.querySelector('#app');
 
