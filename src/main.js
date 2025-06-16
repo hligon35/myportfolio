@@ -6,6 +6,7 @@ const app = document.querySelector('#app');
 app.innerHTML = `
   <header class="portfolio-header">
     <div class="logo"><span>Harold Ligon | Creative Technologist</span></div>
+    <div class="nav-mobile-toggle" aria-hidden="true"></div>
     <nav id="main-nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -242,6 +243,11 @@ const themeToggle = document.getElementById('theme-toggle');
 themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('light-theme');
   themeToggle.textContent = document.body.classList.contains('light-theme') ? '☀️' : '🌙';
+  
+  // On mobile, hide the navigation after toggling the theme
+  if (window.innerWidth <= 768) {
+    setTimeout(hideMobileNav, 150);
+  }
 });
 
 // Project filtering
@@ -285,4 +291,72 @@ document.getElementById('contact-form').addEventListener('submit', e => {
     // Clear the success parameter from URL to prevent showing the message multiple times
     history.replaceState(null, '', window.location.pathname);
   }
+});
+
+// Mobile navigation toggle
+const navToggle = document.querySelector('.nav-mobile-toggle');
+const header = document.querySelector('.portfolio-header');
+const navLinks = document.querySelectorAll('#main-nav a');
+
+// Function to show mobile nav
+function showMobileNav() {
+  header.classList.add('nav-mobile-visible');
+}
+
+// Function to hide mobile nav
+function hideMobileNav() {
+  header.classList.remove('nav-mobile-visible');
+}
+
+// Toggle navigation visibility on mobile
+if (navToggle) {
+  navToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    
+    if (header.classList.contains('nav-mobile-visible')) {
+      hideMobileNav();
+    } else {
+      showMobileNav();
+    }
+  });
+}
+
+// Hide navigation when clicking outside of it
+document.addEventListener('click', function(e) {
+  if (header.classList.contains('nav-mobile-visible')) {
+    // Check if click is outside the navigation
+    if (!e.target.closest('#main-nav') && !e.target.closest('.nav-mobile-toggle')) {
+      hideMobileNav();
+    }
+  }
+});
+
+// For mobile: once a navigation link is tapped, allow a second tap to navigate
+navLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    // Only on mobile devices
+    if (window.innerWidth <= 768) {
+      if (!header.classList.contains('nav-mobile-visible')) {
+        // If the nav isn't visible yet, show it and prevent navigation
+        e.preventDefault();
+        showMobileNav();
+      } else {
+        // Nav is visible and link is clicked - hide nav after a short delay
+        // This allows the browser to start navigating before hiding the nav
+        // Don't prevent default here to allow the navigation to happen
+        setTimeout(hideMobileNav, 150);
+      }
+    }
+  });
+});
+
+// Additional event to ensure nav links hide the menu after selection
+navLinks.forEach(link => {
+  link.addEventListener('touchend', function() {
+    // Only on mobile devices
+    if (window.innerWidth <= 768 && header.classList.contains('nav-mobile-visible')) {
+      // Use a short delay to ensure the navigation has time to start
+      setTimeout(hideMobileNav, 150);
+    }
+  });
 });
