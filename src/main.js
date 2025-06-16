@@ -218,7 +218,7 @@ app.innerHTML = `
   </section>
   <section id="contact" class="contact-section">
     <h2>Contact</h2>
-    <form id="contact-form">
+    <form id="contact-form" action="https://formspree.io/f/xpwrryky" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
@@ -266,47 +266,23 @@ filterBtns.forEach(btn => {
   });
 });
 
-// Contact form with backend submission
-document.getElementById('contact-form').addEventListener('submit', async e => {
-  e.preventDefault();
+// Contact form with Formspree
+document.getElementById('contact-form').addEventListener('submit', e => {
+  // No need to prevent default - let the form submit to Formspree
   
-  // Get form data
-  const formData = new FormData(e.target);
-  const formProps = Object.fromEntries(formData);
-  
-  // Update button state
+  // Just show a loading state on the button
   const submitButton = e.target.querySelector('button[type="submit"]');
   const originalText = submitButton.textContent;
   submitButton.textContent = 'Sending...';
   submitButton.disabled = true;
   
-  try {
-    // Send to backend
-    const response = await fetch('http://localhost:3000/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formProps),
-    });
-    
-    const result = await response.json();
-    
-    if (response.ok) {
-      // Success
-      alert('Thank you for your message! I will get back to you soon.');
-      e.target.reset();
-    } else {
-      // Error from server
-      alert(`Error: ${result.error || 'Something went wrong. Please try again.'}`);
-    }
-  } catch (error) {
-    // Network error
-    console.error('Error submitting form:', error);
-    alert('Failed to send message. Please check your internet connection and try again.');
-  } finally {
-    // Reset button
-    submitButton.textContent = originalText;
-    submitButton.disabled = false;
+  // The form will automatically redirect back to the page after submission
+  // We can add a success parameter to the URL to show a thank you message
+  
+  // Check if we were redirected back after a successful submission
+  if (window.location.search.includes('?success=true')) {
+    alert('Thank you for your message! I will get back to you soon.');
+    // Clear the success parameter from URL to prevent showing the message multiple times
+    history.replaceState(null, '', window.location.pathname);
   }
 });
