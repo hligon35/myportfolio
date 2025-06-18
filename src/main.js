@@ -23,7 +23,7 @@ app.innerHTML = `
   <section id="about" class="about-section">
     <h2>About Me</h2>
     <p>
-      I am a passionate web developer and software development student at Ivy Tech Community College, specializing in creative coding, UI/UX, and interactive design. I thrive on transforming complex challenges into elegant, user-friendly digital solutions that blend technology and design. My experience spans building responsive web applications, engaging games, and impactful graphic design projects. I am committed to continuous learning, staying current with emerging technologies, and collaborating to deliver innovative, high-quality results. Outside of coding, I enjoy exploring new tech trends and sketching creative ideas. I am eager to contribute my skills and creativity to forward-thinking teams and projects.
+      I am a passionate web and software development student at Ivy Tech Community College, specializing in creative coding, UI/UX, and interactive design. I thrive on transforming complex challenges into elegant, user-friendly digital solutions that blend technology and design. My experience spans building responsive web applications, engaging games, and impactful graphic design projects. I am committed to continuous learning, staying current with emerging technologies, and collaborating to deliver innovative, high-quality results. Outside of coding, I enjoy exploring new tech trends and sketching creative ideas. I am eager to contribute my skills and creativity to forward-thinking teams and projects.
     </p>
   </section>
   <section id="tools" class="tools-section">
@@ -99,11 +99,11 @@ app.innerHTML = `
       <div class="project-card project-card-flex" data-type="games">
         <div class="project-card-imgcol">
           <img src="projects/infiniteFlyer.png" alt="Infinite Flyer" class="project-card-img" />
-          <a href="https://hligon35.github.io/infiniteFlyer/" class="cta-btn project-card-btn" target="_blank" style="text-align:center;">View Project<br>(Coming Soon!)</a>
+          <a href="https://hligon35.github.io/infiniteFlyer/" class="cta-btn project-card-btn" target="_blank" style="text-align:center;">View Project</a>
         </div>
         <div class="project-card-content">
           <h3>Infinite Flyer</h3>
-          <p class="project-card-desc">A 3D flyer game built with Godot.</p>
+          <p class="project-card-desc">A 3D flyer built with Godot.</p>
           <div class="project-card-label"><span class="tag">Game</span></div>
         </div>
       </div>
@@ -115,7 +115,7 @@ app.innerHTML = `
         </div>
         <div class="project-card-content">
           <h3>Coin Dash</h3>
-          <p class="project-card-desc">A 2D top-down, coin collector game made with Godot.</p>
+          <p class="project-card-desc">A 2D top-down, coin collector made with Godot.</p>
           <div class="project-card-label"><span class="tag">Game</span></div>
         </div>
       </div>
@@ -123,7 +123,7 @@ app.innerHTML = `
       <div class="project-card project-card-flex" data-type="games">
         <div class="project-card-imgcol">
           <img src="projects/jungleJumper.png" alt="Jungle Jumper" class="project-card-img" />
-          <a href="https://hligon35.github.io/jungleJumper/" class="cta-btn project-card-btn" target="_blank" style="text-align:center;">View Project<br>(Coming Soon!)</a>
+          <a href="https://hligon35.github.io/jungleJumper/" class="cta-btn project-card-btn" target="_blank" style="text-align:center;">View Project</a>
         </div>
         <div class="project-card-content">
           <h3>Jungle Jumper</h3>
