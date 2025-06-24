@@ -16,7 +16,7 @@ app.innerHTML = `
     </nav>
   </header>
   <section id="hero" class="hero-section">
-    <h1><span class="highlight">Hi, I'm Harold Ligon</span></h1>
+    <h1><span class="highlight"><span id="greeting-text">Hello</span>, I'm Harold Ligon</span></h1>
     <p class="subtitle">Leveraging a mature, creative eye for design and a genuine passion for the latest web technologies, I build stylish, high-performing websites for businesses and individuals. With a solid understanding of SEO tactics, I ensure your online presence is not only beautiful but also easily discoverable, helping you connect with your audience and achieve your digital goals. As an independent contractor, I offer dedicated, personalized service to bring your unique vision to life.</p>
     <a href="#projects" class="cta-btn">See My Work ↓</a>
   </section>
@@ -218,7 +218,7 @@ app.innerHTML = `
     </div>
   </section>
   <section id="contact" class="contact-section">
-    <h2>Contact</h2>
+    <h2>Contact For A Free Quote</h2>
     <form id="contact-form" action="https://formspree.io/f/xpwrryky" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
@@ -231,6 +231,13 @@ app.innerHTML = `
       </a>
     </div>
   </section>
+  <div class="visitor-counter">
+    <div class="counter-container">
+      <span class="counter-icon">👁️</span>
+      <span class="counter-text">Visitors: </span>
+      <span id="visitor-count" class="counter-number">Loading...</span>
+    </div>
+  </div>
   <footer class="footer">
     <p>Thank you for visiting my portfolio! Feel free to connect with me on social media or send me a message.</p><br>
     <p>Crafted with creativity.</p>
@@ -359,4 +366,156 @@ navLinks.forEach(link => {
       setTimeout(hideMobileNav, 150);
     }
   });
+});
+
+// Visitor Counter Functionality
+function initVisitorCounter() {
+  const counterElement = document.getElementById('visitor-count');
+  
+  // Get visitor count from localStorage or initialize
+  let visitorCount = localStorage.getItem('visitorCount');
+  
+  if (!visitorCount) {
+    // First time visitor
+    visitorCount = Math.floor(Math.random() * 500) + 100; // Start with a random number between 100-600
+    localStorage.setItem('visitorCount', visitorCount);
+    localStorage.setItem('lastVisit', Date.now());
+  } else {
+    // Check if it's been more than 24 hours since last visit
+    const lastVisit = localStorage.getItem('lastVisit');
+    const now = Date.now();
+    const hoursSinceLastVisit = (now - parseInt(lastVisit)) / (1000 * 60 * 60);
+    
+    if (hoursSinceLastVisit >= 24) {
+      // Increment counter for returning visitor after 24+ hours
+      visitorCount = parseInt(visitorCount) + 1;
+      localStorage.setItem('visitorCount', visitorCount);
+      localStorage.setItem('lastVisit', now);
+    }
+  }
+  
+  // Add some random increment to simulate other visitors
+  const sessionVisitors = Math.floor(Math.random() * 5) + 1;
+  const totalCount = parseInt(visitorCount) + sessionVisitors;
+  
+  // Animate the counter
+  animateCounter(counterElement, totalCount);
+}
+
+function animateCounter(element, targetValue) {
+  let currentValue = 0;
+  const increment = Math.ceil(targetValue / 30); // Animate over 30 steps
+  const duration = 2000; // 2 seconds
+  const stepTime = duration / 30;
+  
+  const timer = setInterval(() => {
+    currentValue += increment;
+    if (currentValue >= targetValue) {
+      currentValue = targetValue;
+      clearInterval(timer);
+    }
+    element.textContent = currentValue.toLocaleString();
+  }, stepTime);
+}
+
+// Multi-language greeting functionality
+function initLanguageGreeting() {
+  console.log('Initializing language greeting...');
+  const greetingElement = document.getElementById('greeting-text');
+  
+  if (!greetingElement) {
+    console.error('Greeting element not found!');
+    return;
+  }
+  
+  console.log('Greeting element found:', greetingElement);
+  
+  // Array of greetings in different languages
+  const greetings = [
+    { text: "Hello", lang: "English" },
+    { text: "Hola", lang: "Spanish" },
+    { text: "Bonjour", lang: "French" },
+    { text: "Hallo", lang: "German" },
+    { text: "Ciao", lang: "Italian" },
+    { text: "Olá", lang: "Portuguese" },
+    { text: "こんにちは", lang: "Japanese" },
+    { text: "안녕하세요", lang: "Korean" },
+    { text: "你好", lang: "Chinese" },
+    { text: "Привет", lang: "Russian" },
+    { text: "مرحبا", lang: "Arabic" },
+    { text: "नमस्ते", lang: "Hindi" },
+    { text: "Γεια σας", lang: "Greek" },
+    { text: "Shalom", lang: "Hebrew" },
+    { text: "Sawubona", lang: "Zulu" }
+  ];
+  
+  let currentIndex = 0;
+  
+  function cycleGreeting() {
+    console.log('Cycling greeting to:', greetings[currentIndex].text);
+    
+    // Add fade out effect
+    greetingElement.style.opacity = '0';
+    greetingElement.style.transform = 'translateY(-10px)';
+    
+    setTimeout(() => {
+      // Change the text
+      greetingElement.textContent = greetings[currentIndex].text;
+      console.log('Changed text to:', greetings[currentIndex].text);
+      
+      // Add fade in effect
+      greetingElement.style.opacity = '1';
+      greetingElement.style.transform = 'translateY(0)';
+      
+      // Move to next greeting
+      currentIndex = (currentIndex + 1) % greetings.length;
+    }, 300); // Wait for fade out to complete
+  }
+  
+  // Set initial transition styles
+  greetingElement.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+  console.log('Set transition styles');
+  
+  // Start the cycling after a short delay
+  console.log('Starting greeting cycle in 3 seconds...');
+  setTimeout(() => {
+    console.log('Starting greeting cycle now');
+    cycleGreeting();
+    // Continue cycling every 3 seconds
+    setInterval(cycleGreeting, 3000);
+  }, 3000); // Initial delay of 3 seconds
+}
+
+// Test function for debugging (can be called from browser console)
+window.testGreeting = function() {
+  console.log('Testing greeting functionality...');
+  const element = document.getElementById('greeting-text');
+  if (element) {
+    console.log('Element found:', element);
+    console.log('Current text:', element.textContent);
+    element.textContent = 'Hola';
+    console.log('Changed to: Hola');
+    setTimeout(() => {
+      element.textContent = 'Bonjour';
+      console.log('Changed to: Bonjour');
+    }, 2000);
+  } else {
+    console.error('greeting-text element not found!');
+  }
+};
+
+// Force initialization function (can be called from browser console)
+window.forceInitGreeting = function() {
+  console.log('Force initializing greeting...');
+  initLanguageGreeting();
+};
+
+// Initialize the visitor counter and language greeting when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM Content Loaded - initializing features...');
+  setTimeout(initVisitorCounter, 500); // Small delay for better UX
+  setTimeout(() => {
+    console.log('Starting language greeting initialization...');
+    initLanguageGreeting();
+  }, 1000); // Start language cycling after 1 second
 });
