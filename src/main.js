@@ -432,7 +432,7 @@ function initLanguageGreeting() {
   
   // Array of greetings in different languages
   const greetings = [
-    { text: "Hello", lang: "English" },
+    // { text: "Hello", lang: "English" },
     { text: "Hola", lang: "Spanish" },
     { text: "Bonjour", lang: "French" },
     { text: "Hallo", lang: "German" },
