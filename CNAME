@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Replace this with your actual domain name
 # For example: hldesignedit.com or www.hldesignedit.com
 # Uncomment the line below and replace with your domain:
@@ -19,3 +20,6 @@
 # For www subdomain:
 # Type: CNAME, Name: www, Value: hligon35.github.io
 www.hldesignedit.com
+=======
+hldesignedit.com
+>>>>>>> d3ec65885be98b8b6a5ffb41f1364deaccd3b3ae
