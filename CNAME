@@ -1,6 +1,21 @@
 # Replace this with your actual domain name
 # For example: yourname.com or www.yourname.com
 # Uncomment the line below and replace with your domain:
-# yourname.com
+# hldesignedit.com
 
+# INSTRUCTIONS FOR SETUP:
+# 1. Replace "yourname.com" above with your actual domain
+# 2. Remove the # symbol to uncomment the line
+# 3. Save this file and commit to GitHub
+# 4. Configure DNS at your domain registrar (see instructions below)
+
+# DNS SETUP FOR YOUR DOMAIN REGISTRAR:
+# For apex domain (yourname.com):
+# Type: A, Name: @, Value: 185.199.108.153
+# Type: A, Name: @, Value: 185.199.109.153
+# Type: A, Name: @, Value: 185.199.110.153
+# Type: A, Name: @, Value: 185.199.111.153
+#
+# For www subdomain:
+# Type: CNAME, Name: www, Value: hligon35.github.io
 www.hldesignedit.com
