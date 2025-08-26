@@ -5,60 +5,73 @@ const app = document.querySelector('#app');
 
 app.innerHTML = `
   <header class="portfolio-header">
-    <div class="logo"><span>Harold Ligon | Creative Technologist</span></div>
-    <div class="nav-mobile-toggle" aria-hidden="true"></div>
+    <div class="logo"><span>Harold Ligon | Web Developer</span></div>
+    <div class="nav-mobile-toggle" role="button" aria-controls="main-nav" aria-expanded="false" title="Menu"></div>
     <nav id="main-nav">
+      <a href="#services">Services</a>
+      <a href="#projects">Portfolio</a>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <button id="theme-toggle" title="Toggle dark/light mode" style="text-align:center;">🌙</button>
     </nav>
   </header>
   <section id="hero" class="hero-section">
-    <h1><span class="highlight"><span id="greeting-text">Hello</span>, I'm Harold Ligon</span></h1>
-    <p class="subtitle">Leveraging a mature, creative eye for design and a genuine passion for the latest web technologies, I build stylish, high-performing websites for businesses and individuals. With a solid understanding of SEO tactics, I ensure your online presence is not only beautiful but also easily discoverable, helping you connect with your audience and achieve your digital goals. As an independent contractor, I offer dedicated, personalized service to bring your unique vision to life.</p>
-    <a href="#projects" class="cta-btn">See My Work ↓</a>
+  <h1><span class="highlight">Need a Website That Grows Your Business?</span></h1>
+    <p class="subtitle">I design and build modern, high-performing websites that help you stand out, attract customers, and achieve your business goals. From concept to launch, I deliver professional, mobile-friendly, and SEO-optimized solutions tailored to your needs.</p>
+    <a href="#contact" class="cta-btn" style="font-size:1.3em;">Request a Free Consultation</a>
+    <div style="margin-top:2em; font-size:1.1em; color:#fff;">
+      <strong>Specializing in:</strong> Business Websites, E-Commerce, Portfolios, Non-Profits, and More
+    </div>
+  </section>
+  <section id="services" class="about-section">
+    <h2>Web Development Services</h2>
+    <ul style="text-align:left; max-width:600px; margin:0 auto; font-size:1.15em; line-height:1.7;">
+      <li><strong>Custom Website Design &amp; Development</strong> – Unique, branded sites built for your goals</li>
+      <li><strong>Mobile-First &amp; Responsive</strong> – Looks great on any device</li>
+      <li><strong>SEO Optimization</strong> – Get found on Google and drive more traffic</li>
+      <li><strong>Fast, Secure, and Accessible</strong> – Modern best practices for performance and safety</li>
+      <li><strong>Ongoing Support</strong> – Reliable help, updates, and advice after launch</li>
+    </ul>
+    <div style="margin-top:2em; text-align:center;">
+      <a href="#projects" class="cta-btn">See My Work</a>
+    </div>
   </section>
   <section id="about" class="about-section">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate web and software development student at Ivy Tech Community College, specializing in creative coding, UI/UX, and interactive design. I thrive on transforming complex challenges into elegant, user-friendly digital solutions that blend technology and design. My experience spans building responsive web applications, engaging games, and impactful graphic design projects. I am committed to continuous learning, staying current with emerging technologies, and collaborating to deliver innovative, high-quality results. Outside of coding, I enjoy exploring new tech trends and sketching creative ideas. I am eager to contribute my skills and creativity to forward-thinking teams and projects.
-    </p>
+    <h2>Why Work With Me?</h2>
+    <ul style="text-align:left; max-width:600px; margin:0 auto; font-size:1.15em; line-height:1.7;">
+      <li><strong>Personalized Service:</strong> You work directly with me, not an agency.</li>
+      <li><strong>Results-Focused:</strong> Every site is built to help you achieve your business goals.</li>
+      <li><strong>Transparent Process:</strong> Clear communication and no hidden fees.</li>
+      <li><strong>Proven Track Record:</strong> See my portfolio and client testimonials below.</li>
+    </ul>
   </section>
   <section id="tools" class="tools-section">
     <h2>Tools</h2>
-    <div class="tools-list" style="flex-wrap: wrap; flex-direction: column; align-items: center;">
-      <div style="display: flex; justify-content: center; gap: 2vw; margin-bottom: 1.5em;">
-        <div class="tool-item"><img src="tools/excel.png" alt="Excel" /><span>Excel</span></div>
-        <div class="tool-item"><img src="tools/figma.png" alt="Figma" /><span>Figma</span></div>
-        <div class="tool-item"><img src="tools/gitHub.png" alt="GitHub" /><span>GitHub</span></div>
-        <div class="tool-item"><img src="tools/godot.png" alt="Godot" /><span>Godot</span></div>
-        <div class="tool-item"><img src="tools/oneDrive.png" alt="OneDrive" /><span>OneDrive</span></div>
-        <div class="tool-item"><img src="tools/outlook.png" alt="Outlook" /><span>Outlook</span></div>
-      </div>
-      <div style="display: flex; justify-content: center; gap: 2vw;">
-        <div class="tool-item"><img src="tools/photoshop.png" alt="Photoshop" /><span>Photoshop</span></div>
-        <div class="tool-item"><img src="tools/powerPoint.png" alt="PowerPoint" /><span>PowerPoint</span></div>
-        <div class="tool-item"><img src="tools/vsCode.png" alt="VS Code" /><span>VS Code</span></div>
-        <div class="tool-item"><img src="tools/word.png" alt="Word" /><span>Word</span></div>
-        <div class="tool-item"><img src="tools/wordPress.png" alt="WordPress" /><span>WordPress</span></div>
-        <div class="tool-item"><img src="tools/canva.png" alt="Canva" /><span>Canva</span></div>
-      </div>
+    <div class="tools-list">
+      <div class="tool-item"><img src="tools/excel.png" alt="Excel" /><span>Excel</span></div>
+      <div class="tool-item"><img src="tools/figma.png" alt="Figma" /><span>Figma</span></div>
+      <div class="tool-item"><img src="tools/gitHub.png" alt="GitHub" /><span>GitHub</span></div>
+      <div class="tool-item"><img src="tools/godot.png" alt="Godot" /><span>Godot</span></div>
+      <div class="tool-item"><img src="tools/oneDrive.png" alt="OneDrive" /><span>OneDrive</span></div>
+      <div class="tool-item"><img src="tools/outlook.png" alt="Outlook" /><span>Outlook</span></div>
+      <div class="tool-item"><img src="tools/photoshop.png" alt="Photoshop" /><span>Photoshop</span></div>
+      <div class="tool-item"><img src="tools/powerPoint.png" alt="PowerPoint" /><span>PowerPoint</span></div>
+      <div class="tool-item"><img src="tools/vsCode.png" alt="VS Code" /><span>VS Code</span></div>
+      <div class="tool-item"><img src="tools/word.png" alt="Word" /><span>Word</span></div>
+      <div class="tool-item"><img src="tools/wordPress.png" alt="WordPress" /><span>WordPress</span></div>
+      <div class="tool-item"><img src="tools/canva.png" alt="Canva" /><span>Canva</span></div>
     </div>
   </section>
   <section id="skills" class="skills-section">
     <h2>Skills</h2>
-    <div class="skills-list" style="flex-wrap: wrap; flex-direction: column; align-items: center;">
-      <div style="display: flex; justify-content: center; gap: 2vw; margin-bottom: 1.5em;">
-        <div class="skill"><img src="skills/css.png" alt="CSS" /><span>CSS</span></div>
-        <div class="skill"><img src="skills/html.png" alt="HTML" /><span>HTML</span></div>
-        <div class="skill"><img src="skills/javaScript.png" alt="JavaScript" /><span>JavaScript</span></div>
-        <div class="skill"><img src="skills/node.png" alt="Node.js" /><span>Node.js</span></div>
-        <div class="skill"><img src="skills/python.png" alt="Python" /><span>Python</span></div>
-        <div class="skill"><img src="skills/react.png" alt="React" /><span>React</span></div>
-        <div class="skill"><img src="skills/typeScript.png" alt="TypeScript" /><span>TypeScript</span></div>
-      </div>
+    <div class="skills-list">
+      <div class="skill"><img src="skills/css.png" alt="CSS" /><span>CSS</span></div>
+      <div class="skill"><img src="skills/html.png" alt="HTML" /><span>HTML</span></div>
+      <div class="skill"><img src="skills/javaScript.png" alt="JavaScript" /><span>JavaScript</span></div>
+      <div class="skill"><img src="skills/node.png" alt="Node.js" /><span>Node.js</span></div>
+      <div class="skill"><img src="skills/python.png" alt="Python" /><span>Python</span></div>
+      <div class="skill"><img src="skills/react.png" alt="React" /><span>React</span></div>
+      <div class="skill"><img src="skills/typeScript.png" alt="TypeScript" /><span>TypeScript</span></div>
     </div>
   </section>
   <section id="projects" class="projects-section">
@@ -218,17 +231,20 @@ app.innerHTML = `
     </div>
   </section>
   <section id="contact" class="contact-section">
-    <h2>Contact For A Free Quote</h2>
+    <h2>Let's Build Your Website</h2>
+    <p style="text-align:center; font-size:1.1em; margin-bottom:1.5em; color:var(--text);">Ready to take your business online or upgrade your current site? Fill out the form below for a free, no-obligation consultation. I respond within 24 hours.</p>
     <form id="contact-form" action="https://formspree.io/f/xpwrryky" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="name" placeholder="Your Name or Business" required />
       <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit" style="text-align:center;">Send</button>
+      <textarea name="message" placeholder="Tell me about your project, goals, or any questions you have..." required></textarea>
+      <button type="submit" style="text-align:center;">Request Consultation</button>
     </form>
     <div class="contact-socials">
-      <a href="https://github.com/hligon35" title="GitHub"><img src="icons/github.png" alt="GitHub" style="width:50px;height:50px;vertical-align:middle;" /><span>GitHub</span>
-      <a href="https://www.linkedin.com/in/hligon/" title="LinkedIn"><img src="icons/linkedin.png" alt="LinkedIn" style="width:50px;height:50px;vertical-align:middle;" /><span>LinkedIn</span>
-      </a>
+      <a href="https://github.com/hligon35" title="GitHub"><img src="icons/github.png" alt="GitHub" style="width:50px;height:50px;vertical-align:middle;" /><span>GitHub</span></a>
+      <a href="https://www.linkedin.com/in/hligon/" title="LinkedIn"><img src="icons/linkedin.png" alt="LinkedIn" style="width:50px;height:50px;vertical-align:middle;" /><span>LinkedIn</span></a>
+    </div>
+    <div style="margin-top:2em; text-align:center; color:var(--accent); font-size:1.05em;">
+      <strong>100% Satisfaction Guarantee –</strong> I’m committed to delivering a website you’ll love.
     </div>
   </section>
   <div class="visitor-counter">
@@ -239,9 +255,9 @@ app.innerHTML = `
     </div>
   </div>
   <footer class="footer">
-    <p>Thank you for visiting my portfolio! Feel free to connect with me on social media or send me a message.</p><br>
-    <p>Crafted with creativity.</p>
-    <p>&copy; 2025 Harold Ligon.</p>
+    <p>Ready to grow your business with a professional website? <a href="#contact" style="color:var(--accent);text-decoration:underline;">Contact me today</a> for a free consultation.</p>
+    <p style="margin-top:1em;">Proudly serving businesses, entrepreneurs, and organizations with creative, results-driven web solutions.</p>
+    <p style="margin-top:1em;">&copy; 2025 Harold Ligon. All rights reserved.</p>
   </footer>
 `;
 
@@ -308,11 +324,15 @@ const navLinks = document.querySelectorAll('#main-nav a');
 // Function to show mobile nav
 function showMobileNav() {
   header.classList.add('nav-mobile-visible');
+  const toggle = document.querySelector('.nav-mobile-toggle');
+  if (toggle) toggle.setAttribute('aria-expanded', 'true');
 }
 
 // Function to hide mobile nav
 function hideMobileNav() {
   header.classList.remove('nav-mobile-visible');
+  const toggle = document.querySelector('.nav-mobile-toggle');
+  if (toggle) toggle.setAttribute('aria-expanded', 'false');
 }
 
 // Toggle navigation visibility on mobile
@@ -324,6 +344,17 @@ if (navToggle) {
       hideMobileNav();
     } else {
       showMobileNav();
+    }
+  });
+  // Keyboard accessibility for toggle
+  navToggle.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      if (header.classList.contains('nav-mobile-visible')) {
+        hideMobileNav();
+      } else {
+        showMobileNav();
+      }
     }
   });
 }
@@ -338,35 +369,95 @@ document.addEventListener('click', function(e) {
   }
 });
 
-// For mobile: once a navigation link is tapped, allow a second tap to navigate
+// Smooth scroll with header offset and active link highlight
+function getHeaderOffset() {
+  const h = document.querySelector('.portfolio-header');
+  return h ? h.offsetHeight : 0;
+}
+
+function smoothScrollToId(hash) {
+  const target = document.querySelector(hash);
+  if (!target) return;
+  const headerOffset = getHeaderOffset();
+  const bodyPad = parseInt(getComputedStyle(document.body).paddingTop || '0', 10) || 0;
+  const effectiveOffset = Math.max(headerOffset - bodyPad, 0);
+  const y = target.getBoundingClientRect().top + window.pageYOffset - effectiveOffset + 8;
+  window.scrollTo({ top: y, behavior: 'smooth' });
+}
+
+function setActiveLink(hash) {
+  navLinks.forEach(a => a.classList.remove('active'));
+  const active = Array.from(navLinks).find(a => a.getAttribute('href') === hash);
+  if (active) active.classList.add('active');
+}
+
+// Handle nav link clicks
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
-    // Only on mobile devices
-    if (window.innerWidth <= 768) {
-      if (!header.classList.contains('nav-mobile-visible')) {
-        // If the nav isn't visible yet, show it and prevent navigation
-        e.preventDefault();
-        showMobileNav();
+    const href = link.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      // Update the URL hash for shareable deep links
+      if (history.pushState) {
+        history.pushState(null, '', href);
       } else {
-        // Nav is visible and link is clicked - hide nav after a short delay
-        // This allows the browser to start navigating before hiding the nav
-        // Don't prevent default here to allow the navigation to happen
-        setTimeout(hideMobileNav, 150);
+        window.location.hash = href;
       }
+      smoothScrollToId(href);
+      setActiveLink(href);
+      if (window.innerWidth <= 768) setTimeout(hideMobileNav, 150);
     }
   });
 });
 
-// Additional event to ensure nav links hide the menu after selection
-navLinks.forEach(link => {
-  link.addEventListener('touchend', function() {
-    // Only on mobile devices
-    if (window.innerWidth <= 768 && header.classList.contains('nav-mobile-visible')) {
-      // Use a short delay to ensure the navigation has time to start
-      setTimeout(hideMobileNav, 150);
+// Update active link on scroll
+const sectionIds = ['#services', '#projects', '#about', '#contact'];
+const sections = sectionIds
+  .map(id => ({ id, el: document.querySelector(id) }))
+  .filter(s => !!s.el);
+
+if ('IntersectionObserver' in window && sections.length) {
+  const observer = new IntersectionObserver((entries) => {
+    const headerOffset = getHeaderOffset();
+    // Pick the entry closest to the top and intersecting
+    const visible = entries
+      .filter(en => en.isIntersecting)
+      .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+    if (visible) {
+      const id = '#' + visible.target.id;
+      setActiveLink(id);
     }
-  });
-});
+  }, { root: null, rootMargin: `-${getHeaderOffset()}px 0px 0px 0px`, threshold: 0.35 });
+
+  sections.forEach(s => observer.observe(s.el));
+}
+
+// Fallback: if IntersectionObserver isn't available, update active link on scroll
+else if (sections.length) {
+  const onScroll = () => {
+    const headerOffset = getHeaderOffset();
+    let current = sections[0].id;
+    for (const s of sections) {
+      const top = s.el.getBoundingClientRect().top - headerOffset;
+      if (top <= 20) current = s.id; else break;
+    }
+    setActiveLink(current);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+// If page loads with a hash, adjust scroll for header
+function initHashScroll() {
+  if (window.location.hash) {
+    const hash = window.location.hash;
+    // Defer to allow layout to settle
+    setTimeout(() => {
+      smoothScrollToId(hash);
+      setActiveLink(hash);
+    }, 50);
+  }
+}
 
 // Visitor Counter Functionality
 function initVisitorCounter() {
@@ -418,104 +509,32 @@ function animateCounter(element, targetValue) {
   }, stepTime);
 }
 
-// Multi-language greeting functionality
-function initLanguageGreeting() {
-  console.log('Initializing language greeting...');
-  const greetingElement = document.getElementById('greeting-text');
-  
-  if (!greetingElement) {
-    console.error('Greeting element not found!');
-    return;
-  }
-  
-  console.log('Greeting element found:', greetingElement);
-  
-  // Array of greetings in different languages
-  const greetings = [
-    // { text: "Hello", lang: "English" },
-    { text: "Hola", lang: "Spanish" },
-    { text: "Bonjour", lang: "French" },
-    { text: "Hallo", lang: "German" },
-    { text: "Ciao", lang: "Italian" },
-    { text: "Olá", lang: "Portuguese" },
-    { text: "こんにちは", lang: "Japanese" },
-    { text: "안녕하세요", lang: "Korean" },
-    { text: "你好", lang: "Chinese" },
-    { text: "Привет", lang: "Russian" },
-    { text: "مرحبا", lang: "Arabic" },
-    { text: "नमस्ते", lang: "Hindi" },
-    { text: "Γεια σας", lang: "Greek" },
-    { text: "Shalom", lang: "Hebrew" },
-    { text: "Sawubona", lang: "Zulu" }
-  ];
-  
-  let currentIndex = 0;
-  
-  function cycleGreeting() {
-    console.log('Cycling greeting to:', greetings[currentIndex].text);
-    
-    // Add fade out effect
-    greetingElement.style.opacity = '0';
-    greetingElement.style.transform = 'translateY(-10px)';
-    
-    setTimeout(() => {
-      // Change the text
-      greetingElement.textContent = greetings[currentIndex].text;
-      console.log('Changed text to:', greetings[currentIndex].text);
-      
-      // Add fade in effect
-      greetingElement.style.opacity = '1';
-      greetingElement.style.transform = 'translateY(0)';
-      
-      // Move to next greeting
-      currentIndex = (currentIndex + 1) % greetings.length;
-    }, 300); // Wait for fade out to complete
-  }
-  
-  // Set initial transition styles
-  greetingElement.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-  console.log('Set transition styles');
-  
-  // Start the cycling after a short delay
-  console.log('Starting greeting cycle in 3 seconds...');
-  setTimeout(() => {
-    console.log('Starting greeting cycle now');
-    cycleGreeting();
-    // Continue cycling every 3 seconds
-    setInterval(cycleGreeting, 3000);
-  }, 3000); // Initial delay of 3 seconds
-}
+// ...existing code...
+// ...existing code...
 
-// Test function for debugging (can be called from browser console)
-window.testGreeting = function() {
-  console.log('Testing greeting functionality...');
-  const element = document.getElementById('greeting-text');
-  if (element) {
-    console.log('Element found:', element);
-    console.log('Current text:', element.textContent);
-    element.textContent = 'Hola';
-    console.log('Changed to: Hola');
-    setTimeout(() => {
-      element.textContent = 'Bonjour';
-      console.log('Changed to: Bonjour');
-    }, 2000);
-  } else {
-    console.error('greeting-text element not found!');
-  }
-};
-
-// Force initialization function (can be called from browser console)
-window.forceInitGreeting = function() {
-  console.log('Force initializing greeting...');
-  initLanguageGreeting();
-};
-
-// Initialize the visitor counter and language greeting when the page loads
+// Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM Content Loaded - initializing features...');
-  setTimeout(initVisitorCounter, 500); // Small delay for better UX
-  setTimeout(() => {
-    console.log('Starting language greeting initialization...');
-    initLanguageGreeting();
-  }, 1000); // Start language cycling after 1 second
+  setTimeout(initVisitorCounter, 300);
+  initHashScroll();
+  // Default active link when no hash
+  if (!window.location.hash) {
+    setActiveLink('#services');
+  }
+  // Keep active state fresh after resizes (header height may change)
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      // Close mobile nav on desktop resize
+      if (window.innerWidth > 768) hideMobileNav();
+      // Update active link to the section closest to top
+      const headerOffset = getHeaderOffset();
+      let current = sections.length ? sections[0].id : '#services';
+      for (const s of sections) {
+        const top = s.el.getBoundingClientRect().top - headerOffset;
+        if (top <= 20) current = s.id; else break;
+      }
+      setActiveLink(current);
+    }, 120);
+  });
 });
