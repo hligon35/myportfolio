@@ -36,7 +36,7 @@ function initializeApp() {
       <div class="hero-stats">
         <div class="stat-container">
           <div class="stat-item">
-            <span class="stat-number">50+</span>
+            <span class="stat-number">30+</span>
             <span class="stat-label">Projects Completed</span>
           </div>
         </div>
@@ -151,27 +151,27 @@ function initializeApp() {
         <h3>Frontend Development</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="skills/skill.svg" alt="React" loading="lazy" />
+            <img src="skills/react.svg" alt="React" loading="lazy" />
             <span>React</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="skills/skill.svg" alt="TypeScript" loading="lazy" />
+            <img src="skills/typescript.svg" alt="TypeScript" loading="lazy" />
             <span>TypeScript</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="skills/skill.svg" alt="JavaScript" loading="lazy" />
+            <img src="skills/javascript.svg" alt="JavaScript" loading="lazy" />
             <span>JavaScript</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="skills/skill.svg" alt="CSS" loading="lazy" />
+            <img src="skills/css3.svg" alt="CSS" loading="lazy" />
             <span>CSS3</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="skills/skill.svg" alt="HTML" loading="lazy" />
+            <img src="skills/html5.svg" alt="HTML" loading="lazy" />
             <span>HTML5</span>
             <div class="proficiency">Expert</div>
           </div>
@@ -181,12 +181,12 @@ function initializeApp() {
         <h3>Backend & Database</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="skills/skill.svg" alt="Node.js" loading="lazy" />
+            <img src="skills/nodejs.svg" alt="Node.js" loading="lazy" />
             <span>Node.js</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="skills/skill.svg" alt="Python" loading="lazy" />
+            <img src="skills/python.svg" alt="Python" loading="lazy" />
             <span>Python</span>
             <div class="proficiency">Intermediate</div>
           </div>
@@ -196,22 +196,22 @@ function initializeApp() {
         <h3>Design & Development Tools</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="tools/tool.svg" alt="Figma" loading="lazy" />
+            <img src="tools/figma.svg" alt="Figma" loading="lazy" />
             <span>Figma</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/tool.svg" alt="Photoshop" loading="lazy" />
+            <img src="tools/photoshop.svg" alt="Photoshop" loading="lazy" />
             <span>Photoshop</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="tools/tool.svg" alt="VS Code" loading="lazy" />
+            <img src="tools/vscode.svg" alt="VS Code" loading="lazy" />
             <span>VS Code</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/tool.svg" alt="GitHub" loading="lazy" />
+            <img src="tools/github.svg" alt="GitHub" loading="lazy" />
             <span>Git/GitHub</span>
             <div class="proficiency">Advanced</div>
           </div>
@@ -229,7 +229,6 @@ function initializeApp() {
       <button class="filter-btn active" data-filter="all">All Projects</button>
       <button class="filter-btn" data-filter="web">Web Applications</button>
       <button class="filter-btn" data-filter="webpages">Business Websites</button>
-      <button class="filter-btn" data-filter="design">Design & Branding</button>
       <button class="filter-btn" data-filter="games">Interactive Media</button>
     </div>
     <div class="portfolio-grid">
@@ -310,7 +309,13 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="https://image.thum.io/get/width/1200/https://www.lifeprepacademyfoundation.com/" alt="Life Prep Academy Foundation" loading="lazy" referrerpolicy="no-referrer" />
+          <img
+            src="https://image.thum.io/get/width/1200/https://lifeprepacademyfoundation.com/"
+            alt="Life Prep Academy Foundation"
+            loading="lazy"
+            referrerpolicy="no-referrer"
+            onerror="this.onerror=null;this.src='projects/lifeprepacademyfoundation.svg';"
+          />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Web Design</span>
@@ -329,31 +334,6 @@ function initializeApp() {
           <div class="portfolio-actions">
             <a href="https://www.lifeprepacademyfoundation.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Discuss Similar</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-card" data-type="design">
-        <div class="portfolio-image">
-          <img src="graphicDesign/logos.svg" alt="Brand Design" loading="lazy" />
-          <div class="portfolio-overlay">
-            <div class="portfolio-tech">
-              <span>Adobe Suite</span>
-              <span>Figma</span>
-              <span>Brand Guidelines</span>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-content">
-          <h3>Brand Identity & Logo Design</h3>
-          <p class="portfolio-desc">Complete brand identity system including logos, color palettes, and brand guidelines for growing businesses.</p>
-          <div class="portfolio-results">
-            <span class="result-item">5 Brand Identities</span>
-            <span class="result-item">Brand Recognition +80%</span>
-          </div>
-          <div class="portfolio-actions">
-            <a href="graphicDesign/logos.svg" class="btn btn-primary" target="_blank" rel="noopener">View Gallery</a>
-            <a href="#contact" class="btn btn-secondary">Brand Consultation</a>
           </div>
         </div>
       </div>
