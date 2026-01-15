@@ -151,27 +151,27 @@ function initializeApp() {
         <h3>Frontend Development</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="skills/react.png" alt="React" loading="lazy" />
+            <img src="skills/skill.svg" alt="React" loading="lazy" />
             <span>React</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="skills/typeScript.png" alt="TypeScript" loading="lazy" />
+            <img src="skills/skill.svg" alt="TypeScript" loading="lazy" />
             <span>TypeScript</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="skills/javaScript.png" alt="JavaScript" loading="lazy" />
+            <img src="skills/skill.svg" alt="JavaScript" loading="lazy" />
             <span>JavaScript</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="skills/css.png" alt="CSS" loading="lazy" />
+            <img src="skills/skill.svg" alt="CSS" loading="lazy" />
             <span>CSS3</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="skills/html.png" alt="HTML" loading="lazy" />
+            <img src="skills/skill.svg" alt="HTML" loading="lazy" />
             <span>HTML5</span>
             <div class="proficiency">Expert</div>
           </div>
@@ -181,12 +181,12 @@ function initializeApp() {
         <h3>Backend & Database</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="skills/node.png" alt="Node.js" loading="lazy" />
+            <img src="skills/skill.svg" alt="Node.js" loading="lazy" />
             <span>Node.js</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="skills/python.png" alt="Python" loading="lazy" />
+            <img src="skills/skill.svg" alt="Python" loading="lazy" />
             <span>Python</span>
             <div class="proficiency">Intermediate</div>
           </div>
@@ -196,22 +196,22 @@ function initializeApp() {
         <h3>Design & Development Tools</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="tools/figma.png" alt="Figma" loading="lazy" />
+            <img src="tools/tool.svg" alt="Figma" loading="lazy" />
             <span>Figma</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/photoshop.png" alt="Photoshop" loading="lazy" />
+            <img src="tools/tool.svg" alt="Photoshop" loading="lazy" />
             <span>Photoshop</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="tools/vsCode.png" alt="VS Code" loading="lazy" />
+            <img src="tools/tool.svg" alt="VS Code" loading="lazy" />
             <span>VS Code</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/gitHub.png" alt="GitHub" loading="lazy" />
+            <img src="tools/tool.svg" alt="GitHub" loading="lazy" />
             <span>Git/GitHub</span>
             <div class="proficiency">Advanced</div>
           </div>
@@ -235,7 +235,7 @@ function initializeApp() {
     <div class="portfolio-grid">
       <div class="portfolio-card featured" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/pizzabyu.png" alt="Business Dashboard" loading="lazy" />
+          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/pizzabyu/" alt="Business Dashboard" loading="lazy" referrerpolicy="no-referrer" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>React</span>
@@ -260,49 +260,49 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="E-Commerce Platform" loading="lazy" />
+          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/pacoslebanese/" alt="Paco's Lebanese" loading="lazy" referrerpolicy="no-referrer" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>Stripe API</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>SEO</span>
             </div>
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>E-Commerce Platform</h3>
-          <p class="portfolio-desc">Full-stack e-commerce solution with payment processing, inventory management, and customer analytics.</p>
+          <h3>Paco's Lebanese Website</h3>
+          <p class="portfolio-desc">Restaurant website built for clear menus, strong branding, and fast access on mobile.</p>
           <div class="portfolio-results">
-            <span class="result-item">300% Conversion Increase</span>
-            <span class="result-item">2x Faster Loading</span>
+            <span class="result-item">Mobile-First UX</span>
+            <span class="result-item">SEO-Ready</span>
           </div>
           <div class="portfolio-actions">
-            <span class="btn btn-disabled">Launching Soon</span>
-            <a href="#contact" class="btn btn-secondary">Get Similar Solution</a>
+            <a href="https://hligon35.github.io/pacoslebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
+            <a href="#contact" class="btn btn-secondary">Discuss Project</a>
           </div>
         </div>
       </div>
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/bearVoice.png" alt="Professional Portfolio" loading="lazy" />
+          <img src="https://image.thum.io/get/width/1200/https://www.luxuriouscakesindy.com/" alt="Luxurious Cakes Indy" loading="lazy" referrerpolicy="no-referrer" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
+              <span>WordPress</span>
+              <span>SEO</span>
+              <span>Performance</span>
             </div>
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>Professional Portfolio Site</h3>
-          <p class="portfolio-desc">Creative portfolio showcasing professional voice-over services with audio integration and booking system.</p>
+          <h3>Luxurious Cakes Indy</h3>
+          <p class="portfolio-desc">Business website optimized for showcasing products, driving inquiries, and improving discoverability.</p>
           <div class="portfolio-results">
-            <span class="result-item">200% More Inquiries</span>
-            <span class="result-item">5-Star Client Rating</span>
+            <span class="result-item">Clear Product Showcase</span>
+            <span class="result-item">Improved Visibility</span>
           </div>
           <div class="portfolio-actions">
-            <a href="https://hligon35.github.io/thebearvoice/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
+            <a href="https://www.luxuriouscakesindy.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Get Quote</a>
           </div>
         </div>
@@ -310,24 +310,24 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/non-profit.png" alt="Non-Profit Website" loading="lazy" />
+          <img src="https://image.thum.io/get/width/1200/https://www.lifeprepacademyfoundation.com/" alt="Life Prep Academy Foundation" loading="lazy" referrerpolicy="no-referrer" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
-              <span>WordPress</span>
-              <span>Donation API</span>
+              <span>Web Design</span>
+              <span>Content</span>
               <span>SEO</span>
             </div>
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>Non-Profit Organization Site</h3>
-          <p class="portfolio-desc">Donor-focused website with integrated payment processing and impact tracking for community outreach.</p>
+          <h3>Life Prep Academy Foundation</h3>
+          <p class="portfolio-desc">Organization website designed to communicate mission, improve trust, and make it easy to engage with programs.</p>
           <div class="portfolio-results">
-            <span class="result-item">150% Donation Increase</span>
-            <span class="result-item">500+ New Members</span>
+            <span class="result-item">Clear Messaging</span>
+            <span class="result-item">Better Engagement</span>
           </div>
           <div class="portfolio-actions">
-            <a href="https://hligon35.github.io/mmmbc/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
+            <a href="https://www.lifeprepacademyfoundation.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Discuss Similar</a>
           </div>
         </div>
@@ -335,7 +335,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="design">
         <div class="portfolio-image">
-          <img src="graphicDesign/Logos.png" alt="Brand Design" loading="lazy" />
+          <img src="graphicDesign/logos.svg" alt="Brand Design" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Adobe Suite</span>
@@ -352,7 +352,7 @@ function initializeApp() {
             <span class="result-item">Brand Recognition +80%</span>
           </div>
           <div class="portfolio-actions">
-            <a href="graphicDesign/Logos.png" class="btn btn-primary" target="_blank" rel="noopener">View Gallery</a>
+            <a href="graphicDesign/logos.svg" class="btn btn-primary" target="_blank" rel="noopener">View Gallery</a>
             <a href="#contact" class="btn btn-secondary">Brand Consultation</a>
           </div>
         </div>
@@ -360,7 +360,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/coinDash.png" alt="Interactive Games" loading="lazy" />
+          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/coinDash/" alt="Interactive Games" loading="lazy" referrerpolicy="no-referrer" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -379,6 +379,56 @@ function initializeApp() {
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/coinDash/" class="btn btn-primary" target="_blank" rel="noopener">Play Demo</a>
             <a href="#contact" class="btn btn-secondary">Gamification Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-type="games">
+        <div class="portfolio-image">
+          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/jungleJumper/" alt="Jungle Jumper" loading="lazy" referrerpolicy="no-referrer" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-tech">
+              <span>Game Dev</span>
+              <span>Gameplay</span>
+              <span>UX</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>Jungle Jumper</h3>
+          <p class="portfolio-desc">Fast-paced platformer focused on responsive controls, progression, and replayability.</p>
+          <div class="portfolio-results">
+            <span class="result-item">Responsive Controls</span>
+            <span class="result-item">Arcade Replayability</span>
+          </div>
+          <div class="portfolio-actions">
+            <a href="https://hligon35.github.io/jungleJumper/" class="btn btn-primary" target="_blank" rel="noopener">Play Now</a>
+            <a href="#contact" class="btn btn-secondary">Build a Game</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-type="games">
+        <div class="portfolio-image">
+          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/infiniteFlyer/" alt="Infinite Flyer" loading="lazy" referrerpolicy="no-referrer" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-tech">
+              <span>Game Dev</span>
+              <span>Scoring</span>
+              <span>UI</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>Infinite Flyer</h3>
+          <p class="portfolio-desc">Endless flyer with quick sessions, score chasing, and lightweight performance for the web.</p>
+          <div class="portfolio-results">
+            <span class="result-item">Endless Mode</span>
+            <span class="result-item">Score Chasing</span>
+          </div>
+          <div class="portfolio-actions">
+            <a href="https://hligon35.github.io/infiniteFlyer/" class="btn btn-primary" target="_blank" rel="noopener">Play Now</a>
+            <a href="#contact" class="btn btn-secondary">Gamification Idea</a>
           </div>
         </div>
       </div>
