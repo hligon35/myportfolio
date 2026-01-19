@@ -25,18 +25,26 @@ function initializeApp() {
       <a href="#portfolio" class="nav-link">Portfolio</a>
       <a href="#contact" class="nav-link">Contact</a>
     </nav>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <div class="partner-banner" role="note" aria-label="Partnership announcement">
+      In partnership with SparQ Digital Media Marketing Company —
+      <a class="partner-banner__link" href="https://www.getsparqd.com" target="_blank" rel="noopener">www.getsparqd.com</a>
+    </div>
   </header>
 
   <section id="hero" class="hero-section">
     <div class="hero-content">
-      <h1><span class="highlight"><span id="greeting-text">Hello</span>, I'm Harold Ligon</span></h1>
+      <h1>
+        <span class="highlight hero-greeting-line">
+          <span id="greeting-text" class="hero-greeting-word">Hello</span>
+          <span class="hero-greeting-rest">, I'm Harold Ligon</span>
+        </span>
+      </h1>
       <h2 class="professional-title">Full-Stack Developer & UI/UX Designer</h2>
       <p class="value-proposition">Transforming business ideas into powerful digital solutions. I deliver high-performance web applications, intuitive user experiences, and data-driven results that drive growth and efficiency for forward-thinking companies.</p>
       <div class="hero-stats">
         <div class="stat-container">
           <div class="stat-item">
-            <span class="stat-number">30+</span>
+            <span class="stat-number">15+</span>
             <span class="stat-label">Projects Completed</span>
           </div>
         </div>
@@ -234,22 +242,18 @@ function initializeApp() {
     <div class="portfolio-grid">
       <div class="portfolio-card featured" data-type="web">
         <div class="portfolio-image">
-          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/pizzabyu/" alt="Business Dashboard" loading="lazy" referrerpolicy="no-referrer" />
+          <img src="projects/pizzabyu.svg" alt="PizzaByU" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
-              <span>React</span>
-              <span>Node.js</span>
-              <span>Charts.js</span>
+              <span>JavaScript</span>
+              <span>UI</span>
+              <span>Ordering Flow</span>
             </div>
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>Business Intelligence Dashboard</h3>
-          <p class="portfolio-desc">Real-time analytics platform with interactive charts, data filtering, and performance metrics. Increased client decision-making efficiency by 40%.</p>
-          <div class="portfolio-results">
-            <span class="result-item">40% Faster Decisions</span>
-            <span class="result-item">$50K+ Cost Savings</span>
-          </div>
+          <h3>PizzaByU</h3>
+          <p class="portfolio-desc">Interactive pizza builder with size/crust/sauce/toppings selection and a guided checkout flow.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/pizzabyu/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Discuss Project</a>
@@ -259,7 +263,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/pacoslebanese/" alt="Paco's Lebanese" loading="lazy" referrerpolicy="no-referrer" />
+          <img src="projects/pacoslebanese.svg" alt="Paco's Lebanese" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>HTML5</span>
@@ -270,11 +274,7 @@ function initializeApp() {
         </div>
         <div class="portfolio-content">
           <h3>Paco's Lebanese Website</h3>
-          <p class="portfolio-desc">Restaurant website built for clear menus, strong branding, and fast access on mobile.</p>
-          <div class="portfolio-results">
-            <span class="result-item">Mobile-First UX</span>
-            <span class="result-item">SEO-Ready</span>
-          </div>
+          <p class="portfolio-desc">Restaurant marketing site with menu, about/contact pages, and a mobile-first layout for quick browsing.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/pacoslebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Discuss Project</a>
@@ -284,7 +284,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="https://image.thum.io/get/width/1200/https://www.luxuriouscakesindy.com/" alt="Luxurious Cakes Indy" loading="lazy" referrerpolicy="no-referrer" />
+          <img src="projects/luxuriouscakesindy.svg" alt="Luxurious Cakes Indy" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>WordPress</span>
@@ -296,10 +296,6 @@ function initializeApp() {
         <div class="portfolio-content">
           <h3>Luxurious Cakes Indy</h3>
           <p class="portfolio-desc">Business website optimized for showcasing products, driving inquiries, and improving discoverability.</p>
-          <div class="portfolio-results">
-            <span class="result-item">Clear Product Showcase</span>
-            <span class="result-item">Improved Visibility</span>
-          </div>
           <div class="portfolio-actions">
             <a href="https://www.luxuriouscakesindy.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Get Quote</a>
@@ -309,13 +305,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img
-            src="https://image.thum.io/get/width/1200/https://lifeprepacademyfoundation.com/"
-            alt="Life Prep Academy Foundation"
-            loading="lazy"
-            referrerpolicy="no-referrer"
-            onerror="this.onerror=null;this.src='projects/lifeprepacademyfoundation.svg';"
-          />
+          <img src="projects/lifeprepacademyfoundation.svg" alt="Life Prep Academy Foundation" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Web Design</span>
@@ -327,10 +317,6 @@ function initializeApp() {
         <div class="portfolio-content">
           <h3>Life Prep Academy Foundation</h3>
           <p class="portfolio-desc">Organization website designed to communicate mission, improve trust, and make it easy to engage with programs.</p>
-          <div class="portfolio-results">
-            <span class="result-item">Clear Messaging</span>
-            <span class="result-item">Better Engagement</span>
-          </div>
           <div class="portfolio-actions">
             <a href="https://www.lifeprepacademyfoundation.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Discuss Similar</a>
@@ -340,22 +326,18 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/coinDash/" alt="Interactive Games" loading="lazy" referrerpolicy="no-referrer" />
+          <img src="projects/coinDash.svg" alt="Coin Dash" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
-              <span>Game Logic</span>
-              <span>UI/UX</span>
+              <span>Web Export</span>
+              <span>WebGL2</span>
             </div>
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>Interactive Gaming Portfolio</h3>
-          <p class="portfolio-desc">Collection of engaging interactive experiences showcasing advanced programming and user engagement principles.</p>
-          <div class="portfolio-results">
-            <span class="result-item">3 Published Games</span>
-            <span class="result-item">1000+ Active Users</span>
-          </div>
+          <h3>Coin Dash</h3>
+          <p class="portfolio-desc">Arcade-style web game built with Godot and exported for the browser.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/coinDash/" class="btn btn-primary" target="_blank" rel="noopener">Play Demo</a>
             <a href="#contact" class="btn btn-secondary">Gamification Project</a>
@@ -365,47 +347,18 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/jungleJumper/" alt="Jungle Jumper" loading="lazy" referrerpolicy="no-referrer" />
-          <div class="portfolio-overlay">
-            <div class="portfolio-tech">
-              <span>Game Dev</span>
-              <span>Gameplay</span>
-              <span>UX</span>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-content">
-          <h3>Jungle Jumper</h3>
-          <p class="portfolio-desc">Fast-paced platformer focused on responsive controls, progression, and replayability.</p>
-          <div class="portfolio-results">
-            <span class="result-item">Responsive Controls</span>
-            <span class="result-item">Arcade Replayability</span>
-          </div>
-          <div class="portfolio-actions">
-            <a href="https://hligon35.github.io/jungleJumper/" class="btn btn-primary" target="_blank" rel="noopener">Play Now</a>
-            <a href="#contact" class="btn btn-secondary">Build a Game</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="portfolio-card" data-type="games">
-        <div class="portfolio-image">
           <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/infiniteFlyer/" alt="Infinite Flyer" loading="lazy" referrerpolicy="no-referrer" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
-              <span>Game Dev</span>
-              <span>Scoring</span>
-              <span>UI</span>
+              <span>Godot</span>
+              <span>Web Export</span>
+              <span>WebGL2</span>
             </div>
           </div>
         </div>
         <div class="portfolio-content">
           <h3>Infinite Flyer</h3>
           <p class="portfolio-desc">Endless flyer with quick sessions, score chasing, and lightweight performance for the web.</p>
-          <div class="portfolio-results">
-            <span class="result-item">Endless Mode</span>
-            <span class="result-item">Score Chasing</span>
-          </div>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/infiniteFlyer/" class="btn btn-primary" target="_blank" rel="noopener">Play Now</a>
             <a href="#contact" class="btn btn-secondary">Gamification Idea</a>
@@ -430,7 +383,7 @@ function initializeApp() {
           </div>
           <div class="value-item">
             <h4>Ongoing Support</h4>
-            <p>3 months free maintenance included</p>
+            <p>1 month free maintenance included</p>
           </div>
           <div class="value-item">
             <h4>Business Results</h4>
@@ -449,17 +402,54 @@ function initializeApp() {
     </div>
   </section>
 
-  <div class="visitor-counter">
-    <div class="counter-container">
-      <span class="counter-text">Visitors: </span>
-      <span id="visitor-count" class="counter-number">Loading...</span>
-    </div>
-  </div>
-
   <footer class="footer">
-    <p>Thank you for visiting my portfolio! Feel free to connect with me on social media or send me a message.</p><br>
-    <p>Crafted with creativity.</p>
-    <p>&copy; 2025 Harold Ligon.</p>
+    <div class="footer-inner">
+      <div class="footer-cta">
+        <div class="footer-cta__text">
+          <h3>Ready to build something great?</h3>
+          <p>Tell me what you need—I'll help you ship a site that looks sharp and performs.</p>
+        </div>
+        <div class="footer-cta__actions">
+          <a href="#contact" class="cta-btn primary">Start a Project</a>
+          <a href="#portfolio" class="cta-btn secondary">View Work</a>
+        </div>
+      </div>
+
+      <div class="footer-grid" aria-label="Footer navigation">
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">My Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#services">Web Applications</a>
+          <a href="#services">Business Websites</a>
+          <a href="#services">UI/UX Design</a>
+          <a href="#contact">Maintenance & Updates</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="#contact">Request a quote</a>
+          <a href="#contact">Ask a question</a>
+          <a href="#contact">Project request form</a>
+
+          <h4 style="margin-top: 1.25rem;">Social</h4>
+          <a href="https://github.com/hligon35" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.getsparqd.com" target="_blank" rel="noopener">SparQ Digital</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <a class="footer-backtotop" href="#hero">Back to top ↑</a>
+        <div class="footer-partner">In partnership with <a href="https://www.getsparqd.com" target="_blank" rel="noopener">SparQ Digital Media Marketing Company</a></div>
+        <div class="footer-legal">© <span id="footer-year">2026</span> Harold Ligon</div>
+      </div>
+    </div>
   </footer>
   
   <!-- Project Request Modal -->
@@ -721,29 +711,23 @@ function getCachedElement(id) {
 function initializeFeatures() {
   // Use requestAnimationFrame for non-critical animations
   requestAnimationFrame(() => {
-    initThemeToggle();
     initPortfolioFilters();
     initSmoothScrolling();
   });
   
   // Defer heavy operations
   setTimeout(() => {
-    initVisitorCounter();
+    initFooterYear();
     initLanguageGreeting();
     initScrollOptimizations();
     initModalFeatures();
   }, 100);
 }
 
-// Optimized theme toggle
-function initThemeToggle() {
-  const themeToggle = getCachedElement('theme-toggle');
-  if (!themeToggle) return;
-  
-  themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('light-theme');
-    themeToggle.textContent = document.body.classList.contains('light-theme') ? '☀️' : '🌙';
-  }, { passive: true });
+function initFooterYear() {
+  const yearElement = getCachedElement('footer-year');
+  if (!yearElement) return;
+  yearElement.textContent = new Date().getFullYear().toString();
 }
 
 // Optimized portfolio filtering
@@ -795,36 +779,6 @@ function initSmoothScrolling() {
       });
     }
   }, { passive: false });
-}
-
-// Optimized visitor counter with reduced complexity
-function initVisitorCounter() {
-  const counterElement = getCachedElement('visitor-count');
-  if (!counterElement) return;
-  
-  try {
-    let visitorCount = localStorage.getItem('visitorCount') || 
-                     (Math.floor(Math.random() * 500) + 100);
-    
-    localStorage.setItem('visitorCount', visitorCount);
-    
-    // Simple animation without heavy computation
-    const targetValue = parseInt(visitorCount) + Math.floor(Math.random() * 5) + 1;
-    let currentValue = 0;
-    const increment = Math.ceil(targetValue / 20);
-    
-    const timer = setInterval(() => {
-      currentValue += increment;
-      if (currentValue >= targetValue) {
-        currentValue = targetValue;
-        clearInterval(timer);
-      }
-      counterElement.textContent = currentValue.toLocaleString();
-    }, 100);
-    
-  } catch (error) {
-    counterElement.textContent = '1,337';
-  }
 }
 
 // Optimized language greeting with reduced array and simpler logic
