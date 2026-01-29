@@ -315,7 +315,10 @@ function initializeApp() {
 
       <div class="portfolio-card featured" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
+          <picture>
+            <source srcset="projects/pizzabyu.webp" type="image/webp">
+            <img src="projects/pizzabyu.png" alt="PizzaByU" loading="lazy" width="400" height="300" />
+          </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>JavaScript</span>
@@ -337,7 +340,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/luxurious_cakes.png" alt="Luxurious Cakes" loading="lazy" />
+          <picture>
+            <source srcset="projects/luxurious_cakes.webp" type="image/webp">
+            <img src="projects/luxurious_cakes.png" alt="Luxurious Cakes" loading="lazy" width="400" height="300" />
+          </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>WordPress</span>
@@ -358,7 +364,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
+          <picture>
+            <source srcset="projects/cedar&gold_lebanese.webp" type="image/webp">
+            <img src="projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" width="400" height="300" />
+          </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>HTML5</span>
