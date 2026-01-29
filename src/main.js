@@ -31,9 +31,36 @@ function initializeApp() {
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
-    /* Remove extra margin if present on last section */
+    /* Remove extra margin below last section before footer */
+    .contact-section {
+      margin-bottom: 0.5rem !important;
+      /* Remove extra bottom padding from container if present */
+    }
+    .contact-section .container {
+      padding-bottom: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    /* Remove extra margin from last .section-header and .hero-actions in contact section */
+    .contact-section .section-header[style],
+    .contact-section .hero-actions[style] {
+      margin-top: 0 !important;
+    }
+    /* Footer: reduce gap above footer */
     .footer {
-      margin-top: 1.5rem;
+      margin-top: 0.5rem !important;
+    }
+    /* Ensure footer grid columns are in a single row */
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .footer-col {
+      min-width: 160px;
+      flex: 1 1 0;
     }
   </style>
   <header class="portfolio-header">
@@ -458,7 +485,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/non-profit.png" alt="MMBC" loading="lazy" />
+          <img src="projects/non-profit.png" alt="MMBMC" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -468,8 +495,8 @@ function initializeApp() {
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>MMBC</h3>
-          <p class="portfolio-desc">Professional business card creation tool with customizable designs and easy sharing options.</p>
+          <h3>MMMBC</h3>
+          <p class="portfolio-desc">A comprehensive church website that helps members and visitors connect with the church, access resources, request facility rentals, and stay informed about church activities and leadership.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/mmmbc/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
             <a href="#contact" class="btn btn-secondary">Similar Projects</a>
