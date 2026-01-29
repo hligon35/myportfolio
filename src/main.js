@@ -189,7 +189,7 @@ function initializeApp() {
         <h3>Backend & Database</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="skills/nodejs.svg" alt="Node.js" loading="lazy" />
+            <img src="tools/node.png" alt="Node.js" loading="lazy" />
             <span>Node.js</span>
             <div class="proficiency">Advanced</div>
           </div>
@@ -204,24 +204,49 @@ function initializeApp() {
         <h3>Design & Development Tools</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="tools/figma.svg" alt="Figma" loading="lazy" />
+            <img src="tools/figma.png" alt="Figma" loading="lazy" />
             <span>Figma</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/photoshop.svg" alt="Photoshop" loading="lazy" />
+            <img src="tools/photoshop.png" alt="Photoshop" loading="lazy" />
             <span>Photoshop</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="tools/vscode.svg" alt="VS Code" loading="lazy" />
+            <img src="tools/vsCode.png" alt="VS Code" loading="lazy" />
             <span>VS Code</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/github.svg" alt="GitHub" loading="lazy" />
+            <img src="tools/gitHub.png" alt="GitHub" loading="lazy" />
             <span>Git/GitHub</span>
             <div class="proficiency">Advanced</div>
+          </div>
+          <div class="tech-item">
+            <img src="tools/canva.png" alt="Canva" loading="lazy" />
+            <span>Canva</span>
+            <div class="proficiency">Advanced</div>
+          </div>
+          <div class="tech-item">
+            <img src="tools/excel.png" alt="Excel" loading="lazy" />
+            <span>Excel</span>
+            <div class="proficiency">Intermediate</div>
+          </div>
+          <div class="tech-item">
+            <img src="tools/godot.png" alt="Godot" loading="lazy" />
+            <span>Godot</span>
+            <div class="proficiency">Intermediate</div>
+          </div>
+          <div class="tech-item">
+            <img src="tools/powerPoint.png" alt="PowerPoint" loading="lazy" />
+            <span>PowerPoint</span>
+            <div class="proficiency">Intermediate</div>
+          </div>
+          <div class="tech-item">
+            <img src="tools/wordPress.png" alt="WordPress" loading="lazy" />
+            <span>WordPress</span>
+            <div class="proficiency">Intermediate</div>
           </div>
         </div>
       </div>
@@ -242,7 +267,7 @@ function initializeApp() {
     <div class="portfolio-grid">
       <div class="portfolio-card featured" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/pizzabyu.svg" alt="PizzaByU" loading="lazy" />
+          <img src="projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>JavaScript</span>
@@ -263,7 +288,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/pacoslebanese.svg" alt="Paco's Lebanese" loading="lazy" />
+          <img src="projects/comingSoon.png" alt="Paco's Lebanese" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>HTML5</span>
@@ -284,7 +309,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/luxuriouscakesindy.svg" alt="Luxurious Cakes Indy" loading="lazy" />
+          <img src="projects/comingSoon.png" alt="Luxurious Cakes Indy" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>WordPress</span>
@@ -305,7 +330,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/lifeprepacademyfoundation.svg" alt="Life Prep Academy Foundation" loading="lazy" />
+          <img src="projects/non-profit.png" alt="Life Prep Academy Foundation" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Web Design</span>
@@ -326,7 +351,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/coinDash.svg" alt="Coin Dash" loading="lazy" />
+          <img src="projects/coinDash.png" alt="Coin Dash" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -347,7 +372,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="https://image.thum.io/get/width/1200/https://hligon35.github.io/infiniteFlyer/" alt="Infinite Flyer" loading="lazy" referrerpolicy="no-referrer" />
+          <img src="projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -362,6 +387,90 @@ function initializeApp() {
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/infiniteFlyer/" class="btn btn-primary" target="_blank" rel="noopener">Play Now</a>
             <a href="#contact" class="btn btn-secondary">Gamification Idea</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-type="web">
+        <div class="portfolio-image">
+          <img src="projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-tech">
+              <span>Website</span>
+              <span>Interactive</span>
+              <span>Portfolio</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>The Bear Voice</h3>
+          <p class="portfolio-desc">Interactive web application featuring voice interaction and bear-themed audio experiences.</p>
+          <div class="portfolio-actions">
+            <a href="https://hligon35.github.io/thebearvoice/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
+            <a href="#contact" class="btn btn-secondary">Similar Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-type="games">
+        <div class="portfolio-image">
+          <img src="projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-tech">
+              <span>Game Development</span>
+              <span>WebGL</span>
+              <span>Interactive</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>Jungle Jumper</h3>
+          <p class="portfolio-desc">Exciting platformer game with jungle adventures, challenging levels, and smooth web-based gameplay.</p>
+          <div class="portfolio-actions">
+            <a href="#contact" class="btn btn-primary">Play Game</a>
+            <a href="#contact" class="btn btn-secondary">Game Development</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-type="web">
+        <div class="portfolio-image">
+          <img src="projects/non-profit.png" alt="MMBC" loading="lazy" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-tech">
+              <span>Website</span>
+              <span>Business</span>
+              <span>Interactive</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>MMBC</h3>
+          <p class="portfolio-desc">Professional business card creation tool with customizable designs and easy sharing options.</p>
+          <div class="portfolio-actions">
+            <a href="https://hligon35.github.io/mmmbc/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
+            <a href="#contact" class="btn btn-secondary">Similar Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-type="games">
+        <div class="portfolio-image">
+          <img src="projects/comingSoon.png" alt="Space Rocks" loading="lazy" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-tech">
+              <span>Game Development</span>
+              <span>WebGL</span>
+              <span>Interactive</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>Space Rocks</h3>
+          <p class="portfolio-desc">Exciting space-themed game with asteroid shooting, cosmic adventures, and challenging gameplay.</p>
+          <div class="portfolio-actions">
+            <a href="https://hligon35.github.io/spaceRocks/" class="btn btn-primary" target="_blank" rel="noopener">Play Game</a>
+            <a href="#contact" class="btn btn-secondary">Game Development</a>
           </div>
         </div>
       </div>
