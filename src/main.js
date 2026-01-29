@@ -16,6 +16,26 @@ if (!app) {
 // Single function to initialize entire app
 function initializeApp() {
   app.innerHTML = `
+  <style>
+    /* Reduce vertical gap between main sections */
+    section {
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .section-header {
+      margin-bottom: 1.5rem;
+    }
+    /* Reduce gap for .portfolio-section and .contact-section if needed */
+    .portfolio-section,
+    .contact-section {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    /* Remove extra margin if present on last section */
+    .footer {
+      margin-top: 1.5rem;
+    }
+  </style>
   <header class="portfolio-header">
     <nav id="main-nav" class="nav-container">
       <a href="#hero" class="nav-link">Home</a>
@@ -40,7 +60,7 @@ function initializeApp() {
         </span>
       </h1>
       <h2 class="professional-title">Full-Stack Developer & UI/UX Designer</h2>
-      <p class="value-proposition">Transforming business ideas into powerful digital solutions. I deliver high-performance web applications, intuitive user experiences, and data-driven results that drive growth and efficiency for forward-thinking companies.</p>
+      <p class="value-proposition">Transforming business ideas into powerful digital solutions. I deliver high-performance web and mobile applications, intuitive user experiences, and data-driven results that drive growth and efficiency for forward-thinking companies.</p>
       <div class="hero-stats">
         <div class="stat-container">
           <div class="stat-item">
@@ -265,6 +285,7 @@ function initializeApp() {
       <button class="filter-btn" data-filter="games">Interactive Media</button>
     </div>
     <div class="portfolio-grid">
+
       <div class="portfolio-card featured" data-type="web">
         <div class="portfolio-image">
           <img src="projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
@@ -286,30 +307,10 @@ function initializeApp() {
         </div>
       </div>
 
-      <div class="portfolio-card" data-type="web">
-        <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Paco's Lebanese" loading="lazy" />
-          <div class="portfolio-overlay">
-            <div class="portfolio-tech">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>SEO</span>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-content">
-          <h3>Paco's Lebanese Website</h3>
-          <p class="portfolio-desc">Restaurant marketing site with menu, about/contact pages, and a mobile-first layout for quick browsing.</p>
-          <div class="portfolio-actions">
-            <a href="https://hligon35.github.io/pacoslebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            <a href="#contact" class="btn btn-secondary">Discuss Project</a>
-          </div>
-        </div>
-      </div>
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Luxurious Cakes Indy" loading="lazy" />
+          <img src="projects/luxurious_cakes.png" alt="Luxurious Cakes" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>WordPress</span>
@@ -319,7 +320,7 @@ function initializeApp() {
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>Luxurious Cakes Indy</h3>
+          <h3>Luxurious Cakes</h3>
           <p class="portfolio-desc">Business website optimized for showcasing products, driving inquiries, and improving discoverability.</p>
           <div class="portfolio-actions">
             <a href="https://www.luxuriouscakesindy.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
@@ -330,7 +331,49 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/non-profit.png" alt="Life Prep Academy Foundation" loading="lazy" />
+          <img src="projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>SEO</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>Cedar & Gold Lebanese Website</h3>
+          <p class="portfolio-desc">Restaurant marketing site with menu, about/contact pages, and a mobile-first layout for quick browsing.</p>
+          <div class="portfolio-actions">
+            <a href="https://hligon35.github.io/cedarngoldlebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
+            <a href="#contact" class="btn btn-secondary">Discuss Project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-type="webpages">
+        <div class="portfolio-image">
+          <img src="projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
+          <div class="portfolio-overlay">
+            <div class="portfolio-tech">
+              <span>Website</span>
+              <span>Interactive</span>
+              <span>Portfolio</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>The Bear Voice</h3>
+          <p class="portfolio-desc">Responsive website built with Vite, showcasing a voice-over portfolio</p>
+          <div class="portfolio-actions">
+            <a href="https://hligon35.github.io/thebearvoice/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
+            <a href="#contact" class="btn btn-secondary">Similar Projects</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-type="webpages">
+        <div class="portfolio-image">
+          <img src="projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Web Design</span>
@@ -391,26 +434,6 @@ function initializeApp() {
         </div>
       </div>
 
-      <div class="portfolio-card" data-type="web">
-        <div class="portfolio-image">
-          <img src="projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
-          <div class="portfolio-overlay">
-            <div class="portfolio-tech">
-              <span>Website</span>
-              <span>Interactive</span>
-              <span>Portfolio</span>
-            </div>
-          </div>
-        </div>
-        <div class="portfolio-content">
-          <h3>The Bear Voice</h3>
-          <p class="portfolio-desc">Interactive web application featuring voice interaction and bear-themed audio experiences.</p>
-          <div class="portfolio-actions">
-            <a href="https://hligon35.github.io/thebearvoice/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
-            <a href="#contact" class="btn btn-secondary">Similar Projects</a>
-          </div>
-        </div>
-      </div>
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
@@ -456,7 +479,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Space Rocks" loading="lazy" />
+          <img src="projects/space_rocks.png" alt="Space Rocks" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
@@ -546,8 +569,10 @@ function initializeApp() {
           <a href="#contact">Request a quote</a>
           <a href="#contact">Ask a question</a>
           <a href="#contact">Project request form</a>
+        </div>
 
-          <h4 style="margin-top: 1.25rem;">Social</h4>
+        <div class="footer-col">
+          <h4>Social</h4>
           <a href="https://github.com/hligon35" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.getsparqd.com" target="_blank" rel="noopener">SparQ Digital</a>
         </div>
