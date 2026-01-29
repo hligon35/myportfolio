@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+<<<<<<< HEAD
   base: './', // Use relative paths instead of repository-specific path
   build: {
     outDir: 'dist',
@@ -19,4 +20,11 @@ export default defineConfig({
     }
   },
   plugins: [],
+=======
+  root: '.',
+  publicDir: 'public',
+  server: {
+    port: 5173
+  }
+>>>>>>> portfolio-dev
 })
