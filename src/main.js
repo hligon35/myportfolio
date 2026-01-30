@@ -546,8 +546,10 @@ function initializeApp() {
           <a href="#contact">Request a quote</a>
           <a href="#contact">Ask a question</a>
           <a href="#contact">Project request form</a>
+        </div>
 
-          <h4 style="margin-top: 1.25rem;">Social</h4>
+        <div class="footer-col">
+          <h4>Social</h4>
           <a href="https://github.com/hligon35" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.getsparqd.com" target="_blank" rel="noopener">SparQ Digital</a>
         </div>
