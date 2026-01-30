@@ -288,7 +288,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Paco's Lebanese" loading="lazy" />
+          <img src="projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>HTML5</span>
@@ -298,10 +298,10 @@ function initializeApp() {
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>Paco's Lebanese Website</h3>
+          <h3>Cedar & Gold Lebanese Website</h3>
           <p class="portfolio-desc">Restaurant marketing site with menu, about/contact pages, and a mobile-first layout for quick browsing.</p>
           <div class="portfolio-actions">
-            <a href="https://hligon35.github.io/pacoslebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
+            <a href="https://hligon35.github.io/cedarngoldslebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Discuss Project</a>
           </div>
         </div>
@@ -309,7 +309,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Luxurious Cakes Indy" loading="lazy" />
+          <img src="projects/luxurious_cakes.png" alt="Luxurious Cakes Indy" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>WordPress</span>
@@ -456,7 +456,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Space Rocks" loading="lazy" />
+          <img src="projects/space_rocks.png" alt="Space Rocks" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
