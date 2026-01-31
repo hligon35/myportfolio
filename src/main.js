@@ -288,7 +288,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Paco's Lebanese" loading="lazy" />
+          <img src="projects/comingSoon.png" alt="Cedar & Gold Lebanese" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>HTML5</span>
@@ -298,10 +298,10 @@ function initializeApp() {
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>Paco's Lebanese Website</h3>
+          <h3>Cedar & Gold Lebanese Restaraunt Website</h3>
           <p class="portfolio-desc">Restaurant marketing site with menu, about/contact pages, and a mobile-first layout for quick browsing.</p>
           <div class="portfolio-actions">
-            <a href="https://hligon35.github.io/pacoslebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
+            <a href="https://hligon35.github.io/cedarngoldlebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Discuss Project</a>
           </div>
         </div>
