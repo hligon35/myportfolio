@@ -267,7 +267,7 @@ function initializeApp() {
     <div class="portfolio-grid">
       <div class="portfolio-card featured" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
+            <img src="/projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>JavaScript</span>
@@ -288,7 +288,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Cedar & Gold Lebanese" loading="lazy" />
+            <img src="/projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>HTML5</span>
@@ -309,7 +309,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Luxurious Cakes Indy" loading="lazy" />
+            <img src="/projects/luxurious_cakes.png" alt="Luxurious Cakes Indy" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>WordPress</span>
@@ -330,7 +330,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/non-profit.png" alt="Life Prep Academy Foundation" loading="lazy" />
+            <img src="/projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Web Design</span>
@@ -351,7 +351,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/coinDash.png" alt="Coin Dash" loading="lazy" />
+            <img src="/projects/coinDash.png" alt="Coin Dash" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -372,7 +372,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
+            <img src="/projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -393,7 +393,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
+            <img src="/projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -414,7 +414,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
+            <img src="/projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
@@ -435,7 +435,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/non-profit.png" alt="MMBC" loading="lazy" />
+            <img src="/projects/non-profit.png" alt="MMBC" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -456,7 +456,7 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Space Rocks" loading="lazy" />
+            <img src="/projects/space_rocks.png" alt="Space Rocks" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
