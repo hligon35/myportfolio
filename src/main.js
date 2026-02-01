@@ -23,7 +23,7 @@ function initializeApp() {
       <a href="#services" class="nav-link">Services</a>
       <a href="#experience" class="nav-link">Skills</a>
       <a href="#portfolio" class="nav-link">Portfolio</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#contact-form" class="nav-link">Contact</a>
     </nav>
     <div class="partner-banner" role="note" aria-label="Partnership announcement">
       In partnership with SparQ Digital Media Marketing Company —
@@ -281,7 +281,6 @@ function initializeApp() {
           <p class="portfolio-desc">Interactive pizza builder with size/crust/sauce/toppings selection and a guided checkout flow.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/pizzabyu/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            <a href="#contact" class="btn btn-secondary">Discuss Project</a>
           </div>
         </div>
       </div>
@@ -302,7 +301,6 @@ function initializeApp() {
           <p class="portfolio-desc">Restaurant marketing site with menu, about/contact pages, and a mobile-first layout for quick browsing.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/cedarngoldlebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            <a href="#contact" class="btn btn-secondary">Discuss Project</a>
           </div>
         </div>
       </div>
@@ -323,7 +321,6 @@ function initializeApp() {
           <p class="portfolio-desc">Business website optimized for showcasing products, driving inquiries, and improving discoverability.</p>
           <div class="portfolio-actions">
             <a href="https://www.luxuriouscakesindy.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            <a href="#contact" class="btn btn-secondary">Get Quote</a>
           </div>
         </div>
       </div>
@@ -344,7 +341,6 @@ function initializeApp() {
           <p class="portfolio-desc">Organization website designed to communicate mission, improve trust, and make it easy to engage with programs.</p>
           <div class="portfolio-actions">
             <a href="https://www.lifeprepacademyfoundation.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            <a href="#contact" class="btn btn-secondary">Discuss Similar</a>
           </div>
         </div>
       </div>
@@ -365,7 +361,6 @@ function initializeApp() {
           <p class="portfolio-desc">Arcade-style web game built with Godot and exported for the browser.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/coinDash/" class="btn btn-primary" target="_blank" rel="noopener">Play Demo</a>
-            <a href="#contact" class="btn btn-secondary">Gamification Project</a>
           </div>
         </div>
       </div>
@@ -386,7 +381,6 @@ function initializeApp() {
           <p class="portfolio-desc">Endless flyer with quick sessions, score chasing, and lightweight performance for the web.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/infiniteFlyer/" class="btn btn-primary" target="_blank" rel="noopener">Play Now</a>
-            <a href="#contact" class="btn btn-secondary">Gamification Idea</a>
           </div>
         </div>
       </div>
@@ -404,10 +398,9 @@ function initializeApp() {
         </div>
         <div class="portfolio-content">
           <h3>The Bear Voice</h3>
-          <p class="portfolio-desc">Interactive web application featuring voice interaction and bear-themed audio experiences.</p>
+          <p class="portfolio-desc">Voiceover portfolio website showcasing commercial/narration/character demos, voice styles, studio equipment, delivery platforms, coaching, and a contact form.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/thebearvoice/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
-            <a href="#contact" class="btn btn-secondary">Similar Projects</a>
           </div>
         </div>
       </div>
@@ -428,14 +421,13 @@ function initializeApp() {
           <p class="portfolio-desc">Exciting platformer game with jungle adventures, challenging levels, and smooth web-based gameplay.</p>
           <div class="portfolio-actions">
             <a href="#contact" class="btn btn-primary">Play Game</a>
-            <a href="#contact" class="btn btn-secondary">Game Development</a>
           </div>
         </div>
       </div>
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/non-profit.png" alt="MMBC" loading="lazy" />
+            <img src="/projects/non-profit.png" alt="MMMBC" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -445,11 +437,10 @@ function initializeApp() {
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>MMBC</h3>
-          <p class="portfolio-desc">Professional business card creation tool with customizable designs and easy sharing options.</p>
+          <h3>MMMBC</h3>
+          <p class="portfolio-desc">Multi-page church website for Mt. Moriah Missionary Baptist Church featuring worship times, ministries, leadership, upcoming events, FAQs, and contact/social links.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/mmmbc/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
-            <a href="#contact" class="btn btn-secondary">Similar Projects</a>
           </div>
         </div>
       </div>
@@ -470,7 +461,6 @@ function initializeApp() {
           <p class="portfolio-desc">Exciting space-themed game with asteroid shooting, cosmic adventures, and challenging gameplay.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/spaceRocks/" class="btn btn-primary" target="_blank" rel="noopener">Play Game</a>
-            <a href="#contact" class="btn btn-secondary">Game Development</a>
           </div>
         </div>
       </div>
@@ -507,6 +497,48 @@ function initializeApp() {
         <div class="hero-actions" style="margin-top: 3rem;">
           <button id="project-request-btn" class="cta-btn primary">Let's Make It Happen!</button>
         </div>
+      </div>
+
+      <div id="contact-form" class="basic-contact-card" aria-label="Contact form" style="margin-top: 3rem;">
+        <div class="section-header" style="margin-top: 0;">
+          <h2>Send a Message</h2>
+          <p class="section-subtitle">Email me directly at <a href="mailto:info@hldesignedit.com">info@hldesignedit.com</a> or use the form below.</p>
+        </div>
+
+        <form id="basic-contact-form" class="basic-contact-form" novalidate>
+          <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" />
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label required" for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" class="form-input" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label required" for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" class="form-input" autocomplete="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="contact-phone">Phone (optional)</label>
+              <input id="contact-phone" name="phone" type="tel" class="form-input" autocomplete="tel" placeholder="(555) 123-4567" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject (optional)</label>
+              <input id="contact-subject" name="subject" type="text" class="form-input" autocomplete="off" placeholder="What can I help with?" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label required" for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <div class="basic-contact-actions">
+            <button type="submit" class="cta-btn primary">Send Email</button>
+            <p id="basic-contact-status" class="basic-contact-status" aria-live="polite"></p>
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -582,18 +614,20 @@ function initializeApp() {
             <div class="date-input">
               <div class="date-group">
                 <label>Month</label>
-                <input type="number" min="1" max="12" placeholder="MM" class="form-input" required>
+                <input type="number" name="submittedMonth" min="1" max="12" placeholder="MM" class="form-input" required>
               </div>
               <div class="date-group">
                 <label>Day</label>
-                <input type="number" min="1" max="31" placeholder="DD" class="form-input" required>
+                <input type="number" name="submittedDay" min="1" max="31" placeholder="DD" class="form-input" required>
               </div>
               <div class="date-group">
                 <label>Year</label>
-                <input type="number" min="2024" max="2030" placeholder="YYYY" class="form-input" required>
+                <input type="number" name="submittedYear" min="2024" max="2030" placeholder="YYYY" class="form-input" required>
               </div>
             </div>
           </div>
+
+          <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" />
   
           <div class="form-section">
             <h3><span class="form-section-icon">👤</span>Section 1: Basic Information</h3>
@@ -832,7 +866,95 @@ function initializeFeatures() {
     initLanguageGreeting();
     initScrollOptimizations();
     initModalFeatures();
+    initBasicContactForm();
   }, 100);
+}
+
+function initBasicContactForm() {
+  const form = document.getElementById('basic-contact-form');
+  if (!form) return;
+
+  const getFormsEndpoint = () => {
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    return isLocal ? 'http://localhost:8787/api/forms' : 'https://hldesignedit.com/api/forms';
+  };
+
+  const status = document.getElementById('basic-contact-status');
+  const nameInput = document.getElementById('contact-name');
+  const emailInput = document.getElementById('contact-email');
+  const messageInput = document.getElementById('contact-message');
+
+  const setStatus = (text) => {
+    if (status) status.textContent = text;
+  };
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const name = String(data.get('name') || '').trim();
+    const email = String(data.get('email') || '').trim();
+    const phone = String(data.get('phone') || '').trim();
+    const subjectRaw = String(data.get('subject') || '').trim();
+    const message = String(data.get('message') || '').trim();
+
+    if (!name) {
+      setStatus('Please enter your name.');
+      if (nameInput) nameInput.focus();
+      return;
+    }
+
+    // Simple email validation (keeps UX light)
+    if (!email || !/^\S+@\S+\.\S+$/.test(email)) {
+      setStatus('Please enter a valid email address.');
+      if (emailInput) emailInput.focus();
+      return;
+    }
+
+    if (!message) {
+      setStatus('Please enter a message.');
+      if (messageInput) messageInput.focus();
+      return;
+    }
+
+    const endpoint = getFormsEndpoint();
+    const submitBtn = form.querySelector('button[type="submit"]');
+
+    if (submitBtn) submitBtn.disabled = true;
+    setStatus('Sending...');
+
+    fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        formType: 'contact',
+        honeypot: String(data.get('company') || ''),
+        pageUrl: window.location.href,
+        data: {
+          name,
+          email,
+          phone,
+          subject: subjectRaw,
+          message,
+        },
+      }),
+    })
+      .then(async (res) => {
+        const payload = await res.json().catch(() => null);
+        if (!res.ok || !payload?.ok) {
+          throw new Error(payload?.error || 'Unable to send message.');
+        }
+
+        setStatus('Message sent! I will reply within 24 hours.');
+        form.reset();
+      })
+      .catch(() => {
+        setStatus('Could not send right now. Please email info@hldesignedit.com.');
+      })
+      .finally(() => {
+        if (submitBtn) submitBtn.disabled = false;
+      });
+  });
 }
 
 function initFooterYear() {
@@ -1020,30 +1142,48 @@ function initModalFeatures() {
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<span class="loading-spinner"></span> Submitting...';
     
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const endpoint = isLocal ? 'http://localhost:8787/api/forms' : 'https://hldesignedit.com/api/forms';
+
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
+      const formData = Object.fromEntries(new FormData(form).entries());
+
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: 'project',
+          honeypot: String(formData.company || ''),
+          pageUrl: window.location.href,
+          data: formData,
+        }),
+      });
+
+      const json = await response.json().catch(() => null);
+      if (!response.ok || !json?.ok) {
+        throw new Error(json?.error || 'Unable to submit request.');
+      }
+
       submitBtn.innerHTML = '✓ Request Submitted!';
       submitBtn.style.background = 'linear-gradient(135deg, #059669, #10b981)';
-      
+
       setTimeout(() => {
         alert('Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours.');
         closeModal();
         submitBtn.innerHTML = originalHTML;
         submitBtn.style.background = '';
         submitBtn.disabled = false;
-      }, 2000);
-      
+      }, 800);
+
     } catch (error) {
       submitBtn.innerHTML = 'Error - Please Try Again';
       submitBtn.style.background = 'linear-gradient(135deg, #dc2626, #ef4444)';
-      
+
       setTimeout(() => {
         submitBtn.innerHTML = originalHTML;
         submitBtn.style.background = '';
         submitBtn.disabled = false;
-      }, 3000);
+      }, 2500);
     }
   });
 }

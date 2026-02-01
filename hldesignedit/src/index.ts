@@ -1,5 +1,6 @@
 import { fromHono } from "chanfana";
 import { Hono } from "hono";
+import { FormsSubmit } from "./endpoints/formsSubmit";
 import { TaskCreate } from "./endpoints/taskCreate";
 import { TaskDelete } from "./endpoints/taskDelete";
 import { TaskFetch } from "./endpoints/taskFetch";
@@ -18,6 +19,9 @@ openapi.get("/api/tasks", TaskList);
 openapi.post("/api/tasks", TaskCreate);
 openapi.get("/api/tasks/:taskSlug", TaskFetch);
 openapi.delete("/api/tasks/:taskSlug", TaskDelete);
+
+app.options("/api/forms", FormsSubmit);
+app.post("/api/forms", FormsSubmit);
 
 // You may also register routes for non OpenAPI directly on Hono
 // app.get('/test', (c) => c.text('Hono!'))

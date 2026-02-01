@@ -23,3 +23,46 @@ This is an example project made to be used as a quick start into building OpenAP
 1. Run `wrangler dev` to start a local instance of the API.
 2. Open `http://localhost:8787/` in your browser to see the Swagger interface where you can try the endpoints.
 3. Changes made in the `src/` folder will automatically trigger the server to reload, you only need to refresh the Swagger interface.
+
+## Forms delivery (email)
+
+This worker exposes `POST /api/forms` which your portfolio site uses to deliver:
+
+- The inline contact form
+- The Project Request modal form
+
+### Email provider
+
+Cloudflare Workers cannot send SMTP email directly. This project uses the Resend API.
+
+1. Create a Resend account and get an API key.
+2. Set the secret:
+
+	- `wrangler secret put RESEND_API_KEY`
+
+3. Set a valid `from` address.
+
+	- By default `FORMS_FROM_EMAIL` is `onboarding@resend.dev`.
+	- For production, set it to a sender you own/verified (example: `forms@hldesignedit.com`).
+
+### Worker config
+
+Configured in `wrangler.jsonc`:
+
+- `FORMS_TO_EMAIL` (defaults to `info@hldesignedit.com`)
+- `FORMS_FROM_EMAIL` (Resend sender)
+- `ALLOWED_ORIGINS` (CORS allowlist for cross-origin submissions)
+
+### Routing
+
+Recommended: add a Worker route so the portfolio can call:
+
+- `https://hldesignedit.com/api/forms`
+
+In Cloudflare Dashboard:
+
+- Workers & Pages → your Worker → Routes → add `hldesignedit.com/api/*`
+
+Then deploy:
+
+- `wrangler deploy`

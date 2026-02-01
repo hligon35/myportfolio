@@ -1,4 +1,4 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))o(a);new MutationObserver(a=>{for(const t of a)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function l(a){const t={};return a.integrity&&(t.integrity=a.integrity),a.referrerPolicy&&(t.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?t.credentials="include":a.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(a){if(a.ep)return;a.ep=!0;const t=l(a);fetch(a.href,t)}})();console.log("JavaScript loading...");const f=document.querySelector("#app");f?(console.log("Setting innerHTML..."),h()):(console.error("App element not found!"),document.body.innerHTML="<h1>Error: App element not found</h1>");function h(){f.innerHTML=`
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))o(a);new MutationObserver(a=>{for(const t of a)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function l(a){const t={};return a.integrity&&(t.integrity=a.integrity),a.referrerPolicy&&(t.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?t.credentials="include":a.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(a){if(a.ep)return;a.ep=!0;const t=l(a);fetch(a.href,t)}})();console.log("JavaScript loading...");const f=document.querySelector("#app");f?(console.log("Setting innerHTML..."),y()):(console.error("App element not found!"),document.body.innerHTML="<h1>Error: App element not found</h1>");function y(){f.innerHTML=`
   <header class="portfolio-header">
     <nav id="main-nav" class="nav-container">
       <a href="#hero" class="nav-link">Home</a>
@@ -264,7 +264,6 @@
           <p class="portfolio-desc">Interactive pizza builder with size/crust/sauce/toppings selection and a guided checkout flow.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/pizzabyu/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            <a href="#contact" class="btn btn-secondary">Discuss Project</a>
           </div>
         </div>
       </div>
@@ -285,7 +284,6 @@
           <p class="portfolio-desc">Restaurant marketing site with menu, about/contact pages, and a mobile-first layout for quick browsing.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/cedarngoldlebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            <a href="#contact" class="btn btn-secondary">Discuss Project</a>
           </div>
         </div>
       </div>
@@ -306,7 +304,6 @@
           <p class="portfolio-desc">Business website optimized for showcasing products, driving inquiries, and improving discoverability.</p>
           <div class="portfolio-actions">
             <a href="https://www.luxuriouscakesindy.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            <a href="#contact" class="btn btn-secondary">Get Quote</a>
           </div>
         </div>
       </div>
@@ -327,7 +324,6 @@
           <p class="portfolio-desc">Organization website designed to communicate mission, improve trust, and make it easy to engage with programs.</p>
           <div class="portfolio-actions">
             <a href="https://www.lifeprepacademyfoundation.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
-            <a href="#contact" class="btn btn-secondary">Discuss Similar</a>
           </div>
         </div>
       </div>
@@ -348,7 +344,6 @@
           <p class="portfolio-desc">Arcade-style web game built with Godot and exported for the browser.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/coinDash/" class="btn btn-primary" target="_blank" rel="noopener">Play Demo</a>
-            <a href="#contact" class="btn btn-secondary">Gamification Project</a>
           </div>
         </div>
       </div>
@@ -369,7 +364,6 @@
           <p class="portfolio-desc">Endless flyer with quick sessions, score chasing, and lightweight performance for the web.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/infiniteFlyer/" class="btn btn-primary" target="_blank" rel="noopener">Play Now</a>
-            <a href="#contact" class="btn btn-secondary">Gamification Idea</a>
           </div>
         </div>
       </div>
@@ -387,10 +381,9 @@
         </div>
         <div class="portfolio-content">
           <h3>The Bear Voice</h3>
-          <p class="portfolio-desc">Interactive web application featuring voice interaction and bear-themed audio experiences.</p>
+          <p class="portfolio-desc">Voiceover portfolio website showcasing commercial/narration/character demos, voice styles, studio equipment, delivery platforms, coaching, and a contact form.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/thebearvoice/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
-            <a href="#contact" class="btn btn-secondary">Similar Projects</a>
           </div>
         </div>
       </div>
@@ -411,14 +404,13 @@
           <p class="portfolio-desc">Exciting platformer game with jungle adventures, challenging levels, and smooth web-based gameplay.</p>
           <div class="portfolio-actions">
             <a href="#contact" class="btn btn-primary">Play Game</a>
-            <a href="#contact" class="btn btn-secondary">Game Development</a>
           </div>
         </div>
       </div>
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/non-profit.png" alt="MMBC" loading="lazy" />
+            <img src="/projects/non-profit.png" alt="MMMBC" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -428,11 +420,10 @@
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>MMBC</h3>
-          <p class="portfolio-desc">Professional business card creation tool with customizable designs and easy sharing options.</p>
+          <h3>MMMBC</h3>
+          <p class="portfolio-desc">Multi-page church website for Mt. Moriah Missionary Baptist Church featuring worship times, ministries, leadership, upcoming events, FAQs, and contact/social links.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/mmmbc/" class="btn btn-primary" target="_blank" rel="noopener">View Project</a>
-            <a href="#contact" class="btn btn-secondary">Similar Projects</a>
           </div>
         </div>
       </div>
@@ -453,7 +444,6 @@
           <p class="portfolio-desc">Exciting space-themed game with asteroid shooting, cosmic adventures, and challenging gameplay.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/spaceRocks/" class="btn btn-primary" target="_blank" rel="noopener">Play Game</a>
-            <a href="#contact" class="btn btn-secondary">Game Development</a>
           </div>
         </div>
       </div>
@@ -490,6 +480,47 @@
         <div class="hero-actions" style="margin-top: 3rem;">
           <button id="project-request-btn" class="cta-btn primary">Let's Make It Happen!</button>
         </div>
+      </div>
+
+      <div class="basic-contact-card" aria-label="Contact form" style="margin-top: 3rem;">
+        <div class="section-header" style="margin-top: 0;">
+          <h2>Send a Message</h2>
+          <p class="section-subtitle">Email me directly at <a href="mailto:info@hldesignedit.com">info@hldesignedit.com</a> or use the form below.</p>
+        </div>
+
+        <form id="basic-contact-form" class="basic-contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label required" for="contact-name">Name</label>
+              <input id="contact-name" name="name" type="text" class="form-input" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label required" for="contact-email">Email</label>
+              <input id="contact-email" name="email" type="email" class="form-input" autocomplete="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="contact-phone">Phone (optional)</label>
+              <input id="contact-phone" name="phone" type="tel" class="form-input" autocomplete="tel" placeholder="(555) 123-4567" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject (optional)</label>
+              <input id="contact-subject" name="subject" type="text" class="form-input" autocomplete="off" placeholder="What can I help with?" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label required" for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <div class="basic-contact-actions">
+            <button type="submit" class="cta-btn primary">Send Email</button>
+            <p id="basic-contact-status" class="basic-contact-status" aria-live="polite"></p>
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -785,4 +816,5 @@
         </div>
       </div>
     </div>
-  </div>`,g()}let m={};function c(e){return m[e]||(m[e]=document.getElementById(e)),m[e]}function g(){requestAnimationFrame(()=>{y(),w()}),setTimeout(()=>{b(),x(),k(),S()},100)}function b(){const e=c("footer-year");e&&(e.textContent=new Date().getFullYear().toString())}function y(){const e=document.querySelectorAll(".filter-btn"),i=document.querySelectorAll(".portfolio-card");!e.length||!i.length||document.querySelector(".portfolio-filters").addEventListener("click",l=>{if(!l.target.classList.contains("filter-btn"))return;e.forEach(a=>a.classList.remove("active")),l.target.classList.add("active");const o=l.target.dataset.filter.trim().toLowerCase();requestAnimationFrame(()=>{i.forEach(a=>{const t=(a.dataset.type||"").trim().toLowerCase(),n=o==="all"||t===o;a.style.display=n?"":"none"})})},{passive:!0})}function w(){document.addEventListener("click",e=>{const i=e.target.closest('a[href^="#"]');if(!i)return;e.preventDefault();const l=i.getAttribute("href"),o=document.querySelector(l);if(o){const n=o.offsetTop-80;window.scrollTo({top:n,behavior:"smooth"})}},{passive:!1})}function x(){const e=c("greeting-text");if(!e)return;const i=["Hola","Bonjour","Ciao","こんにちは","你好","Hello"];let l=0;const o=()=>{e.style.opacity="0",setTimeout(()=>{e.textContent=i[l],e.style.opacity="1",l=(l+1)%i.length},200)};e.style.transition="opacity 0.2s ease",setTimeout(()=>{o(),setInterval(o,3e3)},2e3)}function k(){const e=document.querySelector(".portfolio-header");if(!e)return;let i=!1;const l=()=>{const o=window.scrollY>100;e.style.background=o?"rgba(255, 255, 255, 0.98)":"rgba(255, 255, 255, 0.95)",e.style.boxShadow=o?"0 4px 6px -1px rgba(0, 0, 0, 0.1)":"",i=!1};window.addEventListener("scroll",()=>{i||(requestAnimationFrame(l),i=!0)},{passive:!0})}function S(){const e=c("project-modal"),i=c("project-request-btn"),l=c("modal-close"),o=c("modal-cancel"),a=c("project-form"),t=c("other-project-type");if(!e||!i||!a)return;const n=()=>{e.style.display="none",document.body.style.overflow="auto",a.reset(),t&&t.classList.remove("active")};i.addEventListener("click",r=>{r.preventDefault(),e.style.display="flex",document.body.style.overflow="hidden"}),l&&l.addEventListener("click",n),o&&o.addEventListener("click",n),e.addEventListener("click",r=>{r.target===e&&n()}),document.addEventListener("keydown",r=>{r.key==="Escape"&&e.style.display==="flex"&&n()}),a.addEventListener("change",r=>{if(r.target.name==="project-type"){const s=r.target.value==="other"&&r.target.checked;if(t){t.classList.toggle("active",s);const d=t.querySelector("input");d&&(d.required=s,s||(d.value=""))}}},{passive:!0});const p=a.querySelector('textarea[name="finalNotes"]'),v=a.querySelector(".char-counter");p&&v&&p.addEventListener("input",()=>{const r=p.value.length;v.textContent=`${r} / 1000 characters`,v.classList.toggle("warning",r>800)},{passive:!0}),a.addEventListener("submit",async r=>{r.preventDefault();const s=a.querySelector(".modal-btn-primary");if(!s)return;const d=s.innerHTML;s.disabled=!0,s.innerHTML='<span class="loading-spinner"></span> Submitting...';try{await new Promise(u=>setTimeout(u,1500)),s.innerHTML="✓ Request Submitted!",s.style.background="linear-gradient(135deg, #059669, #10b981)",setTimeout(()=>{alert("Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours."),n(),s.innerHTML=d,s.style.background="",s.disabled=!1},2e3)}catch{s.innerHTML="Error - Please Try Again",s.style.background="linear-gradient(135deg, #dc2626, #ef4444)",setTimeout(()=>{s.innerHTML=d,s.style.background="",s.disabled=!1},3e3)}})}
+  </div>`,w()}let u={};function p(e){return u[e]||(u[e]=document.getElementById(e)),u[e]}function w(){requestAnimationFrame(()=>{k(),P()}),setTimeout(()=>{S(),j(),q(),I(),x()},100)}function x(){const e=document.getElementById("basic-contact-form");if(!e)return;const i=document.getElementById("basic-contact-status"),l=document.getElementById("contact-name"),o=document.getElementById("contact-email"),a=document.getElementById("contact-message"),t=n=>{i&&(i.textContent=n)};e.addEventListener("submit",n=>{n.preventDefault();const c=new FormData(e),v=String(c.get("name")||"").trim(),r=String(c.get("email")||"").trim(),s=String(c.get("phone")||"").trim(),d=String(c.get("subject")||"").trim(),m=String(c.get("message")||"").trim();if(!v){t("Please enter your name."),l&&l.focus();return}if(!r||!/^\S+@\S+\.\S+$/.test(r)){t("Please enter a valid email address."),o&&o.focus();return}if(!m){t("Please enter a message."),a&&a.focus();return}const g=d||"New message from hldesignedit.com",h=[`Name: ${v}`,`Email: ${r}`,s?`Phone: ${s}`:"Phone: (not provided)","",m],b=`mailto:info@hldesignedit.com?subject=${encodeURIComponent(g)}&body=${encodeURIComponent(h.join(`
+`))}`;t("Opening your email app..."),window.location.href=b})}function S(){const e=p("footer-year");e&&(e.textContent=new Date().getFullYear().toString())}function k(){const e=document.querySelectorAll(".filter-btn"),i=document.querySelectorAll(".portfolio-card");!e.length||!i.length||document.querySelector(".portfolio-filters").addEventListener("click",l=>{if(!l.target.classList.contains("filter-btn"))return;e.forEach(a=>a.classList.remove("active")),l.target.classList.add("active");const o=l.target.dataset.filter.trim().toLowerCase();requestAnimationFrame(()=>{i.forEach(a=>{const t=(a.dataset.type||"").trim().toLowerCase(),n=o==="all"||t===o;a.style.display=n?"":"none"})})},{passive:!0})}function P(){document.addEventListener("click",e=>{const i=e.target.closest('a[href^="#"]');if(!i)return;e.preventDefault();const l=i.getAttribute("href"),o=document.querySelector(l);if(o){const n=o.offsetTop-80;window.scrollTo({top:n,behavior:"smooth"})}},{passive:!1})}function j(){const e=p("greeting-text");if(!e)return;const i=["Hola","Bonjour","Ciao","こんにちは","你好","Hello"];let l=0;const o=()=>{e.style.opacity="0",setTimeout(()=>{e.textContent=i[l],e.style.opacity="1",l=(l+1)%i.length},200)};e.style.transition="opacity 0.2s ease",setTimeout(()=>{o(),setInterval(o,3e3)},2e3)}function q(){const e=document.querySelector(".portfolio-header");if(!e)return;let i=!1;const l=()=>{const o=window.scrollY>100;e.style.background=o?"rgba(255, 255, 255, 0.98)":"rgba(255, 255, 255, 0.95)",e.style.boxShadow=o?"0 4px 6px -1px rgba(0, 0, 0, 0.1)":"",i=!1};window.addEventListener("scroll",()=>{i||(requestAnimationFrame(l),i=!0)},{passive:!0})}function I(){const e=p("project-modal"),i=p("project-request-btn"),l=p("modal-close"),o=p("modal-cancel"),a=p("project-form"),t=p("other-project-type");if(!e||!i||!a)return;const n=()=>{e.style.display="none",document.body.style.overflow="auto",a.reset(),t&&t.classList.remove("active")};i.addEventListener("click",r=>{r.preventDefault(),e.style.display="flex",document.body.style.overflow="hidden"}),l&&l.addEventListener("click",n),o&&o.addEventListener("click",n),e.addEventListener("click",r=>{r.target===e&&n()}),document.addEventListener("keydown",r=>{r.key==="Escape"&&e.style.display==="flex"&&n()}),a.addEventListener("change",r=>{if(r.target.name==="project-type"){const s=r.target.value==="other"&&r.target.checked;if(t){t.classList.toggle("active",s);const d=t.querySelector("input");d&&(d.required=s,s||(d.value=""))}}},{passive:!0});const c=a.querySelector('textarea[name="finalNotes"]'),v=a.querySelector(".char-counter");c&&v&&c.addEventListener("input",()=>{const r=c.value.length;v.textContent=`${r} / 1000 characters`,v.classList.toggle("warning",r>800)},{passive:!0}),a.addEventListener("submit",async r=>{r.preventDefault();const s=a.querySelector(".modal-btn-primary");if(!s)return;const d=s.innerHTML;s.disabled=!0,s.innerHTML='<span class="loading-spinner"></span> Submitting...';try{await new Promise(m=>setTimeout(m,1500)),s.innerHTML="✓ Request Submitted!",s.style.background="linear-gradient(135deg, #059669, #10b981)",setTimeout(()=>{alert("Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours."),n(),s.innerHTML=d,s.style.background="",s.disabled=!1},2e3)}catch{s.innerHTML="Error - Please Try Again",s.style.background="linear-gradient(135deg, #dc2626, #ef4444)",setTimeout(()=>{s.innerHTML=d,s.style.background="",s.disabled=!1},3e3)}})}
