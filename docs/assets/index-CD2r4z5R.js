@@ -250,7 +250,7 @@
     <div class="portfolio-grid">
       <div class="portfolio-card featured" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
+            <img src="/projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>JavaScript</span>
@@ -271,7 +271,7 @@
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Paco's Lebanese" loading="lazy" />
+            <img src="/projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>HTML5</span>
@@ -281,10 +281,10 @@
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>Paco's Lebanese Website</h3>
+          <h3>Cedar & Gold Lebanese Restaraunt Website</h3>
           <p class="portfolio-desc">Restaurant marketing site with menu, about/contact pages, and a mobile-first layout for quick browsing.</p>
           <div class="portfolio-actions">
-            <a href="https://hligon35.github.io/pacoslebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
+            <a href="https://hligon35.github.io/cedarngoldlebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
             <a href="#contact" class="btn btn-secondary">Discuss Project</a>
           </div>
         </div>
@@ -292,7 +292,7 @@
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Luxurious Cakes Indy" loading="lazy" />
+            <img src="/projects/luxurious_cakes.png" alt="Luxurious Cakes Indy" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>WordPress</span>
@@ -313,7 +313,7 @@
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-          <img src="projects/non-profit.png" alt="Life Prep Academy Foundation" loading="lazy" />
+            <img src="/projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Web Design</span>
@@ -334,7 +334,7 @@
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/coinDash.png" alt="Coin Dash" loading="lazy" />
+            <img src="/projects/coinDash.png" alt="Coin Dash" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -355,7 +355,7 @@
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
+            <img src="/projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -376,7 +376,7 @@
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
+            <img src="/projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -397,7 +397,7 @@
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
+            <img src="/projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
@@ -418,7 +418,7 @@
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-          <img src="projects/non-profit.png" alt="MMBC" loading="lazy" />
+            <img src="/projects/non-profit.png" alt="MMBC" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -439,7 +439,7 @@
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-          <img src="projects/comingSoon.png" alt="Space Rocks" loading="lazy" />
+            <img src="/projects/space_rocks.png" alt="Space Rocks" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
@@ -785,4 +785,4 @@
         </div>
       </div>
     </div>
-  </div>`,g()}let m={};function c(e){return m[e]||(m[e]=document.getElementById(e)),m[e]}function g(){requestAnimationFrame(()=>{y(),w()}),setTimeout(()=>{b(),x(),S(),k()},100)}function b(){const e=c("footer-year");e&&(e.textContent=new Date().getFullYear().toString())}function y(){const e=document.querySelectorAll(".filter-btn"),i=document.querySelectorAll(".portfolio-card");!e.length||!i.length||document.querySelector(".portfolio-filters").addEventListener("click",l=>{if(!l.target.classList.contains("filter-btn"))return;e.forEach(a=>a.classList.remove("active")),l.target.classList.add("active");const o=l.target.dataset.filter.trim().toLowerCase();requestAnimationFrame(()=>{i.forEach(a=>{const t=(a.dataset.type||"").trim().toLowerCase(),n=o==="all"||t===o;a.style.display=n?"":"none"})})},{passive:!0})}function w(){document.addEventListener("click",e=>{const i=e.target.closest('a[href^="#"]');if(!i)return;e.preventDefault();const l=i.getAttribute("href"),o=document.querySelector(l);if(o){const n=o.offsetTop-80;window.scrollTo({top:n,behavior:"smooth"})}},{passive:!1})}function x(){const e=c("greeting-text");if(!e)return;const i=["Hola","Bonjour","Ciao","こんにちは","你好","Hello"];let l=0;const o=()=>{e.style.opacity="0",setTimeout(()=>{e.textContent=i[l],e.style.opacity="1",l=(l+1)%i.length},200)};e.style.transition="opacity 0.2s ease",setTimeout(()=>{o(),setInterval(o,3e3)},2e3)}function S(){const e=document.querySelector(".portfolio-header");if(!e)return;let i=!1;const l=()=>{const o=window.scrollY>100;e.style.background=o?"rgba(255, 255, 255, 0.98)":"rgba(255, 255, 255, 0.95)",e.style.boxShadow=o?"0 4px 6px -1px rgba(0, 0, 0, 0.1)":"",i=!1};window.addEventListener("scroll",()=>{i||(requestAnimationFrame(l),i=!0)},{passive:!0})}function k(){const e=c("project-modal"),i=c("project-request-btn"),l=c("modal-close"),o=c("modal-cancel"),a=c("project-form"),t=c("other-project-type");if(!e||!i||!a)return;const n=()=>{e.style.display="none",document.body.style.overflow="auto",a.reset(),t&&t.classList.remove("active")};i.addEventListener("click",r=>{r.preventDefault(),e.style.display="flex",document.body.style.overflow="hidden"}),l&&l.addEventListener("click",n),o&&o.addEventListener("click",n),e.addEventListener("click",r=>{r.target===e&&n()}),document.addEventListener("keydown",r=>{r.key==="Escape"&&e.style.display==="flex"&&n()}),a.addEventListener("change",r=>{if(r.target.name==="project-type"){const s=r.target.value==="other"&&r.target.checked;if(t){t.classList.toggle("active",s);const d=t.querySelector("input");d&&(d.required=s,s||(d.value=""))}}},{passive:!0});const p=a.querySelector('textarea[name="finalNotes"]'),v=a.querySelector(".char-counter");p&&v&&p.addEventListener("input",()=>{const r=p.value.length;v.textContent=`${r} / 1000 characters`,v.classList.toggle("warning",r>800)},{passive:!0}),a.addEventListener("submit",async r=>{r.preventDefault();const s=a.querySelector(".modal-btn-primary");if(!s)return;const d=s.innerHTML;s.disabled=!0,s.innerHTML='<span class="loading-spinner"></span> Submitting...';try{await new Promise(u=>setTimeout(u,1500)),s.innerHTML="✓ Request Submitted!",s.style.background="linear-gradient(135deg, #059669, #10b981)",setTimeout(()=>{alert("Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours."),n(),s.innerHTML=d,s.style.background="",s.disabled=!1},2e3)}catch{s.innerHTML="Error - Please Try Again",s.style.background="linear-gradient(135deg, #dc2626, #ef4444)",setTimeout(()=>{s.innerHTML=d,s.style.background="",s.disabled=!1},3e3)}})}
+  </div>`,g()}let m={};function c(e){return m[e]||(m[e]=document.getElementById(e)),m[e]}function g(){requestAnimationFrame(()=>{y(),w()}),setTimeout(()=>{b(),x(),k(),S()},100)}function b(){const e=c("footer-year");e&&(e.textContent=new Date().getFullYear().toString())}function y(){const e=document.querySelectorAll(".filter-btn"),i=document.querySelectorAll(".portfolio-card");!e.length||!i.length||document.querySelector(".portfolio-filters").addEventListener("click",l=>{if(!l.target.classList.contains("filter-btn"))return;e.forEach(a=>a.classList.remove("active")),l.target.classList.add("active");const o=l.target.dataset.filter.trim().toLowerCase();requestAnimationFrame(()=>{i.forEach(a=>{const t=(a.dataset.type||"").trim().toLowerCase(),n=o==="all"||t===o;a.style.display=n?"":"none"})})},{passive:!0})}function w(){document.addEventListener("click",e=>{const i=e.target.closest('a[href^="#"]');if(!i)return;e.preventDefault();const l=i.getAttribute("href"),o=document.querySelector(l);if(o){const n=o.offsetTop-80;window.scrollTo({top:n,behavior:"smooth"})}},{passive:!1})}function x(){const e=c("greeting-text");if(!e)return;const i=["Hola","Bonjour","Ciao","こんにちは","你好","Hello"];let l=0;const o=()=>{e.style.opacity="0",setTimeout(()=>{e.textContent=i[l],e.style.opacity="1",l=(l+1)%i.length},200)};e.style.transition="opacity 0.2s ease",setTimeout(()=>{o(),setInterval(o,3e3)},2e3)}function k(){const e=document.querySelector(".portfolio-header");if(!e)return;let i=!1;const l=()=>{const o=window.scrollY>100;e.style.background=o?"rgba(255, 255, 255, 0.98)":"rgba(255, 255, 255, 0.95)",e.style.boxShadow=o?"0 4px 6px -1px rgba(0, 0, 0, 0.1)":"",i=!1};window.addEventListener("scroll",()=>{i||(requestAnimationFrame(l),i=!0)},{passive:!0})}function S(){const e=c("project-modal"),i=c("project-request-btn"),l=c("modal-close"),o=c("modal-cancel"),a=c("project-form"),t=c("other-project-type");if(!e||!i||!a)return;const n=()=>{e.style.display="none",document.body.style.overflow="auto",a.reset(),t&&t.classList.remove("active")};i.addEventListener("click",r=>{r.preventDefault(),e.style.display="flex",document.body.style.overflow="hidden"}),l&&l.addEventListener("click",n),o&&o.addEventListener("click",n),e.addEventListener("click",r=>{r.target===e&&n()}),document.addEventListener("keydown",r=>{r.key==="Escape"&&e.style.display==="flex"&&n()}),a.addEventListener("change",r=>{if(r.target.name==="project-type"){const s=r.target.value==="other"&&r.target.checked;if(t){t.classList.toggle("active",s);const d=t.querySelector("input");d&&(d.required=s,s||(d.value=""))}}},{passive:!0});const p=a.querySelector('textarea[name="finalNotes"]'),v=a.querySelector(".char-counter");p&&v&&p.addEventListener("input",()=>{const r=p.value.length;v.textContent=`${r} / 1000 characters`,v.classList.toggle("warning",r>800)},{passive:!0}),a.addEventListener("submit",async r=>{r.preventDefault();const s=a.querySelector(".modal-btn-primary");if(!s)return;const d=s.innerHTML;s.disabled=!0,s.innerHTML='<span class="loading-spinner"></span> Submitting...';try{await new Promise(u=>setTimeout(u,1500)),s.innerHTML="✓ Request Submitted!",s.style.background="linear-gradient(135deg, #059669, #10b981)",setTimeout(()=>{alert("Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours."),n(),s.innerHTML=d,s.style.background="",s.disabled=!1},2e3)}catch{s.innerHTML="Error - Please Try Again",s.style.background="linear-gradient(135deg, #dc2626, #ef4444)",setTimeout(()=>{s.innerHTML=d,s.style.background="",s.disabled=!1},3e3)}})}
