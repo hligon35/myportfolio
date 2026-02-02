@@ -361,7 +361,7 @@ a:hover {
     white-space: normal;
   }
   .hero-section {
-    padding-top: 5.5rem;
+    padding-top: calc(5.5rem + 100px);
   }
 }
 
@@ -1581,6 +1581,7 @@ section {
   
   .hero-section {
     padding: 6rem 1rem 3rem;
+    padding-top: calc(5.5rem + 50px);
   }
   
   .hero-content h1 {
