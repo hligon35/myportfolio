@@ -1,12 +1,12 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))o(a);new MutationObserver(a=>{for(const t of a)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&o(n)}).observe(document,{childList:!0,subtree:!0});function l(a){const t={};return a.integrity&&(t.integrity=a.integrity),a.referrerPolicy&&(t.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?t.credentials="include":a.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(a){if(a.ep)return;a.ep=!0;const t=l(a);fetch(a.href,t)}})();console.log("JavaScript loading...");const f=document.querySelector("#app");f?(console.log("Setting innerHTML..."),y()):(console.error("App element not found!"),document.body.innerHTML="<h1>Error: App element not found</h1>");function y(){f.innerHTML=`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))o(t);new MutationObserver(t=>{for(const a of t)if(a.type==="childList")for(const r of a.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&o(r)}).observe(document,{childList:!0,subtree:!0});function l(t){const a={};return t.integrity&&(a.integrity=t.integrity),t.referrerPolicy&&(a.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?a.credentials="include":t.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function o(t){if(t.ep)return;t.ep=!0;const a=l(t);fetch(t.href,a)}})();console.log("JavaScript loading...");const w=document.querySelector("#app");w?(console.log("Setting innerHTML..."),x()):(console.error("App element not found!"),document.body.innerHTML="<h1>Error: App element not found</h1>");function x(){w.innerHTML=`
   <header class="portfolio-header">
-    <nav id="main-nav" class="nav-container">
+    <nav id="main-nav" class="nav-container" aria-label="Main navigation">
       <a href="#hero" class="nav-link">Home</a>
       <a href="#about" class="nav-link">About</a>
       <a href="#services" class="nav-link">Services</a>
       <a href="#experience" class="nav-link">Skills</a>
       <a href="#portfolio" class="nav-link">Portfolio</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#contact-form" class="nav-link">Contact</a>
     </nav>
     <div class="partner-banner" role="note" aria-label="Partnership announcement">
       In partnership with SparQ Digital Media Marketing Company —
@@ -172,7 +172,10 @@
         <h3>Backend & Database</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="tools/node.png" alt="Node.js" loading="lazy" />
+            <picture>
+              <source srcset="tools/node.webp" type="image/webp">
+              <img src="tools/node.png" alt="Node.js" loading="lazy" />
+            </picture>
             <span>Node.js</span>
             <div class="proficiency">Advanced</div>
           </div>
@@ -187,47 +190,74 @@
         <h3>Design & Development Tools</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="tools/figma.png" alt="Figma" loading="lazy" />
+            <picture>
+              <source srcset="tools/figma.webp" type="image/webp">
+              <img src="tools/figma.png" alt="Figma" loading="lazy" />
+            </picture>
             <span>Figma</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/photoshop.png" alt="Photoshop" loading="lazy" />
+            <picture>
+              <source srcset="tools/photoshop.webp" type="image/webp">
+              <img src="tools/photoshop.png" alt="Photoshop" loading="lazy" />
+            </picture>
             <span>Photoshop</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="tools/vsCode.png" alt="VS Code" loading="lazy" />
+            <picture>
+              <source srcset="tools/vsCode.webp" type="image/webp">
+              <img src="tools/vsCode.png" alt="VS Code" loading="lazy" />
+            </picture>
             <span>VS Code</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/gitHub.png" alt="GitHub" loading="lazy" />
+            <picture>
+              <source srcset="tools/gitHub.webp" type="image/webp">
+              <img src="tools/gitHub.png" alt="GitHub" loading="lazy" />
+            </picture>
             <span>Git/GitHub</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="tools/canva.png" alt="Canva" loading="lazy" />
+            <picture>
+              <source srcset="tools/canva.webp" type="image/webp">
+              <img src="tools/canva.png" alt="Canva" loading="lazy" />
+            </picture>
             <span>Canva</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="tools/excel.png" alt="Excel" loading="lazy" />
+            <picture>
+              <source srcset="tools/excel.webp" type="image/webp">
+              <img src="tools/excel.png" alt="Excel" loading="lazy" />
+            </picture>
             <span>Excel</span>
             <div class="proficiency">Intermediate</div>
           </div>
           <div class="tech-item">
-            <img src="tools/godot.png" alt="Godot" loading="lazy" />
+            <picture>
+              <source srcset="tools/godot.webp" type="image/webp">
+              <img src="tools/godot.png" alt="Godot" loading="lazy" />
+            </picture>
             <span>Godot</span>
             <div class="proficiency">Intermediate</div>
           </div>
           <div class="tech-item">
-            <img src="tools/powerPoint.png" alt="PowerPoint" loading="lazy" />
+            <picture>
+              <source srcset="tools/powerPoint.webp" type="image/webp">
+              <img src="tools/powerPoint.png" alt="PowerPoint" loading="lazy" />
+            </picture>
             <span>PowerPoint</span>
             <div class="proficiency">Intermediate</div>
           </div>
           <div class="tech-item">
-            <img src="tools/wordPress.png" alt="WordPress" loading="lazy" />
+            <picture>
+              <source srcset="tools/wordPress.webp" type="image/webp">
+              <img src="tools/wordPress.png" alt="WordPress" loading="lazy" />
+            </picture>
             <span>WordPress</span>
             <div class="proficiency">Intermediate</div>
           </div>
@@ -250,7 +280,10 @@
     <div class="portfolio-grid">
       <div class="portfolio-card featured" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
+            <picture>
+              <source srcset="/projects/pizzabyu.webp" type="image/webp">
+              <img src="/projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>JavaScript</span>
@@ -270,7 +303,10 @@
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
+            <picture>
+              <source srcset="/projects/cedar&gold_lebanese.webp" type="image/webp">
+              <img src="/projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>HTML5</span>
@@ -290,7 +326,10 @@
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-            <img src="/projects/luxurious_cakes.png" alt="Luxurious Cakes Indy" loading="lazy" />
+            <picture>
+              <source srcset="/projects/luxurious_cakes.webp" type="image/webp">
+              <img src="/projects/luxurious_cakes.png" alt="Luxurious Cakes Indy" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>WordPress</span>
@@ -310,7 +349,10 @@
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-            <img src="/projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation" loading="lazy" />
+            <picture>
+              <source srcset="/projects/life_prep_academy_foundation.webp" type="image/webp">
+              <img src="/projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Web Design</span>
@@ -330,7 +372,10 @@
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-            <img src="/projects/coinDash.png" alt="Coin Dash" loading="lazy" />
+            <picture>
+              <source srcset="/projects/coinDash.webp" type="image/webp">
+              <img src="/projects/coinDash.png" alt="Coin Dash" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -350,7 +395,10 @@
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-            <img src="/projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
+            <picture>
+              <source srcset="/projects/infiniteFlyer.webp" type="image/webp">
+              <img src="/projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -370,7 +418,10 @@
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
+            <picture>
+              <source srcset="/projects/bearVoice.webp" type="image/webp">
+              <img src="/projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -390,7 +441,10 @@
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-            <img src="/projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
+            <picture>
+              <source srcset="/projects/jungleJumper.webp" type="image/webp">
+              <img src="/projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
@@ -410,7 +464,10 @@
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/non-profit.png" alt="MMMBC" loading="lazy" />
+            <picture>
+              <source srcset="/projects/non-profit.webp" type="image/webp">
+              <img src="/projects/non-profit.png" alt="MMMBC" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -430,7 +487,10 @@
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-            <img src="/projects/space_rocks.png" alt="Space Rocks" loading="lazy" />
+            <picture>
+              <source srcset="/projects/space_rocks.webp" type="image/webp">
+              <img src="/projects/space_rocks.png" alt="Space Rocks" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
@@ -482,13 +542,14 @@
         </div>
       </div>
 
-      <div class="basic-contact-card" aria-label="Contact form" style="margin-top: 3rem;">
+      <div id="contact-form" class="basic-contact-card" aria-label="Contact form" style="margin-top: 3rem;">
         <div class="section-header" style="margin-top: 0;">
           <h2>Send a Message</h2>
           <p class="section-subtitle">Email me directly at <a href="mailto:info@hldesignedit.com">info@hldesignedit.com</a> or use the form below.</p>
         </div>
 
         <form id="basic-contact-form" class="basic-contact-form" novalidate>
+          <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" />
           <div class="form-row">
             <div class="form-group">
               <label class="form-label required" for="contact-name">Name</label>
@@ -535,6 +596,7 @@
         <div class="footer-cta__actions">
           <a href="#contact" class="cta-btn primary">Start a Project</a>
           <a href="#portfolio" class="cta-btn secondary">View Work</a>
+          <a href="#contact" class="cta-btn secondary">Support Nonprofits</a>
         </div>
       </div>
 
@@ -596,18 +658,20 @@
             <div class="date-input">
               <div class="date-group">
                 <label>Month</label>
-                <input type="number" min="1" max="12" placeholder="MM" class="form-input" required>
+                <input type="number" name="submittedMonth" min="1" max="12" placeholder="MM" class="form-input" required>
               </div>
               <div class="date-group">
                 <label>Day</label>
-                <input type="number" min="1" max="31" placeholder="DD" class="form-input" required>
+                <input type="number" name="submittedDay" min="1" max="31" placeholder="DD" class="form-input" required>
               </div>
               <div class="date-group">
                 <label>Year</label>
-                <input type="number" min="2024" max="2030" placeholder="YYYY" class="form-input" required>
+                <input type="number" name="submittedYear" min="2024" max="2030" placeholder="YYYY" class="form-input" required>
               </div>
             </div>
           </div>
+
+          <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" />
   
           <div class="form-section">
             <h3><span class="form-section-icon">👤</span>Section 1: Basic Information</h3>
@@ -816,5 +880,4 @@
         </div>
       </div>
     </div>
-  </div>`,w()}let u={};function p(e){return u[e]||(u[e]=document.getElementById(e)),u[e]}function w(){requestAnimationFrame(()=>{k(),P()}),setTimeout(()=>{S(),j(),q(),I(),x()},100)}function x(){const e=document.getElementById("basic-contact-form");if(!e)return;const i=document.getElementById("basic-contact-status"),l=document.getElementById("contact-name"),o=document.getElementById("contact-email"),a=document.getElementById("contact-message"),t=n=>{i&&(i.textContent=n)};e.addEventListener("submit",n=>{n.preventDefault();const c=new FormData(e),v=String(c.get("name")||"").trim(),r=String(c.get("email")||"").trim(),s=String(c.get("phone")||"").trim(),d=String(c.get("subject")||"").trim(),m=String(c.get("message")||"").trim();if(!v){t("Please enter your name."),l&&l.focus();return}if(!r||!/^\S+@\S+\.\S+$/.test(r)){t("Please enter a valid email address."),o&&o.focus();return}if(!m){t("Please enter a message."),a&&a.focus();return}const g=d||"New message from hldesignedit.com",h=[`Name: ${v}`,`Email: ${r}`,s?`Phone: ${s}`:"Phone: (not provided)","",m],b=`mailto:info@hldesignedit.com?subject=${encodeURIComponent(g)}&body=${encodeURIComponent(h.join(`
-`))}`;t("Opening your email app..."),window.location.href=b})}function S(){const e=p("footer-year");e&&(e.textContent=new Date().getFullYear().toString())}function k(){const e=document.querySelectorAll(".filter-btn"),i=document.querySelectorAll(".portfolio-card");!e.length||!i.length||document.querySelector(".portfolio-filters").addEventListener("click",l=>{if(!l.target.classList.contains("filter-btn"))return;e.forEach(a=>a.classList.remove("active")),l.target.classList.add("active");const o=l.target.dataset.filter.trim().toLowerCase();requestAnimationFrame(()=>{i.forEach(a=>{const t=(a.dataset.type||"").trim().toLowerCase(),n=o==="all"||t===o;a.style.display=n?"":"none"})})},{passive:!0})}function P(){document.addEventListener("click",e=>{const i=e.target.closest('a[href^="#"]');if(!i)return;e.preventDefault();const l=i.getAttribute("href"),o=document.querySelector(l);if(o){const n=o.offsetTop-80;window.scrollTo({top:n,behavior:"smooth"})}},{passive:!1})}function j(){const e=p("greeting-text");if(!e)return;const i=["Hola","Bonjour","Ciao","こんにちは","你好","Hello"];let l=0;const o=()=>{e.style.opacity="0",setTimeout(()=>{e.textContent=i[l],e.style.opacity="1",l=(l+1)%i.length},200)};e.style.transition="opacity 0.2s ease",setTimeout(()=>{o(),setInterval(o,3e3)},2e3)}function q(){const e=document.querySelector(".portfolio-header");if(!e)return;let i=!1;const l=()=>{const o=window.scrollY>100;e.style.background=o?"rgba(255, 255, 255, 0.98)":"rgba(255, 255, 255, 0.95)",e.style.boxShadow=o?"0 4px 6px -1px rgba(0, 0, 0, 0.1)":"",i=!1};window.addEventListener("scroll",()=>{i||(requestAnimationFrame(l),i=!0)},{passive:!0})}function I(){const e=p("project-modal"),i=p("project-request-btn"),l=p("modal-close"),o=p("modal-cancel"),a=p("project-form"),t=p("other-project-type");if(!e||!i||!a)return;const n=()=>{e.style.display="none",document.body.style.overflow="auto",a.reset(),t&&t.classList.remove("active")};i.addEventListener("click",r=>{r.preventDefault(),e.style.display="flex",document.body.style.overflow="hidden"}),l&&l.addEventListener("click",n),o&&o.addEventListener("click",n),e.addEventListener("click",r=>{r.target===e&&n()}),document.addEventListener("keydown",r=>{r.key==="Escape"&&e.style.display==="flex"&&n()}),a.addEventListener("change",r=>{if(r.target.name==="project-type"){const s=r.target.value==="other"&&r.target.checked;if(t){t.classList.toggle("active",s);const d=t.querySelector("input");d&&(d.required=s,s||(d.value=""))}}},{passive:!0});const c=a.querySelector('textarea[name="finalNotes"]'),v=a.querySelector(".char-counter");c&&v&&c.addEventListener("input",()=>{const r=c.value.length;v.textContent=`${r} / 1000 characters`,v.classList.toggle("warning",r>800)},{passive:!0}),a.addEventListener("submit",async r=>{r.preventDefault();const s=a.querySelector(".modal-btn-primary");if(!s)return;const d=s.innerHTML;s.disabled=!0,s.innerHTML='<span class="loading-spinner"></span> Submitting...';try{await new Promise(m=>setTimeout(m,1500)),s.innerHTML="✓ Request Submitted!",s.style.background="linear-gradient(135deg, #059669, #10b981)",setTimeout(()=>{alert("Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours."),n(),s.innerHTML=d,s.style.background="",s.disabled=!1},2e3)}catch{s.innerHTML="Error - Please Try Again",s.style.background="linear-gradient(135deg, #dc2626, #ef4444)",setTimeout(()=>{s.innerHTML=d,s.style.background="",s.disabled=!1},3e3)}})}
+  </div>`,S()}let b={};function u(e){return b[e]||(b[e]=document.getElementById(e)),b[e]}function S(){requestAnimationFrame(()=>{P(),q()}),setTimeout(()=>{j(),L(),D(),C(),k()},100)}function k(){const e=document.getElementById("basic-contact-form");if(!e)return;const s=()=>window.location.hostname==="localhost"||window.location.hostname==="127.0.0.1"?"http://localhost:8787/api/forms":"https://hldesignedit.com/api/forms",l=document.getElementById("basic-contact-status"),o=document.getElementById("contact-name"),t=document.getElementById("contact-email"),a=document.getElementById("contact-message"),r=p=>{l&&(l.textContent=p)};e.addEventListener("submit",p=>{p.preventDefault();const c=new FormData(e),n=String(c.get("name")||"").trim(),i=String(c.get("email")||"").trim(),m=String(c.get("phone")||"").trim(),y=String(c.get("subject")||"").trim(),h=String(c.get("message")||"").trim();if(!n){r("Please enter your name."),o&&o.focus();return}if(!i||!/^\S+@\S+\.\S+$/.test(i)){r("Please enter a valid email address."),t&&t.focus();return}if(!h){r("Please enter a message."),a&&a.focus();return}const g=s(),v=e.querySelector('button[type="submit"]');v&&(v.disabled=!0),r("Sending..."),fetch(g,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({formType:"contact",honeypot:String(c.get("company")||""),pageUrl:window.location.href,data:{name:n,email:i,phone:m,subject:y,message:h}})}).then(async d=>{const f=await d.json().catch(()=>null);if(!d.ok||!(f!=null&&f.ok))throw new Error((f==null?void 0:f.error)||"Unable to send message.");r("Message sent! I will reply within 24 hours."),e.reset()}).catch(()=>{r("Could not send right now. Please email info@hldesignedit.com.")}).finally(()=>{v&&(v.disabled=!1)})})}function j(){const e=u("footer-year");e&&(e.textContent=new Date().getFullYear().toString())}function P(){const e=document.querySelectorAll(".filter-btn"),s=document.querySelectorAll(".portfolio-card");!e.length||!s.length||document.querySelector(".portfolio-filters").addEventListener("click",l=>{if(!l.target.classList.contains("filter-btn"))return;e.forEach(t=>t.classList.remove("active")),l.target.classList.add("active");const o=l.target.dataset.filter.trim().toLowerCase();requestAnimationFrame(()=>{s.forEach(t=>{const a=(t.dataset.type||"").trim().toLowerCase(),r=o==="all"||a===o;t.style.display=r?"":"none"})})},{passive:!0})}function q(){document.addEventListener("click",e=>{const s=e.target.closest('a[href^="#"]');if(!s)return;e.preventDefault();const l=s.getAttribute("href"),o=document.querySelector(l);if(o){const r=o.offsetTop-80;window.scrollTo({top:r,behavior:"smooth"})}},{passive:!1})}function L(){const e=u("greeting-text");if(!e)return;const s=["Hola","Bonjour","Ciao","こんにちは","你好","Hello"];let l=0;const o=()=>{e.style.opacity="0",setTimeout(()=>{e.textContent=s[l],e.style.opacity="1",l=(l+1)%s.length},200)};e.style.transition="opacity 0.2s ease",setTimeout(()=>{o(),setInterval(o,3e3)},2e3)}function D(){const e=document.querySelector(".portfolio-header");if(!e)return;let s=!1;const l=()=>{const o=window.scrollY>100;e.style.background=o?"rgba(255, 255, 255, 0.98)":"rgba(255, 255, 255, 0.95)",e.style.boxShadow=o?"0 4px 6px -1px rgba(0, 0, 0, 0.1)":"",s=!1};window.addEventListener("scroll",()=>{s||(requestAnimationFrame(l),s=!0)},{passive:!0})}function C(){const e=u("project-modal"),s=u("project-request-btn"),l=u("modal-close"),o=u("modal-cancel"),t=u("project-form"),a=u("other-project-type");if(!e||!s||!t)return;const r=()=>{e.style.display="none",document.body.style.overflow="auto",t.reset(),a&&a.classList.remove("active")};s.addEventListener("click",n=>{n.preventDefault(),e.style.display="flex",document.body.style.overflow="hidden"}),l&&l.addEventListener("click",r),o&&o.addEventListener("click",r),e.addEventListener("click",n=>{n.target===e&&r()}),document.addEventListener("keydown",n=>{n.key==="Escape"&&e.style.display==="flex"&&r()}),t.addEventListener("change",n=>{if(n.target.name==="project-type"){const i=n.target.value==="other"&&n.target.checked;if(a){a.classList.toggle("active",i);const m=a.querySelector("input");m&&(m.required=i,i||(m.value=""))}}},{passive:!0});const p=t.querySelector('textarea[name="finalNotes"]'),c=t.querySelector(".char-counter");p&&c&&p.addEventListener("input",()=>{const n=p.value.length;c.textContent=`${n} / 1000 characters`,c.classList.toggle("warning",n>800)},{passive:!0}),t.addEventListener("submit",async n=>{n.preventDefault();const i=t.querySelector(".modal-btn-primary");if(!i)return;const m=i.innerHTML;i.disabled=!0,i.innerHTML='<span class="loading-spinner"></span> Submitting...';const h=window.location.hostname==="localhost"||window.location.hostname==="127.0.0.1"?"http://localhost:8787/api/forms":"https://hldesignedit.com/api/forms";try{const g=Object.fromEntries(new FormData(t).entries()),v=await fetch(h,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({formType:"project",honeypot:String(g.company||""),pageUrl:window.location.href,data:g})}),d=await v.json().catch(()=>null);if(!v.ok||!(d!=null&&d.ok))throw new Error((d==null?void 0:d.error)||"Unable to submit request.");i.innerHTML="✓ Request Submitted!",i.style.background="linear-gradient(135deg, #059669, #10b981)",setTimeout(()=>{alert("Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours."),r(),i.innerHTML=m,i.style.background="",i.disabled=!1},800)}catch{i.innerHTML="Error - Please Try Again",i.style.background="linear-gradient(135deg, #dc2626, #ef4444)",setTimeout(()=>{i.innerHTML=m,i.style.background="",i.disabled=!1},2500)}})}

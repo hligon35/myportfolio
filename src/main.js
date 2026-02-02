@@ -17,7 +17,7 @@ if (!app) {
 function initializeApp() {
   app.innerHTML = `
   <header class="portfolio-header">
-    <nav id="main-nav" class="nav-container">
+    <nav id="main-nav" class="nav-container" aria-label="Main navigation">
       <a href="#hero" class="nav-link">Home</a>
       <a href="#about" class="nav-link">About</a>
       <a href="#services" class="nav-link">Services</a>
@@ -189,7 +189,10 @@ function initializeApp() {
         <h3>Backend & Database</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="tools/node.png" alt="Node.js" loading="lazy" />
+            <picture>
+              <source srcset="tools/node.webp" type="image/webp">
+              <img src="tools/node.png" alt="Node.js" loading="lazy" />
+            </picture>
             <span>Node.js</span>
             <div class="proficiency">Advanced</div>
           </div>
@@ -204,47 +207,74 @@ function initializeApp() {
         <h3>Design & Development Tools</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="tools/figma.png" alt="Figma" loading="lazy" />
+            <picture>
+              <source srcset="tools/figma.webp" type="image/webp">
+              <img src="tools/figma.png" alt="Figma" loading="lazy" />
+            </picture>
             <span>Figma</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/photoshop.png" alt="Photoshop" loading="lazy" />
+            <picture>
+              <source srcset="tools/photoshop.webp" type="image/webp">
+              <img src="tools/photoshop.png" alt="Photoshop" loading="lazy" />
+            </picture>
             <span>Photoshop</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="tools/vsCode.png" alt="VS Code" loading="lazy" />
+            <picture>
+              <source srcset="tools/vsCode.webp" type="image/webp">
+              <img src="tools/vsCode.png" alt="VS Code" loading="lazy" />
+            </picture>
             <span>VS Code</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="tools/gitHub.png" alt="GitHub" loading="lazy" />
+            <picture>
+              <source srcset="tools/gitHub.webp" type="image/webp">
+              <img src="tools/gitHub.png" alt="GitHub" loading="lazy" />
+            </picture>
             <span>Git/GitHub</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="tools/canva.png" alt="Canva" loading="lazy" />
+            <picture>
+              <source srcset="tools/canva.webp" type="image/webp">
+              <img src="tools/canva.png" alt="Canva" loading="lazy" />
+            </picture>
             <span>Canva</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="tools/excel.png" alt="Excel" loading="lazy" />
+            <picture>
+              <source srcset="tools/excel.webp" type="image/webp">
+              <img src="tools/excel.png" alt="Excel" loading="lazy" />
+            </picture>
             <span>Excel</span>
             <div class="proficiency">Intermediate</div>
           </div>
           <div class="tech-item">
-            <img src="tools/godot.png" alt="Godot" loading="lazy" />
+            <picture>
+              <source srcset="tools/godot.webp" type="image/webp">
+              <img src="tools/godot.png" alt="Godot" loading="lazy" />
+            </picture>
             <span>Godot</span>
             <div class="proficiency">Intermediate</div>
           </div>
           <div class="tech-item">
-            <img src="tools/powerPoint.png" alt="PowerPoint" loading="lazy" />
+            <picture>
+              <source srcset="tools/powerPoint.webp" type="image/webp">
+              <img src="tools/powerPoint.png" alt="PowerPoint" loading="lazy" />
+            </picture>
             <span>PowerPoint</span>
             <div class="proficiency">Intermediate</div>
           </div>
           <div class="tech-item">
-            <img src="tools/wordPress.png" alt="WordPress" loading="lazy" />
+            <picture>
+              <source srcset="tools/wordPress.webp" type="image/webp">
+              <img src="tools/wordPress.png" alt="WordPress" loading="lazy" />
+            </picture>
             <span>WordPress</span>
             <div class="proficiency">Intermediate</div>
           </div>
@@ -267,7 +297,10 @@ function initializeApp() {
     <div class="portfolio-grid">
       <div class="portfolio-card featured" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
+            <picture>
+              <source srcset="/projects/pizzabyu.webp" type="image/webp">
+              <img src="/projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>JavaScript</span>
@@ -287,7 +320,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
+            <picture>
+              <source srcset="/projects/cedar&gold_lebanese.webp" type="image/webp">
+              <img src="/projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>HTML5</span>
@@ -307,7 +343,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-            <img src="/projects/luxurious_cakes.png" alt="Luxurious Cakes Indy" loading="lazy" />
+            <picture>
+              <source srcset="/projects/luxurious_cakes.webp" type="image/webp">
+              <img src="/projects/luxurious_cakes.png" alt="Luxurious Cakes Indy" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>WordPress</span>
@@ -327,7 +366,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
-            <img src="/projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation" loading="lazy" />
+            <picture>
+              <source srcset="/projects/life_prep_academy_foundation.webp" type="image/webp">
+              <img src="/projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Web Design</span>
@@ -347,7 +389,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-            <img src="/projects/coinDash.png" alt="Coin Dash" loading="lazy" />
+            <picture>
+              <source srcset="/projects/coinDash.webp" type="image/webp">
+              <img src="/projects/coinDash.png" alt="Coin Dash" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -367,7 +412,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-            <img src="/projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
+            <picture>
+              <source srcset="/projects/infiniteFlyer.webp" type="image/webp">
+              <img src="/projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Godot</span>
@@ -387,7 +435,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
+            <picture>
+              <source srcset="/projects/bearVoice.webp" type="image/webp">
+              <img src="/projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -407,7 +458,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-            <img src="/projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
+            <picture>
+              <source srcset="/projects/jungleJumper.webp" type="image/webp">
+              <img src="/projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
@@ -427,7 +481,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="web">
         <div class="portfolio-image">
-            <img src="/projects/non-profit.png" alt="MMMBC" loading="lazy" />
+            <picture>
+              <source srcset="/projects/non-profit.webp" type="image/webp">
+              <img src="/projects/non-profit.png" alt="MMMBC" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Website</span>
@@ -447,7 +504,10 @@ function initializeApp() {
 
       <div class="portfolio-card" data-type="games">
         <div class="portfolio-image">
-            <img src="/projects/space_rocks.png" alt="Space Rocks" loading="lazy" />
+            <picture>
+              <source srcset="/projects/space_rocks.webp" type="image/webp">
+              <img src="/projects/space_rocks.png" alt="Space Rocks" loading="lazy" />
+            </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
               <span>Game Development</span>
@@ -553,6 +613,7 @@ function initializeApp() {
         <div class="footer-cta__actions">
           <a href="#contact" class="cta-btn primary">Start a Project</a>
           <a href="#portfolio" class="cta-btn secondary">View Work</a>
+          <a href="#contact" class="cta-btn secondary">Support Nonprofits</a>
         </div>
       </div>
 
