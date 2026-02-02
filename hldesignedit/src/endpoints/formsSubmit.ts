@@ -52,6 +52,20 @@ function sanitizeField(value: unknown): string {
 	return text.length > MAX_FIELD_LENGTH ? `${text.slice(0, MAX_FIELD_LENGTH)}…` : text;
 }
 
+function displayOrNotProvided(value: string): string {
+	const trimmed = value.trim();
+	return trimmed ? trimmed : "(not provided)";
+}
+
+function escapeHtml(value: string): string {
+	return value
+		.replaceAll("&", "&amp;")
+		.replaceAll("<", "&lt;")
+		.replaceAll(">", "&gt;")
+		.replaceAll('"', "&quot;")
+		.replaceAll("'", "&#039;");
+}
+
 function pickReplyTo(data: Record<string, unknown>): string | undefined {
 	const candidates = [data.email, data.contactEmail, data["emailAddress"]];
 	for (const candidate of candidates) {
@@ -61,33 +75,13 @@ function pickReplyTo(data: Record<string, unknown>): string | undefined {
 	return undefined;
 }
 
-async function sendViaResend(options: {
-	apiKey: string;
-	from: string;
-	to: string;
-	subject: string;
-	text: string;
-	replyTo?: string;
-}) {
-	const response = await fetch("https://api.resend.com/emails", {
-		method: "POST",
-		headers: {
-			Authorization: `Bearer ${options.apiKey}`,
-			"Content-Type": "application/json",
-		},
-		body: JSON.stringify({
-			from: options.from,
-			to: [options.to],
-			subject: options.subject,
-			text: options.text,
-			...(options.replyTo ? { reply_to: options.replyTo } : {}),
-		}),
-	});
-
-	if (!response.ok) {
-		const errorText = await response.text().catch(() => "");
-		throw new Error(`Resend error (${response.status}): ${errorText || response.statusText}`);
+function pickFirstNonEmpty(data: Record<string, unknown>, keys: string[]): string {
+	for (const key of keys) {
+		const value = data[key];
+		const text = normalizeString(value).trim();
+		if (text) return text;
 	}
+	return "";
 }
 
 export async function FormsSubmit(c: AppContext) {
@@ -116,59 +110,121 @@ export async function FormsSubmit(c: AppContext) {
 	}
 
 	const to = c.env.FORMS_TO_EMAIL || "info@hldesignedit.com";
-	const from = c.env.FORMS_FROM_EMAIL || "onboarding@resend.dev";
-	const apiKey = c.env.RESEND_API_KEY;
+	const from = c.env.FORMS_FROM_EMAIL || "noreply@hldesignedit.com";
 
-	if (!apiKey) {
+	if (!c.env.EMAIL) {
 		return c.json(
-			{ ok: false, error: "Server not configured (missing RESEND_API_KEY)." },
+			{ ok: false, error: "Email service not configured." },
 			500,
 			{ ...cors, "Content-Type": "application/json" }
 		);
 	}
 
 	const data = parsed.data || {};
-	const pageUrl = parsed.pageUrl || c.req.header("Referer") || "";
-	const ua = c.req.header("User-Agent") || "";
-	const ip = c.req.header("CF-Connecting-IP") || "";
+	// Note: We intentionally do not include request metadata in the email body.
 
-	const subjectPrefix = parsed.formType === "project" ? "New Project Request" : "New Contact Message";
-	const name = sanitizeField(data.fullName ?? data.name ?? "").trim();
-	const email = sanitizeField(data.email ?? "").trim();
-	const subject = `${subjectPrefix}${name ? ` — ${name}` : ""}`;
+	const isProject = parsed.formType === "project";
+	const name = sanitizeField(pickFirstNonEmpty(data, ["fullName", "name"])).trim();
+	const email = sanitizeField(
+		pickFirstNonEmpty(data, ["email", "contactEmail", "emailAddress"])
+	).trim();
+	const phone = sanitizeField(
+		pickFirstNonEmpty(data, ["phone", "phoneNumber", "contactPhone", "tel"])
+	).trim();
+	const company = sanitizeField(
+		pickFirstNonEmpty(data, [
+			"company",
+			"companyName",
+			"business",
+			"businessName",
+			"organization",
+			"org",
+		])
+	).trim();
+	const budget = sanitizeField(pickFirstNonEmpty(data, ["budget", "projectBudget"])).trim();
+	const timeline = sanitizeField(
+		pickFirstNonEmpty(data, ["timeline", "deadline", "timeframe", "desiredTimeline"])
+	).trim();
+	const contactSubject = sanitizeField(pickFirstNonEmpty(data, ["subject", "topic"])).trim();
+	const message = sanitizeField(pickFirstNonEmpty(data, ["message"])).trim();
+	const details = sanitizeField(
+		pickFirstNonEmpty(data, ["details", "projectDetails", "description", "message"])
+	).trim();
+
+	const subject = isProject
+		? "New Project Form - HLDesignedIt.com!"
+		: "New Contact Form - HLDesignedIt.com!";
+
+	const gridPairs: Array<[string, string]> = isProject
+		? [
+			["Name", displayOrNotProvided(name)],
+			["Company", displayOrNotProvided(company)],
+			["Email", displayOrNotProvided(email)],
+			["Phone Number", displayOrNotProvided(phone)],
+			["Budget", displayOrNotProvided(budget)],
+			["Timeline", displayOrNotProvided(timeline)],
+		]
+		: [
+			["Name", displayOrNotProvided(name)],
+			["Email", displayOrNotProvided(email)],
+			["Phone Number", displayOrNotProvided(phone)],
+			["Subject", displayOrNotProvided(contactSubject)],
+		];
+
+	const longLabel = isProject ? "Details" : "Message";
+	const longValue = isProject ? displayOrNotProvided(details) : displayOrNotProvided(message);
 
 	const lines: string[] = [];
-	lines.push(`${subjectPrefix}`);
+	lines.push(subject);
 	lines.push("");
-	lines.push(`From: ${name || "(not provided)"}`);
-	lines.push(`Email: ${email || "(not provided)"}`);
-	lines.push("");
-
-	const entries = Object.entries(data)
-		.filter(([key, value]) => key && value != null && normalizeString(value).trim() !== "")
-		.sort(([a], [b]) => a.localeCompare(b));
-
-	for (const [key, value] of entries) {
-		const label = key.replace(/([A-Z])/g, " $1").replace(/_/g, " ").trim();
-		lines.push(`${label}: ${sanitizeField(value)}`);
+	for (const [label, value] of gridPairs) {
+		lines.push(`${label}: ${value}`);
 	}
-
 	lines.push("");
-	lines.push("--- Metadata ---");
-	if (pageUrl) lines.push(`Page: ${pageUrl}`);
-	if (ip) lines.push(`IP: ${ip}`);
-	if (ua) lines.push(`User-Agent: ${ua}`);
+	lines.push(`${longLabel}:`);
+	lines.push(longValue);
 
 	const replyTo = pickReplyTo(data);
 
+	const htmlRows = gridPairs
+		.map(([label, value]) => {
+			const safeLabel = escapeHtml(label);
+			const safeValue = escapeHtml(value).replaceAll("\n", "<br>");
+			return `
+				<tr>
+					<th style="text-align:left;vertical-align:top;padding:10px;border:1px solid #e5e7eb;background:#f9fafb;width:30%;">${safeLabel}</th>
+					<td style="padding:10px;border:1px solid #e5e7eb;width:70%;">${safeValue}</td>
+				</tr>`;
+		})
+		.join("");
+
+	const longValueHtml = escapeHtml(longValue).replaceAll("\n", "<br>");
+	const longLabelHtml = escapeHtml(longLabel);
+
+	const html = `
+		<div style="font-family:Arial,Helvetica,sans-serif;color:#111827;line-height:1.4;">
+			<div style="padding:16px 18px;border:1px solid #e5e7eb;border-radius:12px;">
+				<h2 style="margin:0 0 6px 0;font-size:18px;">${escapeHtml(subject)}</h2>
+				<table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:14px;">
+					${htmlRows || ""}
+					<tr>
+						<th colspan="2" style="text-align:left;vertical-align:top;padding:10px;border:1px solid #e5e7eb;background:#f9fafb;">${longLabelHtml}</th>
+					</tr>
+					<tr>
+						<td colspan="2" style="padding:10px;border:1px solid #e5e7eb;">${longValueHtml}</td>
+					</tr>
+				</table>
+			</div>
+		</div>`;
+
 	try {
-		await sendViaResend({
-			apiKey,
-			from,
-			to,
-			subject,
+		await c.env.EMAIL.send({
+			from: from,
+			to: to,
+			subject: subject,
 			text: lines.join("\n"),
-			replyTo,
+			html,
+			...(replyTo ? { reply_to: replyTo } : {}),
 		});
 	} catch (error) {
 		return c.json(

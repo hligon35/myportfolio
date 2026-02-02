@@ -613,14 +613,12 @@ function initializeApp() {
         <div class="footer-cta__actions">
           <a href="#contact" class="cta-btn primary">Start a Project</a>
           <a href="#portfolio" class="cta-btn secondary">View Work</a>
-          <a href="#contact" class="cta-btn secondary">Support Nonprofits</a>
         </div>
       </div>
 
       <div class="footer-grid" aria-label="Footer navigation">
         <div class="footer-col">
           <h4>Quick Links</h4>
-          <a href="#hero">Home</a>
           <a href="#about">About</a>
           <a href="#portfolio">My Work</a>
           <a href="#contact">Contact</a>
@@ -937,7 +935,9 @@ function initBasicContactForm() {
 
   const getFormsEndpoint = () => {
     const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    return isLocal ? 'http://localhost:8787/api/forms' : 'https://hldesignedit.com/api/forms';
+    return isLocal
+      ? 'http://127.0.0.1:8787/api/forms'
+      : 'https://hldesignedit.hligon.workers.dev/api/forms';
   };
 
   const status = document.getElementById('basic-contact-status');
