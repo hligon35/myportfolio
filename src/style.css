@@ -58,6 +58,9 @@
   /* Transitions */
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: all 0.15s ease-in-out;
+
+  /* Layout */
+  --partner-banner-height: 44px;
 }
 
 /* Reset */
@@ -169,7 +172,7 @@ a:hover {
 
 .portfolio-header {
   position: fixed;
-  top: 0;
+  top: var(--partner-banner-height);
   left: 0;
   right: 0;
   z-index: 1000;
@@ -199,19 +202,25 @@ a:hover {
 }
 
 .partner-banner {
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  height: var(--partner-banner-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0 1rem;
   text-align: center;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--gray-700);
-  padding: 0.45rem 1rem;
-  border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    rgba(var(--primary-rgb), 0.10),
-    rgba(var(--accent-rgb), 0.10)
-  );
-  border: 1px solid rgba(var(--primary-rgb), 0.18);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--gray-200);
+  border-radius: 0;
 }
 
 .partner-banner__link {
@@ -274,7 +283,7 @@ a:hover {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 10.5rem 2rem 4rem;
+  padding: calc(10.5rem + var(--partner-banner-height)) 2rem 4rem;
   background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
   position: relative;
   overflow: hidden;
@@ -361,7 +370,7 @@ a:hover {
     white-space: normal;
   }
   .hero-section {
-    padding-top: calc(5.5rem + 25px);
+    padding-top: calc(5.5rem + 25px + var(--partner-banner-height));
   }
 }
 
@@ -812,6 +821,19 @@ section {
   line-height: 1.3;
 }
 
+.portfolio-subtitle {
+  display: inline-block;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  color: var(--gray-500);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.portfolio-subtitle:hover {
+  color: var(--primary);
+}
+
 .portfolio-desc {
   margin-bottom: 1.5rem;
   flex: 1;
@@ -1140,6 +1162,7 @@ section {
   }
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-left: 0;
   }
   .footer-bottom {
     grid-template-columns: 1fr;
@@ -1154,7 +1177,7 @@ section {
 
 @media (max-width: 520px) {
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

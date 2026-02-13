@@ -16,6 +16,11 @@ if (!app) {
 // Single function to initialize entire app
 function initializeApp() {
   app.innerHTML = `
+  <div class="partner-banner" role="note" aria-label="Marketing partner link">
+    For all your marketing needs, visit
+    <a class="partner-banner__link" href="https://www.getsparqd.com" target="_blank" rel="noopener">www.getsparqd.com</a>
+  </div>
+
   <header class="portfolio-header">
     <nav id="main-nav" class="nav-container" aria-label="Main navigation">
       <a href="#hero" class="nav-link">Home</a>
@@ -25,10 +30,6 @@ function initializeApp() {
       <a href="#portfolio" class="nav-link">Portfolio</a>
       <a href="#contact-form" class="nav-link">Contact</a>
     </nav>
-    <div class="partner-banner" role="note" aria-label="Partnership announcement">
-      In partnership with SparQ Digital Media Marketing Company —
-      <a class="partner-banner__link" href="https://www.getsparqd.com" target="_blank" rel="noopener">www.getsparqd.com</a>
-    </div>
   </header>
 
   <section id="hero" class="hero-section">
@@ -367,6 +368,29 @@ function initializeApp() {
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
             <picture>
+              <img src="/projects/bbm.png" alt="Black Bridge Mindset" loading="lazy" />
+            </picture>
+          <div class="portfolio-overlay">
+            <div class="portfolio-tech">
+              <span>Business</span>
+              <span>Brand</span>
+              <span>SEO</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <h3>Black Bridge Mindset</h3>
+          <a class="portfolio-subtitle" href="https://blackbridgemindset.com/" target="_blank" rel="noopener">blackbridgemindset.com</a>
+          <p class="portfolio-desc">Business website built to establish trust, clearly communicate the offer, and convert visitors into booked calls.</p>
+          <div class="portfolio-actions">
+            <a href="https://blackbridgemindset.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-card" data-type="webpages">
+        <div class="portfolio-image">
+            <picture>
               <source srcset="/projects/life_prep_academy_foundation.webp" type="image/webp">
               <img src="/projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation" loading="lazy" />
             </picture>
@@ -380,6 +404,7 @@ function initializeApp() {
         </div>
         <div class="portfolio-content">
           <h3>Life Prep Academy Foundation</h3>
+          <a class="portfolio-subtitle" href="https://www.lifeprepacademyfoundation.com/" target="_blank" rel="noopener">lifeprepacademyfoundation.com</a>
           <p class="portfolio-desc">Organization website designed to communicate mission, improve trust, and make it easy to engage with programs.</p>
           <div class="portfolio-actions">
             <a href="https://www.lifeprepacademyfoundation.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
@@ -648,7 +673,7 @@ function initializeApp() {
 
       <div class="footer-bottom">
         <a class="footer-backtotop" href="#hero">Back to top ↑</a>
-        <div class="footer-partner">In partnership with <a href="https://www.getsparqd.com" target="_blank" rel="noopener">SparQ Digital Media Marketing Company</a></div>
+        <div class="footer-partner">Looking for marketing? We can help with that! <a href="https://www.getsparqd.com" target="_blank" rel="noopener">SparQ Digital Media Marketing Company</a></div>
         <div class="footer-legal">© <span id="footer-year">2026</span> Harold Ligon</div>
       </div>
     </div>
