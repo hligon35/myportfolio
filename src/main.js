@@ -1204,7 +1204,9 @@ function initModalFeatures() {
     submitBtn.innerHTML = '<span class="loading-spinner"></span> Submitting...';
     
     const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    const endpoint = isLocal ? 'http://localhost:8787/api/forms' : 'https://hldesignedit.com/api/forms';
+    const endpoint = isLocal
+      ? 'http://127.0.0.1:8787/api/forms'
+      : 'https://hldesignedit.hligon.workers.dev/api/forms';
 
     try {
       const formData = Object.fromEntries(new FormData(form).entries());
