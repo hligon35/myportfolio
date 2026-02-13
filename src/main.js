@@ -1134,8 +1134,9 @@ function initModalFeatures() {
   const cancelBtn = getCachedElement('modal-cancel');
   const form = getCachedElement('project-form');
   const otherInput = getCachedElement('other-project-type');
+  const submitBtn = modal?.querySelector('.modal-btn-primary');
   
-  if (!modal || !projectBtn || !form) return;
+  if (!modal || !projectBtn || !form || !submitBtn) return;
   
   const closeModal = () => {
     modal.style.display = 'none';
@@ -1194,11 +1195,9 @@ function initModalFeatures() {
   // Form submission
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
-    const submitBtn = form.querySelector('.modal-btn-primary');
-    if (!submitBtn) return;
-    
+
     const originalHTML = submitBtn.innerHTML;
+    const originalBackground = submitBtn.style.background;
     
     submitBtn.disabled = true;
     submitBtn.innerHTML = '<span class="loading-spinner"></span> Submitting...';
@@ -1234,7 +1233,7 @@ function initModalFeatures() {
         alert('Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours.');
         closeModal();
         submitBtn.innerHTML = originalHTML;
-        submitBtn.style.background = '';
+        submitBtn.style.background = originalBackground;
         submitBtn.disabled = false;
       }, 800);
 
@@ -1244,7 +1243,7 @@ function initModalFeatures() {
 
       setTimeout(() => {
         submitBtn.innerHTML = originalHTML;
-        submitBtn.style.background = '';
+        submitBtn.style.background = originalBackground;
         submitBtn.disabled = false;
       }, 2500);
     }
