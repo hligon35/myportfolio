@@ -1,6 +1,8 @@
 // Import CSS for Vite
 import './style.css';
 
+import hldiLogoUrl from '../hldiLogo.png?url';
+
 console.log('JavaScript loading...');
 
 // Cache DOM elements and initialize app
@@ -17,19 +19,45 @@ if (!app) {
 function initializeApp() {
   app.innerHTML = `
   <div class="partner-banner" role="note" aria-label="Marketing partner link">
-    For all your marketing needs, visit
-    <a class="partner-banner__link" href="https://www.getsparqd.com" target="_blank" rel="noopener">www.getsparqd.com</a>
+    <div class="partner-banner__content">
+      For all your marketing needs, visit
+      <a class="partner-banner__link" href="https://www.getsparqd.com" target="_blank" rel="noopener">www.getsparqd.com</a>
+    </div>
+  </div>
+
+  <div class="header-logo" aria-label="Site logo">
+    <div class="header-logo__inner">
+      <a class="header-logo__link" href="#hero" aria-label="Go to top">
+        <img class="header-logo__img" src="${hldiLogoUrl}" alt="HLDI logo" loading="eager" decoding="async" />
+      </a>
+    </div>
   </div>
 
   <header class="portfolio-header">
     <nav id="main-nav" class="nav-container" aria-label="Main navigation">
-      <a href="#hero" class="nav-link">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#experience" class="nav-link">Skills</a>
-      <a href="#portfolio" class="nav-link">Portfolio</a>
-      <a href="#contact-form" class="nav-link">Contact</a>
+      <div id="mobile-nav" class="nav-links">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#experience" class="nav-link">Skills</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#contact-form" class="nav-link">Contact</a>
+      </div>
     </nav>
+
+    <button
+      class="nav-hamburger"
+      type="button"
+      aria-label="Open menu"
+      aria-controls="mobile-nav"
+      aria-expanded="false"
+    >
+      <span class="nav-hamburger__lines" aria-hidden="true">
+        <span class="nav-hamburger__line"></span>
+        <span class="nav-hamburger__line"></span>
+        <span class="nav-hamburger__line"></span>
+      </span>
+    </button>
   </header>
 
   <section id="hero" class="hero-section">
@@ -942,6 +970,7 @@ function initializeFeatures() {
   requestAnimationFrame(() => {
     initPortfolioFilters();
     initSmoothScrolling();
+    initMobileNav();
   });
   
   // Defer heavy operations
@@ -1272,5 +1301,45 @@ function initModalFeatures() {
         submitBtn.disabled = false;
       }, 2500);
     }
+  });
+}
+
+function initMobileNav() {
+  const header = document.querySelector('.portfolio-header');
+  if (!header) return;
+
+  const toggleButton = header.querySelector('.nav-hamburger');
+  const navLinks = document.getElementById('mobile-nav');
+  if (!toggleButton || !navLinks) return;
+
+  const setExpanded = (isOpen) => {
+    header.classList.toggle('is-menu-open', isOpen);
+    toggleButton.setAttribute('aria-expanded', String(isOpen));
+    toggleButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+  };
+
+  const isOpen = () => header.classList.contains('is-menu-open');
+
+  toggleButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    setExpanded(!isOpen());
+  });
+
+  // Close on link click
+  navLinks.addEventListener('click', (e) => {
+    const link = e.target.closest('a');
+    if (link) setExpanded(false);
+  });
+
+  // Close on outside click
+  document.addEventListener('click', (e) => {
+    if (!isOpen()) return;
+    const clickedInsideHeader = Boolean(e.target.closest('.portfolio-header'));
+    if (!clickedInsideHeader) setExpanded(false);
+  });
+
+  // Close on escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen()) setExpanded(false);
   });
 }
