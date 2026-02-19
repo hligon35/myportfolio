@@ -4,57 +4,106 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/hldiLogo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harold Ligon | Full-Stack Developer (Indianapolis, IN & Paducah, KY)</title>
-    <meta name="description" content="Full-Stack Developer & UI/UX Designer serving Indianapolis, IN and Paducah, KY. I build web applications, business websites, and digital solutions. View my portfolio of projects including PizzaByU, Cedar & Gold Lebanese, and more.">
-    <meta name="keywords" content="full-stack developer Indianapolis, full-stack developer Paducah, web developer Indianapolis IN, web developer Paducah KY, UI/UX designer, web applications, business websites, portfolio, Harold Ligon">
+    <title>Harold Ligon | Full-Stack Developer & UI/UX Designer</title>
+    <meta name="description" content="Full-stack developer and UI/UX designer serving Indianapolis, IN, Paducah, KY & Baltimore, MD. Web apps and business websites—view projects and request a quote.">
     <meta name="author" content="Harold Ligon">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://hldesignedit.com/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hldesignedit.com/">
-    <meta property="og:title" content="Harold Ligon - Full-Stack Developer (Indianapolis, IN & Paducah, KY)">
-    <meta property="og:description" content="Full-Stack Developer & UI/UX Designer serving Indianapolis, IN and Paducah, KY. View my portfolio of web applications and design projects.">
+    <meta property="og:site_name" content="Harold Ligon Design & Development">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Harold Ligon | Full-Stack Developer & UI/UX Designer">
+    <meta property="og:description" content="Full-stack developer and UI/UX designer serving Indianapolis, IN, Paducah, KY & Baltimore, MD. Web apps, business websites, and conversion-focused design.">
     <meta property="og:image" content="https://hldesignedit.com/projects/pizzabyu.png">
+    <meta property="og:image:alt" content="PizzaByU web application project screenshot">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://hldesignedit.com/">
-    <meta property="twitter:title" content="Harold Ligon - Full-Stack Developer (Indianapolis, IN & Paducah, KY)">
-    <meta property="twitter:description" content="Full-Stack Developer & UI/UX Designer serving Indianapolis, IN and Paducah, KY. View my portfolio of web applications and design projects.">
-    <meta property="twitter:image" content="https://hldesignedit.com/projects/pizzabyu.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://hldesignedit.com/">
+    <meta name="twitter:title" content="Harold Ligon | Full-Stack Developer & UI/UX Designer">
+    <meta name="twitter:description" content="Full-stack developer and UI/UX designer serving Indianapolis, IN, Paducah, KY & Baltimore, MD. Web apps, business websites, and conversion-focused design.">
+    <meta name="twitter:image" content="https://hldesignedit.com/projects/pizzabyu.png">
+    <meta name="twitter:image:alt" content="PizzaByU web application project screenshot">
 
     <!-- Schema.org for Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Harold Ligon Design & Development",
-      "url": "https://hldesignedit.com/",
-      "logo": "https://hldesignedit.com/vite.svg",
-      "description": "Full-Stack Developer and UI/UX Designer creating digital solutions for businesses and nonprofits.",
-      "founder": {
-        "@type": "Person",
-        "name": "Harold Ligon"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "email": "info@hldesignedit.com"
-      },
-      "sameAs": [
-        "https://github.com/hligon35",
-        "https://www.getsparqd.com"
-      ],
-      "areaServed": [
+      "@graph": [
         {
-          "@type": "Place",
-          "name": "Indianapolis, IN"
+          "@type": "Organization",
+          "@id": "https://hldesignedit.com/#organization",
+          "name": "Harold Ligon Design & Development",
+          "url": "https://hldesignedit.com/",
+          "logo": "https://hldesignedit.com/hldiLogo.png",
+          "description": "Full-stack development and UI/UX design services creating digital solutions for businesses and nonprofits.",
+          "email": "info@hldesignedit.com",
+          "founder": { "@id": "https://hldesignedit.com/#harold-ligon" },
+          "sameAs": [
+            "https://github.com/hligon35",
+            "https://www.getsparqd.com"
+          ],
+          "areaServed": [
+            { "@type": "Place", "name": "Indianapolis, IN" },
+            { "@type": "Place", "name": "Paducah, KY" },
+            { "@type": "Place", "name": "Baltimore, MD" }
+          ]
         },
         {
-          "@type": "Place",
-          "name": "Paducah, KY"
+          "@type": ["LocalBusiness", "ProfessionalService"],
+          "@id": "https://hldesignedit.com/#service",
+          "name": "Harold Ligon Design & Development",
+          "url": "https://hldesignedit.com/",
+          "image": "https://hldesignedit.com/hldiLogo.png",
+          "logo": "https://hldesignedit.com/hldiLogo.png",
+          "email": "info@hldesignedit.com",
+          "provider": { "@id": "https://hldesignedit.com/#organization" },
+          "areaServed": [
+            { "@type": "Place", "name": "Indianapolis, IN" },
+            { "@type": "Place", "name": "Paducah, KY" },
+            { "@type": "Place", "name": "Baltimore, MD" }
+          ],
+          "serviceType": [
+            "Full-stack web development",
+            "UI/UX design",
+            "SEO and performance optimization"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://hldesignedit.com/#harold-ligon",
+          "name": "Harold Ligon",
+          "url": "https://hldesignedit.com/",
+          "jobTitle": ["Full-Stack Developer", "UI/UX Designer"],
+          "worksFor": { "@id": "https://hldesignedit.com/#organization" },
+          "sameAs": [
+            "https://github.com/hligon35"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://hldesignedit.com/#website",
+          "url": "https://hldesignedit.com/",
+          "name": "Harold Ligon | Full-Stack Developer & UI/UX Designer",
+          "publisher": { "@id": "https://hldesignedit.com/#organization" },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://hldesignedit.com/#webpage",
+          "url": "https://hldesignedit.com/",
+          "name": "Harold Ligon | Full-Stack Developer & UI/UX Designer",
+          "description": "Full-stack developer and UI/UX designer serving Indianapolis, IN, Paducah, KY & Baltimore, MD. Web apps and business websites—view projects and request a quote.",
+          "isPartOf": { "@id": "https://hldesignedit.com/#website" },
+          "about": { "@id": "https://hldesignedit.com/#harold-ligon" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://hldesignedit.com/projects/pizzabyu.png"
+          },
+          "inLanguage": "en-US"
         }
       ]
     }
@@ -64,7 +113,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://hldesignedit.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self' https://hldesignedit.com https://hldesignedit.hligon.workers.dev http://127.0.0.1:8787 http://localhost:8787; frame-ancestors 'none';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-    <script type="module" crossorigin src="/assets/index-DtUkHsrS.js"></script>
+    <script type="module" crossorigin src="/assets/index-CSF61p-5.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-FFiDLKVT.css">
   </head>
   <body>

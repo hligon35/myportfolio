@@ -22,7 +22,7 @@
         <a href="#services" class="nav-link">Services</a>
         <a href="#experience" class="nav-link">Skills</a>
         <a href="#portfolio" class="nav-link">Portfolio</a>
-        <a href="#contact-form" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
     </nav>
 
@@ -169,27 +169,27 @@
         <h3>Frontend Development</h3>
         <div class="tech-grid">
           <div class="tech-item">
-            <img src="skills/react.svg" alt="React" loading="lazy" />
+            <img src="skills/react.svg" alt="React logo" loading="lazy" />
             <span>React</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="skills/typescript.svg" alt="TypeScript" loading="lazy" />
+            <img src="skills/typescript.svg" alt="TypeScript logo" loading="lazy" />
             <span>TypeScript</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="skills/javascript.svg" alt="JavaScript" loading="lazy" />
+            <img src="skills/javascript.svg" alt="JavaScript logo" loading="lazy" />
             <span>JavaScript</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="skills/css3.svg" alt="CSS" loading="lazy" />
+            <img src="skills/css3.svg" alt="CSS3 logo" loading="lazy" />
             <span>CSS3</span>
             <div class="proficiency">Expert</div>
           </div>
           <div class="tech-item">
-            <img src="skills/html5.svg" alt="HTML" loading="lazy" />
+            <img src="skills/html5.svg" alt="HTML5 logo" loading="lazy" />
             <span>HTML5</span>
             <div class="proficiency">Expert</div>
           </div>
@@ -201,13 +201,13 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/node.webp" type="image/webp">
-              <img src="tools/node.png" alt="Node.js" loading="lazy" />
+              <img src="tools/node.png" alt="Node.js logo" loading="lazy" />
             </picture>
             <span>Node.js</span>
             <div class="proficiency">Advanced</div>
           </div>
           <div class="tech-item">
-            <img src="skills/python.svg" alt="Python" loading="lazy" />
+            <img src="skills/python.svg" alt="Python logo" loading="lazy" />
             <span>Python</span>
             <div class="proficiency">Intermediate</div>
           </div>
@@ -219,7 +219,7 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/figma.webp" type="image/webp">
-              <img src="tools/figma.png" alt="Figma" loading="lazy" />
+              <img src="tools/figma.png" alt="Figma logo" loading="lazy" />
             </picture>
             <span>Figma</span>
             <div class="proficiency">Expert</div>
@@ -227,7 +227,7 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/photoshop.webp" type="image/webp">
-              <img src="tools/photoshop.png" alt="Photoshop" loading="lazy" />
+              <img src="tools/photoshop.png" alt="Adobe Photoshop logo" loading="lazy" />
             </picture>
             <span>Photoshop</span>
             <div class="proficiency">Advanced</div>
@@ -235,7 +235,7 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/vsCode.webp" type="image/webp">
-              <img src="tools/vsCode.png" alt="VS Code" loading="lazy" />
+              <img src="tools/vsCode.png" alt="Visual Studio Code logo" loading="lazy" />
             </picture>
             <span>VS Code</span>
             <div class="proficiency">Expert</div>
@@ -243,7 +243,7 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/gitHub.webp" type="image/webp">
-              <img src="tools/gitHub.png" alt="GitHub" loading="lazy" />
+              <img src="tools/gitHub.png" alt="GitHub logo" loading="lazy" />
             </picture>
             <span>Git/GitHub</span>
             <div class="proficiency">Advanced</div>
@@ -251,7 +251,7 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/canva.webp" type="image/webp">
-              <img src="tools/canva.png" alt="Canva" loading="lazy" />
+              <img src="tools/canva.png" alt="Canva logo" loading="lazy" />
             </picture>
             <span>Canva</span>
             <div class="proficiency">Advanced</div>
@@ -259,7 +259,7 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/excel.webp" type="image/webp">
-              <img src="tools/excel.png" alt="Excel" loading="lazy" />
+              <img src="tools/excel.png" alt="Microsoft Excel logo" loading="lazy" />
             </picture>
             <span>Excel</span>
             <div class="proficiency">Intermediate</div>
@@ -267,7 +267,7 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/godot.webp" type="image/webp">
-              <img src="tools/godot.png" alt="Godot" loading="lazy" />
+              <img src="tools/godot.png" alt="Godot Engine logo" loading="lazy" />
             </picture>
             <span>Godot</span>
             <div class="proficiency">Intermediate</div>
@@ -275,7 +275,7 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/powerPoint.webp" type="image/webp">
-              <img src="tools/powerPoint.png" alt="PowerPoint" loading="lazy" />
+              <img src="tools/powerPoint.png" alt="Microsoft PowerPoint logo" loading="lazy" />
             </picture>
             <span>PowerPoint</span>
             <div class="proficiency">Intermediate</div>
@@ -283,7 +283,7 @@
           <div class="tech-item">
             <picture>
               <source srcset="tools/wordPress.webp" type="image/webp">
-              <img src="tools/wordPress.png" alt="WordPress" loading="lazy" />
+              <img src="tools/wordPress.png" alt="WordPress logo" loading="lazy" />
             </picture>
             <span>WordPress</span>
             <div class="proficiency">Intermediate</div>
@@ -309,7 +309,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/pizzabyu.webp" type="image/webp">
-              <img src="/projects/pizzabyu.png" alt="PizzaByU" loading="lazy" />
+              <img src="/projects/pizzabyu.png" alt="PizzaByU pizza builder web app screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -332,7 +332,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/cedar&gold_lebanese.webp" type="image/webp">
-              <img src="/projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese" loading="lazy" />
+              <img src="/projects/cedar&gold_lebanese.png" alt="Cedar & Gold Lebanese restaurant website screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -343,7 +343,7 @@
           </div>
         </div>
         <div class="portfolio-content">
-          <h3>Cedar & Gold Lebanese Restaraunt Website</h3>
+          <h3>Cedar & Gold Lebanese Restaurant Website</h3>
           <p class="portfolio-desc">Restaurant marketing site with menu, about/contact pages, and a mobile-first layout for quick browsing.</p>
           <div class="portfolio-actions">
             <a href="https://hligon35.github.io/cedarngoldlebanese/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
@@ -355,7 +355,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/luxurious_cakes.webp" type="image/webp">
-              <img src="/projects/luxurious_cakes.png" alt="Luxurious Cakes Indy" loading="lazy" />
+              <img src="/projects/luxurious_cakes.png" alt="Luxurious Cakes Indy business website screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -377,7 +377,7 @@
       <div class="portfolio-card" data-type="webpages">
         <div class="portfolio-image">
             <picture>
-              <img src="/projects/bbm.png" alt="Black Bridge Mindset" loading="lazy" />
+              <img src="/projects/bbm.png" alt="Black Bridge Mindset business website screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -389,7 +389,7 @@
         </div>
         <div class="portfolio-content">
           <h3>Black Bridge Mindset</h3>
-          <a class="portfolio-subtitle" href="https://blackbridgemindset.com/" target="_blank" rel="noopener">blackbridgemindset.com</a>
+          <a class="portfolio-subtitle" href="https://blackbridgemindset.com/" target="_blank" rel="noopener" aria-label="Visit Black Bridge Mindset website">blackbridgemindset.com</a>
           <p class="portfolio-desc">Business website built to establish trust, clearly communicate the offer, and convert visitors into booked calls.</p>
           <div class="portfolio-actions">
             <a href="https://blackbridgemindset.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
@@ -401,7 +401,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/life_prep_academy_foundation.webp" type="image/webp">
-              <img src="/projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation" loading="lazy" />
+              <img src="/projects/life_prep_academy_foundation.png" alt="Life Prep Academy Foundation nonprofit website screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -413,7 +413,7 @@
         </div>
         <div class="portfolio-content">
           <h3>Life Prep Academy Foundation</h3>
-          <a class="portfolio-subtitle" href="https://www.lifeprepacademyfoundation.com/" target="_blank" rel="noopener">lifeprepacademyfoundation.com</a>
+          <a class="portfolio-subtitle" href="https://www.lifeprepacademyfoundation.com/" target="_blank" rel="noopener" aria-label="Visit Life Prep Academy Foundation website">lifeprepacademyfoundation.com</a>
           <p class="portfolio-desc">Organization website designed to communicate mission, improve trust, and make it easy to engage with programs.</p>
           <div class="portfolio-actions">
             <a href="https://www.lifeprepacademyfoundation.com/" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
@@ -425,7 +425,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/coinDash.webp" type="image/webp">
-              <img src="/projects/coinDash.png" alt="Coin Dash" loading="lazy" />
+              <img src="/projects/coinDash.png" alt="Coin Dash Godot web game screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -448,7 +448,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/infiniteFlyer.webp" type="image/webp">
-              <img src="/projects/infiniteFlyer.png" alt="Infinite Flyer" loading="lazy" />
+              <img src="/projects/infiniteFlyer.png" alt="Infinite Flyer Godot web game screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -471,7 +471,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/bearVoice.webp" type="image/webp">
-              <img src="/projects/bearVoice.png" alt="Bear Voice" loading="lazy" />
+              <img src="/projects/bearVoice.png" alt="The Bear Voice voiceover portfolio website screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -494,7 +494,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/jungleJumper.webp" type="image/webp">
-              <img src="/projects/jungleJumper.png" alt="Jungle Jumper" loading="lazy" />
+              <img src="/projects/jungleJumper.png" alt="Jungle Jumper platformer game screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -508,7 +508,7 @@
           <h3>Jungle Jumper</h3>
           <p class="portfolio-desc">Exciting platformer game with jungle adventures, challenging levels, and smooth web-based gameplay.</p>
           <div class="portfolio-actions">
-            <a href="#contact" class="btn btn-primary">Play Game</a>
+            <a href="#contact" class="btn btn-primary">Request Demo</a>
           </div>
         </div>
       </div>
@@ -517,7 +517,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/non-profit.webp" type="image/webp">
-              <img src="/projects/non-profit.png" alt="MMMBC" loading="lazy" />
+              <img src="/projects/non-profit.png" alt="MMMBC church website screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -540,7 +540,7 @@
         <div class="portfolio-image">
             <picture>
               <source srcset="/projects/space_rocks.webp" type="image/webp">
-              <img src="/projects/space_rocks.png" alt="Space Rocks" loading="lazy" />
+              <img src="/projects/space_rocks.png" alt="Space Rocks asteroid shooter web game screenshot" loading="lazy" />
             </picture>
           <div class="portfolio-overlay">
             <div class="portfolio-tech">
@@ -929,4 +929,4 @@
         </div>
       </div>
     </div>
-  </div>`,S()}let y={};function m(e){return y[e]||(y[e]=document.getElementById(e)),y[e]}function S(){requestAnimationFrame(()=>{P(),q(),C()}),setTimeout(()=>{L(),D(),I(),E(),j()},100)}function j(){const e=document.getElementById("basic-contact-form");if(!e)return;const s=()=>window.location.hostname==="localhost"||window.location.hostname==="127.0.0.1"?"http://127.0.0.1:8787/api/forms":"https://hldesignedit.hligon.workers.dev/api/forms",r=document.getElementById("basic-contact-status"),o=document.getElementById("contact-name"),t=document.getElementById("contact-email"),a=document.getElementById("contact-message"),i=c=>{r&&(r.textContent=c)};e.addEventListener("submit",c=>{c.preventDefault();const d=new FormData(e),f=String(d.get("name")||"").trim(),l=String(d.get("email")||"").trim(),p=String(d.get("phone")||"").trim(),v=String(d.get("subject")||"").trim(),h=String(d.get("message")||"").trim();if(!f){i("Please enter your name."),o&&o.focus();return}if(!l||!/^\S+@\S+\.\S+$/.test(l)){i("Please enter a valid email address."),t&&t.focus();return}if(!h){i("Please enter a message."),a&&a.focus();return}const b=s(),u=e.querySelector('button[type="submit"]');u&&(u.disabled=!0),i("Sending..."),fetch(b,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({formType:"contact",honeypot:String(d.get("company")||""),pageUrl:window.location.href,data:{name:f,email:l,phone:p,subject:v,message:h}})}).then(async g=>{const n=await g.json().catch(()=>null);if(!g.ok||!(n!=null&&n.ok))throw new Error((n==null?void 0:n.error)||"Unable to send message.");i("Message sent! I will reply within 24 hours."),e.reset()}).catch(()=>{i("Could not send right now. Please email info@hldesignedit.com.")}).finally(()=>{u&&(u.disabled=!1)})})}function L(){const e=m("footer-year");e&&(e.textContent=new Date().getFullYear().toString())}function P(){const e=document.querySelectorAll(".filter-btn"),s=document.querySelectorAll(".portfolio-card");!e.length||!s.length||document.querySelector(".portfolio-filters").addEventListener("click",r=>{if(!r.target.classList.contains("filter-btn"))return;e.forEach(t=>t.classList.remove("active")),r.target.classList.add("active");const o=r.target.dataset.filter.trim().toLowerCase();requestAnimationFrame(()=>{s.forEach(t=>{const a=(t.dataset.type||"").trim().toLowerCase(),i=o==="all"||a===o;t.style.display=i?"":"none"})})},{passive:!0})}function q(){document.addEventListener("click",e=>{const s=e.target.closest('a[href^="#"]');if(!s)return;e.preventDefault();const r=s.getAttribute("href"),o=document.querySelector(r);if(o){const i=o.offsetTop-80;window.scrollTo({top:i,behavior:"smooth"})}},{passive:!1})}function D(){const e=m("greeting-text");if(!e)return;const s=["Hola","Bonjour","Ciao","こんにちは","你好","Hello"];let r=0;const o=()=>{e.style.opacity="0",setTimeout(()=>{e.textContent=s[r],e.style.opacity="1",r=(r+1)%s.length},200)};e.style.transition="opacity 0.2s ease",setTimeout(()=>{o(),setInterval(o,3e3)},2e3)}function I(){const e=document.querySelector(".portfolio-header");if(!e)return;let s=!1;const r=()=>{const o=window.scrollY>100;e.style.background=o?"rgba(255, 255, 255, 0.98)":"rgba(255, 255, 255, 0.95)",e.style.boxShadow=o?"0 4px 6px -1px rgba(0, 0, 0, 0.1)":"",s=!1};window.addEventListener("scroll",()=>{s||(requestAnimationFrame(r),s=!0)},{passive:!0})}function E(){const e=m("project-modal"),s=m("project-request-btn"),r=m("modal-close"),o=m("modal-cancel"),t=m("project-form"),a=m("other-project-type"),i=e==null?void 0:e.querySelector(".modal-btn-primary");if(!e||!s||!t||!i)return;const c=()=>{e.style.display="none",document.body.style.overflow="auto",t.reset(),a&&a.classList.remove("active")};s.addEventListener("click",l=>{l.preventDefault(),e.style.display="flex",document.body.style.overflow="hidden"}),r&&r.addEventListener("click",c),o&&o.addEventListener("click",c),e.addEventListener("click",l=>{l.target===e&&c()}),document.addEventListener("keydown",l=>{l.key==="Escape"&&e.style.display==="flex"&&c()}),t.addEventListener("change",l=>{if(l.target.name==="project-type"){const p=l.target.value==="other"&&l.target.checked;if(a){a.classList.toggle("active",p);const v=a.querySelector("input");v&&(v.required=p,p||(v.value=""))}}},{passive:!0});const d=t.querySelector('textarea[name="finalNotes"]'),f=t.querySelector(".char-counter");d&&f&&d.addEventListener("input",()=>{const l=d.value.length;f.textContent=`${l} / 1000 characters`,f.classList.toggle("warning",l>800)},{passive:!0}),t.addEventListener("submit",async l=>{l.preventDefault();const p=i.innerHTML,v=i.style.background;i.disabled=!0,i.innerHTML='<span class="loading-spinner"></span> Submitting...';const b=window.location.hostname==="localhost"||window.location.hostname==="127.0.0.1"?"http://127.0.0.1:8787/api/forms":"https://hldesignedit.hligon.workers.dev/api/forms";try{const u=Object.fromEntries(new FormData(t).entries()),g=await fetch(b,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({formType:"project",honeypot:String(u.company||""),pageUrl:window.location.href,data:u})}),n=await g.json().catch(()=>null);if(!g.ok||!(n!=null&&n.ok))throw new Error((n==null?void 0:n.error)||"Unable to submit request.");i.innerHTML="✓ Request Submitted!",i.style.background="linear-gradient(135deg, #059669, #10b981)",setTimeout(()=>{alert("Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours."),c(),i.innerHTML=p,i.style.background=v,i.disabled=!1},800)}catch{i.innerHTML="Error - Please Try Again",i.style.background="linear-gradient(135deg, #dc2626, #ef4444)",setTimeout(()=>{i.innerHTML=p,i.style.background=v,i.disabled=!1},2500)}})}function C(){const e=document.querySelector(".portfolio-header");if(!e)return;const s=e.querySelector(".nav-hamburger"),r=document.getElementById("mobile-nav");if(!s||!r)return;const o=a=>{e.classList.toggle("is-menu-open",a),s.setAttribute("aria-expanded",String(a)),s.setAttribute("aria-label",a?"Close menu":"Open menu")},t=()=>e.classList.contains("is-menu-open");s.addEventListener("click",a=>{a.preventDefault(),o(!t())}),r.addEventListener("click",a=>{a.target.closest("a")&&o(!1)}),document.addEventListener("click",a=>{if(!t())return;!!a.target.closest(".portfolio-header")||o(!1)}),document.addEventListener("keydown",a=>{a.key==="Escape"&&t()&&o(!1)})}
+  </div>`,S()}let y={};function m(e){return y[e]||(y[e]=document.getElementById(e)),y[e]}function S(){requestAnimationFrame(()=>{P(),q(),C()}),setTimeout(()=>{L(),D(),E(),I(),j()},100)}function j(){const e=document.getElementById("basic-contact-form");if(!e)return;const s=()=>window.location.hostname==="localhost"||window.location.hostname==="127.0.0.1"?"http://127.0.0.1:8787/api/forms":"https://hldesignedit.hligon.workers.dev/api/forms",r=document.getElementById("basic-contact-status"),o=document.getElementById("contact-name"),t=document.getElementById("contact-email"),a=document.getElementById("contact-message"),i=c=>{r&&(r.textContent=c)};e.addEventListener("submit",c=>{c.preventDefault();const d=new FormData(e),f=String(d.get("name")||"").trim(),l=String(d.get("email")||"").trim(),p=String(d.get("phone")||"").trim(),u=String(d.get("subject")||"").trim(),h=String(d.get("message")||"").trim();if(!f){i("Please enter your name."),o&&o.focus();return}if(!l||!/^\S+@\S+\.\S+$/.test(l)){i("Please enter a valid email address."),t&&t.focus();return}if(!h){i("Please enter a message."),a&&a.focus();return}const b=s(),v=e.querySelector('button[type="submit"]');v&&(v.disabled=!0),i("Sending..."),fetch(b,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({formType:"contact",honeypot:String(d.get("company")||""),pageUrl:window.location.href,data:{name:f,email:l,phone:p,subject:u,message:h}})}).then(async g=>{const n=await g.json().catch(()=>null);if(!g.ok||!(n!=null&&n.ok))throw new Error((n==null?void 0:n.error)||"Unable to send message.");i("Message sent! I will reply within 24 hours."),e.reset()}).catch(()=>{i("Could not send right now. Please email info@hldesignedit.com.")}).finally(()=>{v&&(v.disabled=!1)})})}function L(){const e=m("footer-year");e&&(e.textContent=new Date().getFullYear().toString())}function P(){const e=document.querySelectorAll(".filter-btn"),s=document.querySelectorAll(".portfolio-card");!e.length||!s.length||document.querySelector(".portfolio-filters").addEventListener("click",r=>{if(!r.target.classList.contains("filter-btn"))return;e.forEach(t=>t.classList.remove("active")),r.target.classList.add("active");const o=r.target.dataset.filter.trim().toLowerCase();requestAnimationFrame(()=>{s.forEach(t=>{const a=(t.dataset.type||"").trim().toLowerCase(),i=o==="all"||a===o;t.style.display=i?"":"none"})})},{passive:!0})}function q(){document.addEventListener("click",e=>{const s=e.target.closest('a[href^="#"]');if(!s)return;e.preventDefault();const r=s.getAttribute("href"),o=document.querySelector(r);if(o){const i=o.offsetTop-80;window.scrollTo({top:i,behavior:"smooth"})}},{passive:!1})}function D(){const e=m("greeting-text");if(!e)return;const s=["Hola","Bonjour","Ciao","こんにちは","你好","Hello"];let r=0;const o=()=>{e.style.opacity="0",setTimeout(()=>{e.textContent=s[r],e.style.opacity="1",r=(r+1)%s.length},200)};e.style.transition="opacity 0.2s ease",setTimeout(()=>{o(),setInterval(o,3e3)},2e3)}function E(){const e=document.querySelector(".portfolio-header");if(!e)return;let s=!1;const r=()=>{const o=window.scrollY>100;e.style.background=o?"rgba(255, 255, 255, 0.98)":"rgba(255, 255, 255, 0.95)",e.style.boxShadow=o?"0 4px 6px -1px rgba(0, 0, 0, 0.1)":"",s=!1};window.addEventListener("scroll",()=>{s||(requestAnimationFrame(r),s=!0)},{passive:!0})}function I(){const e=m("project-modal"),s=m("project-request-btn"),r=m("modal-close"),o=m("modal-cancel"),t=m("project-form"),a=m("other-project-type"),i=e==null?void 0:e.querySelector(".modal-btn-primary");if(!e||!s||!t||!i)return;const c=()=>{e.style.display="none",document.body.style.overflow="auto",t.reset(),a&&a.classList.remove("active")};s.addEventListener("click",l=>{l.preventDefault(),e.style.display="flex",document.body.style.overflow="hidden"}),r&&r.addEventListener("click",c),o&&o.addEventListener("click",c),e.addEventListener("click",l=>{l.target===e&&c()}),document.addEventListener("keydown",l=>{l.key==="Escape"&&e.style.display==="flex"&&c()}),t.addEventListener("change",l=>{if(l.target.name==="project-type"){const p=l.target.value==="other"&&l.target.checked;if(a){a.classList.toggle("active",p);const u=a.querySelector("input");u&&(u.required=p,p||(u.value=""))}}},{passive:!0});const d=t.querySelector('textarea[name="finalNotes"]'),f=t.querySelector(".char-counter");d&&f&&d.addEventListener("input",()=>{const l=d.value.length;f.textContent=`${l} / 1000 characters`,f.classList.toggle("warning",l>800)},{passive:!0}),t.addEventListener("submit",async l=>{l.preventDefault();const p=i.innerHTML,u=i.style.background;i.disabled=!0,i.innerHTML='<span class="loading-spinner"></span> Submitting...';const b=window.location.hostname==="localhost"||window.location.hostname==="127.0.0.1"?"http://127.0.0.1:8787/api/forms":"https://hldesignedit.hligon.workers.dev/api/forms";try{const v=Object.fromEntries(new FormData(t).entries()),g=await fetch(b,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({formType:"project",honeypot:String(v.company||""),pageUrl:window.location.href,data:v})}),n=await g.json().catch(()=>null);if(!g.ok||!(n!=null&&n.ok))throw new Error((n==null?void 0:n.error)||"Unable to submit request.");i.innerHTML="✓ Request Submitted!",i.style.background="linear-gradient(135deg, #059669, #10b981)",setTimeout(()=>{alert("Thank you! Your project request has been submitted successfully. I will review it and get back to you within 24 hours."),c(),i.innerHTML=p,i.style.background=u,i.disabled=!1},800)}catch{i.innerHTML="Error - Please Try Again",i.style.background="linear-gradient(135deg, #dc2626, #ef4444)",setTimeout(()=>{i.innerHTML=p,i.style.background=u,i.disabled=!1},2500)}})}function C(){const e=document.querySelector(".portfolio-header");if(!e)return;const s=e.querySelector(".nav-hamburger"),r=document.getElementById("mobile-nav");if(!s||!r)return;const o=a=>{e.classList.toggle("is-menu-open",a),s.setAttribute("aria-expanded",String(a)),s.setAttribute("aria-label",a?"Close menu":"Open menu")},t=()=>e.classList.contains("is-menu-open");s.addEventListener("click",a=>{a.preventDefault(),o(!t())}),r.addEventListener("click",a=>{a.target.closest("a")&&o(!1)}),document.addEventListener("click",a=>{if(!t())return;!!a.target.closest(".portfolio-header")||o(!1)}),document.addEventListener("keydown",a=>{a.key==="Escape"&&t()&&o(!1)})}
