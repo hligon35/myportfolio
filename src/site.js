@@ -89,6 +89,10 @@ const pages = {
           </div>
 
           <aside class="hero-panel" aria-label="Online presence outcomes preview">
+            <div class="hero-panel__card hero-panel__card--image">
+              <img class="section-visual__image" src="/hero image.png" alt="Website mockup shown on desktop and mobile screens" loading="eager" decoding="async" />
+              <p class="section-visual__caption">A stronger first impression on desktop and mobile helps the business look more established from the first visit.</p>
+            </div>
             <div class="hero-panel__card hero-panel__card--primary">
               <p class="hero-panel__label">Two ways businesses usually show up here</p>
               <ul class="hero-panel__list">
@@ -321,6 +325,17 @@ const pages = {
             </article>
           </div>
         </div>
+
+        <div class="section-visual section-visual--split">
+          <div class="section-visual__copy">
+            <p class="eyebrow">Conversion path</p>
+            <h2>Good website work should make the path from visitor to lead easier to follow.</h2>
+            <p>The site does not need more clutter. It needs a clearer message, a clearer next step, and fewer places for attention to die before someone contacts the business.</p>
+          </div>
+          <div class="section-visual__frame">
+            <img class="section-visual__image" src="/web conv.png" alt="Diagram showing a website conversion flow from visitor to website to lead form" loading="lazy" />
+          </div>
+        </div>
       </section>
 
       <section class="insight-section">
@@ -360,6 +375,16 @@ const pages = {
         </div>
         <div class="portfolio-grid">
           ${portfolioCards(portfolioItems, true)}
+        </div>
+        <div class="section-visual section-visual--split section-visual--proof">
+          <div class="section-visual__copy">
+            <p class="eyebrow">Before and after</p>
+            <h2>Fixing a weak site usually means making the offer, layout, and CTA easier to understand fast.</h2>
+            <p>The improvement is not just visual. It is about moving from vague messaging and cluttered pages to a site that looks more credible and guides people toward action.</p>
+          </div>
+          <div class="section-visual__frame">
+            <img class="section-visual__image" src="/beforevsafteer.png" alt="Before and after website comparison showing a weak layout transformed into a clearer business website" loading="lazy" />
+          </div>
         </div>
       </section>
       <section class="trust-section">
@@ -404,6 +429,14 @@ const pages = {
           <p class="eyebrow">How I think</p>
           <h2>A website should answer three questions fast.</h2>
         </div>
+        <div class="section-visual section-visual--split section-visual--compact">
+          <div class="section-visual__copy">
+            <p>The first part of strategy is usually diagnosis. Weak headlines, unclear calls to action, and confusing layouts are common because the page was never built around what the business actually needs the visitor to do.</p>
+          </div>
+          <div class="section-visual__frame">
+            <img class="section-visual__image" src="/web brkdwn.png" alt="Website critique graphic highlighting weak headline, unclear CTA, and confusing layout" loading="lazy" />
+          </div>
+        </div>
         <div class="process-grid process-grid--wide">
           <article class="process-card"><span class="process-number">01</span><h3>What does this business do?</h3><p>If that is not obvious immediately, the site is losing attention.</p></article>
           <article class="process-card"><span class="process-number">02</span><h3>Why should someone trust it?</h3><p>Layout, tone, proof, and structure all shape trust before a word is spoken.</p></article>
@@ -434,6 +467,10 @@ const pages = {
               <div class="contact-benefit"><strong>Best for:</strong><span>New website builds, online presence setup, redesigns, landing pages, and conversion cleanup.</span></div>
               <div class="contact-benefit"><strong>What to send:</strong><span>Business name, whether you need a new website or a fix, and what outcome you want from the site.</span></div>
               <div class="contact-benefit"><strong>Reply:</strong><span>I will review the request and respond by email.</span></div>
+            </div>
+            <div class="contact-visual">
+              <img class="section-visual__image" src="/hero image.png" alt="Mockup of a business website displayed on desktop and mobile" loading="lazy" />
+              <p class="section-visual__caption">The goal is simple: a website that looks established, works on every screen, and gives people a clear way to contact you.</p>
             </div>
           </div>
           <div class="basic-contact-card" aria-label="Website project form">
