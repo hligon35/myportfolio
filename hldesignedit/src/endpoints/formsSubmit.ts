@@ -192,28 +192,54 @@ export async function FormsSubmit(c: AppContext) {
 			const safeValue = escapeHtml(value).replaceAll("\n", "<br>");
 			return `
 				<tr>
-					<th style="text-align:left;vertical-align:top;padding:10px;border:1px solid #e5e7eb;background:#f9fafb;width:30%;">${safeLabel}</th>
-					<td style="padding:10px;border:1px solid #e5e7eb;width:70%;">${safeValue}</td>
+					<td style="padding:0 0 12px 0;">
+						<div style="padding:14px 16px;border:1px solid #e7e5e4;border-radius:14px;background:#ffffff;">
+							<div style="margin:0 0 6px 0;color:#9a3412;font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;">${safeLabel}</div>
+							<div style="color:#171717;font-size:14px;line-height:1.6;">${safeValue}</div>
+						</div>
+					</td>
 				</tr>`;
 		})
 		.join("");
 
 	const longValueHtml = escapeHtml(longValue).replaceAll("\n", "<br>");
 	const longLabelHtml = escapeHtml(longLabel);
+	const requestTypeLabel = isProject ? "Project Request" : "Contact Request";
+	const introCopy = isProject
+		? "A new website inquiry came in from HLDesignedIt. The details below are styled to mirror the site experience: clear, direct, and business-first."
+		: "A new contact message came in from HLDesignedIt. The details below keep the same tone as the site: clear, direct, and business-first.";
+	const replyToHtml = replyTo
+		? `<div style="margin-top:14px;padding:12px 14px;border-radius:12px;background:#fff7ed;border:1px solid #fdba74;color:#7c2d12;font-size:13px;line-height:1.5;"><strong style="color:#171717;">Reply-to:</strong> ${escapeHtml(replyTo)}</div>`
+		: "";
 
 	const html = `
-		<div style="font-family:Arial,Helvetica,sans-serif;color:#111827;line-height:1.4;">
-			<div style="padding:16px 18px;border:1px solid #e5e7eb;border-radius:12px;">
-				<h2 style="margin:0 0 6px 0;font-size:18px;">${escapeHtml(subject)}</h2>
-				<table role="presentation" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:100%;font-size:14px;">
-					${htmlRows || ""}
-					<tr>
-						<th colspan="2" style="text-align:left;vertical-align:top;padding:10px;border:1px solid #e5e7eb;background:#f9fafb;">${longLabelHtml}</th>
-					</tr>
-					<tr>
-						<td colspan="2" style="padding:10px;border:1px solid #e5e7eb;">${longValueHtml}</td>
-					</tr>
-				</table>
+		<div style="margin:0;padding:32px 18px;background:#fffaf2;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#171717;line-height:1.6;">
+			<div style="max-width:720px;margin:0 auto;">
+				<div style="margin-bottom:18px;padding:22px 24px;border-radius:22px;background:linear-gradient(135deg,#c2410c,#9a3412);color:#ffffff;box-shadow:0 18px 50px rgba(28,25,23,0.12);">
+					<div style="margin:0 0 10px 0;color:#ffedd5;font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;">${requestTypeLabel}</div>
+					<h1 style="margin:0 0 8px 0;font-family:Georgia,'Times New Roman',serif;font-size:28px;line-height:1.15;font-weight:700;color:#ffffff;">${escapeHtml(subject)}</h1>
+					<p style="margin:0;font-size:14px;line-height:1.7;color:#ffedd5;">${introCopy}</p>
+				</div>
+
+				<div style="padding:22px 24px;border:1px solid #e7e5e4;border-radius:22px;background:#fffcf8;box-shadow:0 10px 30px rgba(28,25,23,0.06);">
+					<h2 style="margin:0 0 16px 0;font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.2;color:#171717;">Request details</h2>
+					<table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;border-collapse:separate;font-size:14px;">
+						${htmlRows || ""}
+						<tr>
+							<td style="padding:4px 0 0 0;">
+								<div style="padding:16px;border:1px solid #e7e5e4;border-radius:16px;background:#ffffff;">
+									<div style="margin:0 0 8px 0;color:#9a3412;font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;">${longLabelHtml}</div>
+									<div style="color:#171717;font-size:14px;line-height:1.7;">${longValueHtml}</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					${replyToHtml}
+				</div>
+
+				<div style="padding:14px 8px 0;color:#6b7280;font-size:12px;line-height:1.6;text-align:center;">
+					Sent from HLDesignedIt form submissions.
+				</div>
 			</div>
 		</div>`;
 
