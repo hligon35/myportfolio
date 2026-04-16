@@ -22,9 +22,9 @@ const portfolioItems = [
     title: 'Black Bridge Mindset',
     image: '/projects/bbm.png',
     alt: 'Black Bridge Mindset website screenshot',
-    problem: 'The brand needed a site that looked credible and made the next step obvious.',
-    changed: 'Cleaner structure, stronger offer presentation, and a clearer booking path.',
-    result: 'Better trust on first visit and more qualified inquiries.',
+    problem: 'The business needed a site that looked established fast and made the offer easier to understand.',
+    changed: 'Clearer offer framing, stronger trust cues, and a booking path that felt more direct.',
+    impact: 'Stronger first impression, cleaner inquiry flow, and better support for qualified conversations.',
     href: 'https://blackbridgemindset.com/',
   },
   {
@@ -34,9 +34,9 @@ const portfolioItems = [
     image: '/projects/cedar&gold_lebanese.png',
     alt: 'Cedar and Gold Lebanese restaurant website screenshot',
     webp: '/projects/cedar&gold_lebanese.webp',
-    problem: 'Visitors needed fast access to the menu, brand story, and contact information.',
-    changed: 'Mobile-first layout, cleaner browsing flow, and business info placed where users actually look.',
-    result: 'Better discoverability and easier customer action from mobile traffic.',
+    problem: 'Visitors needed fast access to the menu, location details, and the basics that drive restaurant decisions.',
+    changed: 'Mobile-first layout, clearer page order, and business info placed where customers actually look first.',
+    impact: 'Better mobile usability, easier customer action, and a stronger first impression for new visitors.',
     href: 'https://hligon35.github.io/cedarngoldlebanese/',
   },
   {
@@ -46,9 +46,9 @@ const portfolioItems = [
     image: '/projects/luxurious_cakes.png',
     alt: 'Luxurious Cakes Indy website screenshot',
     webp: '/projects/luxurious_cakes.webp',
-    problem: 'The business needed a website that showcased products and supported inquiry-driven sales.',
-    changed: 'Better presentation of the offer, clearer browsing, and stronger local business visibility.',
-    result: 'More trust, better product discovery, and more quote requests.',
+    problem: 'The business needed a site that made the product line easier to browse and the brand easier to trust.',
+    changed: 'Sharper product presentation, clearer browsing flow, and stronger local business positioning.',
+    impact: 'Better first impression, easier inquiry flow, and stronger support for quote-driven sales.',
     href: 'https://www.luxuriouscakesindy.com/',
   },
   {
@@ -58,9 +58,9 @@ const portfolioItems = [
     image: '/projects/life_prep_academy_foundation.png',
     alt: 'Life Prep Academy Foundation website screenshot',
     webp: '/projects/life_prep_academy_foundation.webp',
-    problem: 'The organization needed a clearer way to explain its mission and move people toward engagement.',
+    problem: 'The organization needed a clearer way to explain its mission and make involvement feel easier.',
     changed: 'Cleaner content hierarchy, stronger trust signals, and simpler access to program information.',
-    result: 'More confidence from visitors and easier community engagement.',
+    impact: 'More clarity for visitors, stronger trust, and easier support for community engagement.',
     href: 'https://www.lifeprepacademyfoundation.com/',
   },
 ];
@@ -72,10 +72,10 @@ const pages = {
       <section class="hero-section hero-section--home">
         <div class="hero-shell">
           <div class="hero-copy">
-            <p class="eyebrow">Websites for business owners who need to get online or get better results</p>
+            <p class="eyebrow">For local service businesses, coaches, restaurants, nonprofits, and small brands</p>
             <h1>No website? I'll build it. Have one already? I'll fix it.</h1>
             <p class="hero-lead">
-              Whether you need a website built from scratch or your current one fixed, I help businesses create an online presence that actually works.
+              Whether you need a website built from scratch or your current one fixed, I help business owners create a site that looks credible and supports more calls, quote requests, bookings, and inquiries.
             </p>
             <div class="hero-actions">
               <a href="${contactRoutes.start}" class="cta-btn primary">Start Your Website</a>
@@ -83,8 +83,8 @@ const pages = {
             </div>
             <div class="hero-proof">
               <span>Built from scratch</span>
-              <span>Fixes weak conversion</span>
-              <span>Lead capture and visibility</span>
+              <span>Fixes weak inquiry flow</span>
+              <span>Supports calls, quotes, and bookings</span>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ const pages = {
               </ul>
             </div>
             <div class="hero-panel__card">
-              <p class="hero-panel__label">What should change after the work</p>
+              <p class="hero-panel__label">What the site should help support</p>
               <div class="hero-panel__stats">
                 <div>
                   <strong>Stronger credibility</strong>
@@ -119,6 +119,8 @@ const pages = {
       </section>
 
       ${userPathSection()}
+
+      ${bestFitSection()}
 
       <section class="problem-section">
         <div class="section-header">
@@ -151,65 +153,74 @@ const pages = {
       <section class="services-section">
         <div class="section-header">
           <p class="eyebrow">Services</p>
-          <h2>Services for getting online or fixing what is already live.</h2>
+          <h2>Services for businesses that need a stronger online home or a stronger website.</h2>
           <p class="section-subtitle">
-            Clear offers for business owners who either need a website from scratch or need their current one to stop wasting attention.
+            Clear offers for business owners who either need a website from scratch or need their current one to stop wasting attention, trust, and inquiries.
           </p>
         </div>
         <div class="services-grid">
           ${serviceCards()}
         </div>
-        <div class="section-cta">
-          <a href="${contactRoutes.quote}" class="cta-btn primary">Get a Quote</a>
+        <div class="section-cta section-cta--dual">
+          <a href="${contactRoutes.start}" class="cta-btn primary">Start Your Website</a>
+          <a href="${contactRoutes.fix}" class="cta-btn secondary">Fix My Website</a>
         </div>
       </section>
 
       <section class="about-section">
         <div class="about-layout">
           <div class="about-copy">
-            <p class="eyebrow">Why work with me</p>
-            <h2>I build websites that help businesses get online, get trusted, and get contacted.</h2>
+            <p class="eyebrow">Why business owners hire me</p>
+            <h2>I build websites that help the business look more credible and make customer action easier.</h2>
             <p>
               I am not here to sell you a trendy layout and hope for the best. I look at your website like a business tool.
               If you do not have one yet, the job is to get you online fast with something credible and usable. If you already have one, the job is to fix what is blocking trust and leads.
             </p>
             <p>
-              My approach is blunt on purpose: clarify the offer, tighten the structure, improve the user path, and make it easier for the right people to contact the business.
+              My approach is blunt on purpose: clarify the offer, tighten the structure, improve the user path, and make it easier for the right people to call, book, request a quote, or send an inquiry.
             </p>
           </div>
           <div class="about-points">
             <article class="about-point">
               <h3>Business-first thinking</h3>
-              <p>I care about what the site is supposed to produce: stronger credibility, better leads, and cleaner growth.</p>
+              <p>I care about what the site is supposed to support: stronger credibility, easier inquiry flow, and better-quality leads.</p>
             </article>
             <article class="about-point">
               <h3>Clear strategy</h3>
-              <p>I understand what needs to be on the site, what can wait, and why some businesses need a full build while others need a smarter rebuild.</p>
+              <p>I understand what needs to be on the page, what can wait, and how to match the website to the stage the business is actually in.</p>
             </article>
             <article class="about-point">
-              <h3>Straight communication</h3>
-              <p>No fluff, no mystery process, no endless jargon. You get direct recommendations and clean execution.</p>
+              <h3>Specific decisions</h3>
+              <p>No fluff, no generic digital-solution language, no endless jargon. You get direct recommendations and clean execution.</p>
             </article>
           </div>
         </div>
-        <div class="section-cta">
-          <a href="${contactRoutes.quote}" class="cta-btn secondary">Get a Quote</a>
+        <div class="trust-strip trust-strip--home">
+          <div class="trust-item"><strong>Best fit</strong><span>Local service businesses, coaches, consultants, restaurants, nonprofits, and small brands that need a stronger first impression.</span></div>
+          <div class="trust-item"><strong>What clients usually come for</strong><span>No website yet, weak redesigns, confusing messaging, poor mobile usability, and inquiry flow that is too weak.</span></div>
+          <div class="trust-item"><strong>What the work focuses on</strong><span>Clearer offers, stronger trust signals, easier customer action, and a cleaner path to calls, bookings, and quote requests.</span></div>
+          <div class="trust-item"><strong>What makes the approach different</strong><span>The work starts with the business need, not with design trends or generic filler copy.</span></div>
+        </div>
+        <div class="section-cta section-cta--dual">
+          <a href="${contactRoutes.start}" class="cta-btn primary">Start Your Website</a>
+          <a href="${contactRoutes.fix}" class="cta-btn secondary">Fix My Website</a>
         </div>
       </section>
 
       <section class="portfolio-section">
         <div class="section-header">
           <p class="eyebrow">Selected work</p>
-          <h2>Relevant website projects, framed around business impact.</h2>
+          <h2>Website work that improved clarity, trust, and customer action.</h2>
           <p class="section-subtitle">
-            The point is not to show random projects. The point is to show businesses the kind of website work that helps them sell better online.
+            These examples are here to show the kind of businesses I work with and the kind of improvements the website was built to support.
           </p>
         </div>
         <div class="portfolio-grid">
           ${portfolioCards(portfolioItems.slice(0, 3))}
         </div>
-        <div class="section-cta">
-          <a href="${contactRoutes.audit}" class="cta-btn primary">Book a Website Audit</a>
+        <div class="section-cta section-cta--dual">
+          <a href="${contactRoutes.fix}" class="cta-btn primary">Fix My Website</a>
+          <a href="${contactRoutes.start}" class="cta-btn secondary">Start Your Website</a>
         </div>
       </section>
 
@@ -339,7 +350,7 @@ const pages = {
   portfolio: {
     bodyClass: 'page-interior',
     main: `
-      ${pageHero('portfolio', 'Portfolio', 'Website work framed around business impact, not random screenshots.', 'These projects show the kind of site work that helps businesses look credible, communicate clearly, and move visitors toward action.')}
+      ${pageHero('portfolio', 'Portfolio', 'Website work framed around business impact, not random screenshots.', 'These projects show the kind of website work that helps service businesses, restaurants, and organizations look more established and make customer action easier.')}
       <section class="portfolio-section portfolio-section--interior">
         <div class="portfolio-filters">
           <button class="filter-btn active" data-filter="all">All</button>
@@ -353,10 +364,10 @@ const pages = {
       </section>
       <section class="trust-section">
         <div class="trust-strip">
-          <div class="trust-item"><strong>Case studies</strong><span>Ready for measurable results and before/after breakdowns. <a class="inline-link" href="${contactRoutes.fix}">Fix my website</a>.</span></div>
-          <div class="trust-item"><strong>Outcomes</strong><span>Built to highlight stronger messaging, better trust, and cleaner CTAs. <a class="inline-link" href="/services.html">See the service focus</a>.</span></div>
-          <div class="trust-item"><strong>Industries served</strong><span>Local businesses, coaches, nonprofits, and service brands. <a class="inline-link" href="/about.html">Read my approach</a>.</span></div>
-          <div class="trust-item"><strong>Next phase</strong><span>Add client quotes and hard metrics as they come in. <a class="inline-link" href="/contact.html">Start the conversation</a>.</span></div>
+          <div class="trust-item"><strong>Industries served</strong><span>Service businesses, restaurants, small brands, nonprofits, and organizations that need a clearer online presence.</span></div>
+          <div class="trust-item"><strong>What the work improved</strong><span>Stronger first impression, clearer offer presentation, easier customer action, and better mobile usability.</span></div>
+          <div class="trust-item"><strong>Proof style</strong><span>No fake metrics, no inflated claims. The language stays honest about what the work improved and what it helped support.</span></div>
+          <div class="trust-item"><strong>Next step</strong><span>If your current website feels weak or unclear, <a class="inline-link" href="${contactRoutes.fix}">fix my website</a>. If you need a full build, <a class="inline-link" href="${contactRoutes.start}">start your website</a>.</span></div>
         </div>
       </section>
       ${ctaPanel(
@@ -466,7 +477,7 @@ function partnerBanner() {
   return `
     <div class="partner-banner" role="note" aria-label="Marketing partner link">
       <div class="partner-banner__content">
-        Need marketing after the site is fixed?
+        Need marketing after the site is built or fixed?
         <a class="partner-banner__link" href="https://www.getsparqd.com" target="_blank" rel="noopener">SparQ Digital can handle that.</a>
       </div>
     </div>
@@ -488,7 +499,8 @@ function header(activeKey) {
           ${navigation.map((item) => `
             <a href="${item.href}" class="nav-link${item.key === activeKey ? ' is-active' : ''}"${item.key === activeKey ? ' aria-current="page"' : ''}>${item.label}</a>
           `).join('')}
-          <a href="${contactRoutes.quote}" class="cta-btn nav-cta">Get a Quote</a>
+          <a href="${contactRoutes.start}" class="cta-btn nav-cta">Start Your Website</a>
+          <a href="${contactRoutes.fix}" class="cta-btn secondary nav-cta nav-cta--secondary">Fix My Website</a>
         </div>
       </nav>
       <button class="nav-hamburger" type="button" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
@@ -643,6 +655,25 @@ function userPathSection() {
   `;
 }
 
+function bestFitSection() {
+  return `
+    <section class="best-fit-section">
+      <div class="section-header">
+        <p class="eyebrow">Best fit</p>
+        <h2>This site is built for business owners who need a clearer, more credible online presence.</h2>
+        <p class="section-subtitle">If you are trying to look more established, make your offer easier to understand, and make customer action simpler, you are in the right place.</p>
+      </div>
+      <div class="best-fit-grid">
+        <article class="best-fit-card"><h3>Local service businesses</h3><p>For businesses that need more calls, quote requests, and inquiry form submissions from the website.</p></article>
+        <article class="best-fit-card"><h3>Coaches and consultants</h3><p>For offers that need clearer positioning, better trust, and a more direct path to booked conversations.</p></article>
+        <article class="best-fit-card"><h3>Restaurants and food brands</h3><p>For brands that need stronger mobile usability, clearer browsing, and easier customer action.</p></article>
+        <article class="best-fit-card"><h3>Nonprofits and community organizations</h3><p>For organizations that need to explain the mission clearly and make support or engagement easier.</p></article>
+        <article class="best-fit-card"><h3>Small businesses building credibility</h3><p>For owners who need a stronger first impression than a social page, weak template, or outdated site can give them.</p></article>
+      </div>
+    </section>
+  `;
+}
+
 function portfolioCards(items, includeFilters = false) {
   return items.map((item, index) => `
     <article class="portfolio-card${index === 0 && includeFilters ? ' featured' : ''}" data-type="${item.type}">
@@ -657,9 +688,9 @@ function portfolioCards(items, includeFilters = false) {
       <div class="portfolio-content">
         <p class="portfolio-label">${item.label}</p>
         <h3>${item.title}</h3>
-        <p class="portfolio-desc"><strong>Problem:</strong> ${item.problem}</p>
-        <p class="portfolio-desc"><strong>What changed:</strong> ${item.changed}</p>
-        <p class="portfolio-desc"><strong>Expected result:</strong> ${item.result}</p>
+        <p class="portfolio-desc"><strong>Business need:</strong> ${item.problem}</p>
+        <p class="portfolio-desc"><strong>What this improved:</strong> ${item.changed}</p>
+        <p class="portfolio-desc"><strong>What this helped support:</strong> ${item.impact}</p>
         <div class="portfolio-actions">
           <a href="${item.href}" class="btn btn-primary" target="_blank" rel="noopener">View Live Site</a>
         </div>
